@@ -8,21 +8,156 @@
     <language>de-DE</language>
     <lastBuildDate>Thu, 14 Oct 2021 00:00:00 +0200</lastBuildDate><atom:link href="https://datenschauer.de/tags/anf%C3%A4nger/index.xml" rel="self" type="application/rss+xml" />
     <item>
-      <title>Emacs von Grund auf - #01</title>
-      <link>https://datenschauer.de/posts/emacs-von-grund-auf-01/</link>
+      <title>Emacs Basics - Tastenkombinationen</title>
+      <link>https://datenschauer.de/posts/emacs-basics-tastenkombinationen/</link>
       <pubDate>Thu, 14 Oct 2021 00:00:00 +0200</pubDate>
       
-      <guid>https://datenschauer.de/posts/emacs-von-grund-auf-01/</guid>
-      <description>Das ist eine erste Überschrift In Emacs &amp;ldquo;bewegt&amp;rdquo; man sich viel über Tastenkombinationen. Dafür werden vor allem die Strg-Taste und die Alt- oder Esc-Taste gedrückt. Die Strg-Taste heißt im Englischen &amp;ldquo;Control&amp;rdquo; = &amp;ldquo;Ctrl&amp;rdquo; und wird daher mit &amp;ldquo;C-&amp;rdquo; abgekürzt. Wenn man also irgendwo die Tastenkombination C-x liest so heißt das: &amp;ldquo;Drücke die Tasten &amp;lsquo;Strg&amp;rsquo; und &amp;lsquo;x&amp;rsquo; gleichzeitig.&amp;rdquo; Achtung: gibt es Kombinationen mit Großbuchstaben, so müssen drei Tasten gleichzeitig gedrückt werden. So meint C-X das gleichzeitige Drücken von &amp;ldquo;Strg&amp;rdquo;, &amp;ldquo;Shift&amp;rdquo; und &amp;ldquo;x&amp;rdquo;.</description>
-      <content>&lt;h2 id=&#34;das-ist-eine-erste-überschrift&#34;&gt;Das ist eine erste Überschrift&lt;/h2&gt;
+      <guid>https://datenschauer.de/posts/emacs-basics-tastenkombinationen/</guid>
+      <description>&amp;ldquo;C&amp;rdquo; und &amp;ldquo;M&amp;rdquo; In Emacs &amp;ldquo;bewegt&amp;rdquo; man sich viel über Tastenkombinationen. Dafür werden vor allem die Strg-Taste und die Alt- oder Esc-Taste gedrückt. Die Strg-Taste heißt im Englischen &amp;ldquo;Control&amp;rdquo; = &amp;ldquo;Ctrl&amp;rdquo; und wird daher mit &amp;ldquo;C-&amp;rdquo; abgekürzt. Wenn man also irgendwo die Tastenkombination C-x liest so heißt das: &amp;ldquo;Drücke die Tasten &amp;lsquo;Strg&amp;rsquo; und &amp;lsquo;x&amp;rsquo; gleichzeitig.&amp;rdquo; Achtung: gibt es Kombinationen mit Großbuchstaben, so müssen drei Tasten gleichzeitig gedrückt werden. So meint C-X das gleichzeitige Drücken von &amp;ldquo;Strg&amp;rdquo;, &amp;ldquo;Shift&amp;rdquo; und &amp;ldquo;x&amp;rdquo;.</description>
+      <content>&lt;h2 id=&#34;c-und-m&#34;&gt;&amp;ldquo;C&amp;rdquo; und &amp;ldquo;M&amp;rdquo;&lt;/h2&gt;
 &lt;p&gt;In Emacs &amp;ldquo;bewegt&amp;rdquo; man sich viel über Tastenkombinationen. Dafür werden vor allem die Strg-Taste und die Alt- oder Esc-Taste gedrückt. Die Strg-Taste heißt im Englischen &amp;ldquo;Control&amp;rdquo; = &amp;ldquo;Ctrl&amp;rdquo; und wird daher mit &amp;ldquo;C-&amp;rdquo; abgekürzt. Wenn man also irgendwo die Tastenkombination &lt;code&gt;C-x&lt;/code&gt; liest so heißt das: &amp;ldquo;Drücke die Tasten &amp;lsquo;Strg&amp;rsquo; und &amp;lsquo;x&amp;rsquo; gleichzeitig.&amp;rdquo; Achtung: gibt es Kombinationen mit Großbuchstaben, so müssen drei Tasten gleichzeitig gedrückt werden. So meint &lt;code&gt;C-X&lt;/code&gt; das gleichzeitige Drücken von &amp;ldquo;Strg&amp;rdquo;, &amp;ldquo;Shift&amp;rdquo; und &amp;ldquo;x&amp;rdquo;.&lt;/p&gt;
-&lt;p&gt;Eine weitere wichtige Taste ist die &amp;ldquo;Meta-Taste&amp;rdquo;. Sie gibt es auf heutigen Tastaturen nicht mehr und ist ein Relikte aus den frühen achziger Jahren. Dort gab es die Taste auf Keyboards sogenannter LISP-Machines. Da die Taste auf heutigen Tastaturen fehlt muss natürlich Ersatz her. In eine Standard Emacs Installation ist die Meta Taste die Alt- oder die ESC-(Escape-)Taste. Sie wird mit &amp;ldquo;M&amp;rdquo; für &amp;ldquo;Meta&amp;rdquo; abgekürzt. Lesen Sie also irgenwo &lt;code&gt;M-x&lt;/code&gt; so meint das: &amp;ldquo;Drücken sie die Alt-Taste und die Taste &amp;lsquo;x&amp;rsquo; gleichzeitig.&amp;rdquo;&lt;/p&gt;
-&lt;div class=&#34;highlight&#34;&gt;&lt;pre tabindex=&#34;0&#34; style=&#34;color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4&#34;&gt;&lt;code class=&#34;language-python&#34; data-lang=&#34;python&#34;&gt;&lt;span style=&#34;color:#66d9ef&#34;&gt;def&lt;/span&gt; &lt;span style=&#34;color:#a6e22e&#34;&gt;test&lt;/span&gt;(x):
-    &lt;span style=&#34;color:#66d9ef&#34;&gt;return&lt;/span&gt; &lt;span style=&#34;color:#e6db74&#34;&gt;&amp;#34;Hallo, das ist &lt;/span&gt;&lt;span style=&#34;color:#e6db74&#34;&gt;{}&lt;/span&gt;&lt;span style=&#34;color:#e6db74&#34;&gt;.&amp;#34;&lt;/span&gt;&lt;span style=&#34;color:#f92672&#34;&gt;.&lt;/span&gt;format(x)
-
-print(test(&lt;span style=&#34;color:#e6db74&#34;&gt;&amp;#34;Stefan&amp;#34;&lt;/span&gt;))
-&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;&lt;div class=&#34;highlight&#34;&gt;&lt;pre tabindex=&#34;0&#34; style=&#34;color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4&#34;&gt;&lt;code class=&#34;language-text&#34; data-lang=&#34;text&#34;&gt;Hallo, das ist Stefan.
-&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;</content>
+&lt;p&gt;Eine weitere wichtige Taste ist die &amp;ldquo;Meta-Taste&amp;rdquo;. Sie gibt es auf heutigen Tastaturen nicht mehr und ist ein Relikte aus den frühen achziger Jahren. Dort gab es die Taste auf Keyboards sogenannter LISP-Machines. Da die Taste auf heutigen Tastaturen fehlt muss natürlich Ersatz her. In eine Standard Emacs Installation ist die Meta Taste die Alt- oder die ESC-(Escape-)Taste. Sie wird mit &amp;ldquo;M&amp;rdquo; für &amp;ldquo;Meta&amp;rdquo; abgekürzt. List man also irgenwo &lt;code&gt;M-x&lt;/code&gt; so meint das: &amp;ldquo;Drücke die Alt-Taste und die Taste &amp;lsquo;x&amp;rsquo; gleichzeitig!&amp;rdquo;&lt;/p&gt;
+&lt;h2 id=&#34;die-wichtigsten-bewegungen&#34;&gt;Die wichtigsten Bewegungen&lt;/h2&gt;
+&lt;p&gt;Hier eine kleine Liste der wichtigsten Bewegungen in Emacs:&lt;/p&gt;
+&lt;table&gt;
+&lt;thead&gt;
+&lt;tr&gt;
+&lt;th&gt;Tasten&lt;/th&gt;
+&lt;th&gt;Funktion&lt;/th&gt;
+&lt;th&gt;Bewegung&lt;/th&gt;
+&lt;/tr&gt;
+&lt;/thead&gt;
+&lt;tbody&gt;
+&lt;tr&gt;
+&lt;td&gt;&lt;code&gt;C-f&lt;/code&gt;&lt;/td&gt;
+&lt;td&gt;forward-char&lt;/td&gt;
+&lt;td&gt;ein Zeichen nach rechts&lt;/td&gt;
+&lt;/tr&gt;
+&lt;tr&gt;
+&lt;td&gt;&lt;code&gt;C-b&lt;/code&gt;&lt;/td&gt;
+&lt;td&gt;backward-char&lt;/td&gt;
+&lt;td&gt;ein Zeichen nach links&lt;/td&gt;
+&lt;/tr&gt;
+&lt;tr&gt;
+&lt;td&gt;&lt;code&gt;C-n&lt;/code&gt;&lt;/td&gt;
+&lt;td&gt;next-line&lt;/td&gt;
+&lt;td&gt;eine Zeile nach unten&lt;/td&gt;
+&lt;/tr&gt;
+&lt;tr&gt;
+&lt;td&gt;&lt;code&gt;C-p&lt;/code&gt;&lt;/td&gt;
+&lt;td&gt;previous-line&lt;/td&gt;
+&lt;td&gt;eine Zeile nach oben&lt;/td&gt;
+&lt;/tr&gt;
+&lt;tr&gt;
+&lt;td&gt;&lt;code&gt;M-f&lt;/code&gt;&lt;/td&gt;
+&lt;td&gt;forward-word&lt;/td&gt;
+&lt;td&gt;ein Wort nach rechts&lt;/td&gt;
+&lt;/tr&gt;
+&lt;tr&gt;
+&lt;td&gt;&lt;code&gt;M-b&lt;/code&gt;&lt;/td&gt;
+&lt;td&gt;backward-word&lt;/td&gt;
+&lt;td&gt;ein Wort nach links&lt;/td&gt;
+&lt;/tr&gt;
+&lt;tr&gt;
+&lt;td&gt;&lt;code&gt;C-v&lt;/code&gt;&lt;/td&gt;
+&lt;td&gt;scroll-up-command&lt;/td&gt;
+&lt;td&gt;Seite nach unten (= nach oben scrollen)&lt;/td&gt;
+&lt;/tr&gt;
+&lt;tr&gt;
+&lt;td&gt;&lt;code&gt;M-v&lt;/code&gt;&lt;/td&gt;
+&lt;td&gt;scroll-down-command&lt;/td&gt;
+&lt;td&gt;Seite nach oben (= nach unten scrollen)&lt;/td&gt;
+&lt;/tr&gt;
+&lt;tr&gt;
+&lt;td&gt;&lt;code&gt;C-l&lt;/code&gt;&lt;/td&gt;
+&lt;td&gt;recenter-top-bottom&lt;/td&gt;
+&lt;td&gt;Seite auf Cursor Position zentrieren&lt;/td&gt;
+&lt;/tr&gt;
+&lt;tr&gt;
+&lt;td&gt;&lt;code&gt;M-&lt;/code&gt;&lt;/td&gt;
+&lt;td&gt;beginning-of-buffer&lt;/td&gt;
+&lt;td&gt;an den Anfang des Buffers springen&lt;/td&gt;
+&lt;/tr&gt;
+&lt;tr&gt;
+&lt;td&gt;&lt;code&gt;M-&lt;/code&gt;&lt;/td&gt;
+&lt;td&gt;end-of-buffer&lt;/td&gt;
+&lt;td&gt;an das Ende des Buffers springen&lt;/td&gt;
+&lt;/tr&gt;
+&lt;/tbody&gt;
+&lt;/table&gt;
+&lt;h2 id=&#34;weitere-wichtige-tastenkombinationen&#34;&gt;weitere wichtige Tastenkombinationen&lt;/h2&gt;
+&lt;table&gt;
+&lt;thead&gt;
+&lt;tr&gt;
+&lt;th&gt;Tasten&lt;/th&gt;
+&lt;th&gt;Funktion&lt;/th&gt;
+&lt;th&gt;Beschreibung&lt;/th&gt;
+&lt;/tr&gt;
+&lt;/thead&gt;
+&lt;tbody&gt;
+&lt;tr&gt;
+&lt;td&gt;&lt;code&gt;C-x C-f&lt;/code&gt;&lt;/td&gt;
+&lt;td&gt;find-file&lt;/td&gt;
+&lt;td&gt;Datei öffnen&lt;/td&gt;
+&lt;/tr&gt;
+&lt;tr&gt;
+&lt;td&gt;&lt;code&gt;C-x C-s&lt;/code&gt;&lt;/td&gt;
+&lt;td&gt;save-buffer&lt;/td&gt;
+&lt;td&gt;Datei speichern&lt;/td&gt;
+&lt;/tr&gt;
+&lt;tr&gt;
+&lt;td&gt;&lt;code&gt;C-x s&lt;/code&gt;&lt;/td&gt;
+&lt;td&gt;save-some-buffers&lt;/td&gt;
+&lt;td&gt;alle Buffer speichern&lt;/td&gt;
+&lt;/tr&gt;
+&lt;tr&gt;
+&lt;td&gt;&lt;code&gt;C-x C-c&lt;/code&gt;&lt;/td&gt;
+&lt;td&gt;save-buffers-kill-terminal&lt;/td&gt;
+&lt;td&gt;alle Buffer speichern und Emacs beenden&lt;/td&gt;
+&lt;/tr&gt;
+&lt;tr&gt;
+&lt;td&gt;&lt;code&gt;M-x&lt;/code&gt;&lt;/td&gt;
+&lt;td&gt;execute-extended-command&lt;/td&gt;
+&lt;td&gt;einen Befehl eingeben&lt;/td&gt;
+&lt;/tr&gt;
+&lt;tr&gt;
+&lt;td&gt;&lt;code&gt;C-x b&lt;/code&gt;&lt;/td&gt;
+&lt;td&gt;switch-to-buffer&lt;/td&gt;
+&lt;td&gt;zu einem anderen Buffer wechseln&lt;/td&gt;
+&lt;/tr&gt;
+&lt;tr&gt;
+&lt;td&gt;&lt;code&gt;C-x C-b&lt;/code&gt;&lt;/td&gt;
+&lt;td&gt;list-buffers&lt;/td&gt;
+&lt;td&gt;alle Buffer auflisten&lt;/td&gt;
+&lt;/tr&gt;
+&lt;tr&gt;
+&lt;td&gt;&lt;code&gt;C-x o&lt;/code&gt;&lt;/td&gt;
+&lt;td&gt;other-window&lt;/td&gt;
+&lt;td&gt;in ein anderes Fenster springen&lt;/td&gt;
+&lt;/tr&gt;
+&lt;tr&gt;
+&lt;td&gt;&lt;code&gt;C-x 0&lt;/code&gt;&lt;/td&gt;
+&lt;td&gt;delete-window&lt;/td&gt;
+&lt;td&gt;ein Fenster schließen&lt;/td&gt;
+&lt;/tr&gt;
+&lt;tr&gt;
+&lt;td&gt;&lt;code&gt;C-x 1&lt;/code&gt;&lt;/td&gt;
+&lt;td&gt;delete-other-windows&lt;/td&gt;
+&lt;td&gt;alle Fenster bis auf das akttuelle schließen&lt;/td&gt;
+&lt;/tr&gt;
+&lt;tr&gt;
+&lt;td&gt;&lt;code&gt;C-x 2&lt;/code&gt;&lt;/td&gt;
+&lt;td&gt;split-window-below&lt;/td&gt;
+&lt;td&gt;Fenster horizontal teilen&lt;/td&gt;
+&lt;/tr&gt;
+&lt;tr&gt;
+&lt;td&gt;&lt;code&gt;C-x 3&lt;/code&gt;&lt;/td&gt;
+&lt;td&gt;split-window-right&lt;/td&gt;
+&lt;td&gt;Fenster vertikal teilen&lt;/td&gt;
+&lt;/tr&gt;
+&lt;/tbody&gt;
+&lt;/table&gt;
+</content>
     </item>
     
   </channel>

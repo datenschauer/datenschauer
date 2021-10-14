@@ -1,0 +1,305 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  
+    <title>Emacs Basics - Tastenkombinationen :: Datenschauer</title>
+  
+  <meta http-equiv="content-type" content="text/html; charset=utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<meta name="description" content="&amp;ldquo;C&amp;rdquo; und &amp;ldquo;M&amp;rdquo; In Emacs &amp;ldquo;bewegt&amp;rdquo; man sich viel über Tastenkombinationen. Dafür werden vor allem die Strg-Taste und die Alt- oder Esc-Taste gedrückt. Die Strg-Taste heißt im Englischen &amp;ldquo;Control&amp;rdquo; = &amp;ldquo;Ctrl&amp;rdquo; und wird daher mit &amp;ldquo;C-&amp;rdquo; abgekürzt. Wenn man also irgendwo die Tastenkombination C-x liest so heißt das: &amp;ldquo;Drücke die Tasten &amp;lsquo;Strg&amp;rsquo; und &amp;lsquo;x&amp;rsquo; gleichzeitig.&amp;rdquo; Achtung: gibt es Kombinationen mit Großbuchstaben, so müssen drei Tasten gleichzeitig gedrückt werden. So meint C-X das gleichzeitige Drücken von &amp;ldquo;Strg&amp;rdquo;, &amp;ldquo;Shift&amp;rdquo; und &amp;ldquo;x&amp;rdquo;." />
+<meta name="keywords" content="" />
+<meta name="robots" content="noodp" />
+<link rel="canonical" href="https://datenschauer.de/posts/emacs-basics-tastenkombinationen/" />
+
+
+
+
+<link rel="stylesheet" href="https://datenschauer.de/assets/style.css">
+
+  <link rel="stylesheet" href="https://datenschauer.de/assets/green.css">
+
+
+
+
+
+
+<link rel="apple-touch-icon" href="https://datenschauer.de/img/apple-touch-icon-192x192.png">
+
+  <link rel="shortcut icon" href="https://datenschauer.de/img/favicon/green.png">
+
+
+
+<meta name="twitter:card" content="summary" />
+
+  
+    <meta name="twitter:site" content="https://twitter.com/Datenschauer" />
+  
+    <meta name="twitter:creator" content="[Stefan Boehringer]" />
+
+
+
+<meta property="og:locale" content="en" />
+<meta property="og:type" content="article" />
+<meta property="og:title" content="Emacs Basics - Tastenkombinationen">
+<meta property="og:description" content="&amp;ldquo;C&amp;rdquo; und &amp;ldquo;M&amp;rdquo; In Emacs &amp;ldquo;bewegt&amp;rdquo; man sich viel über Tastenkombinationen. Dafür werden vor allem die Strg-Taste und die Alt- oder Esc-Taste gedrückt. Die Strg-Taste heißt im Englischen &amp;ldquo;Control&amp;rdquo; = &amp;ldquo;Ctrl&amp;rdquo; und wird daher mit &amp;ldquo;C-&amp;rdquo; abgekürzt. Wenn man also irgendwo die Tastenkombination C-x liest so heißt das: &amp;ldquo;Drücke die Tasten &amp;lsquo;Strg&amp;rsquo; und &amp;lsquo;x&amp;rsquo; gleichzeitig.&amp;rdquo; Achtung: gibt es Kombinationen mit Großbuchstaben, so müssen drei Tasten gleichzeitig gedrückt werden. So meint C-X das gleichzeitige Drücken von &amp;ldquo;Strg&amp;rdquo;, &amp;ldquo;Shift&amp;rdquo; und &amp;ldquo;x&amp;rdquo;." />
+<meta property="og:url" content="https://datenschauer.de/posts/emacs-basics-tastenkombinationen/" />
+<meta property="og:site_name" content="Datenschauer" />
+
+  
+    <meta property="og:image" content="https://datenschauer.de/img/favicon/green.png">
+  
+
+<meta property="og:image:width" content="2048">
+<meta property="og:image:height" content="1024">
+
+  <meta property="article:section" content="emacs" />
+
+
+  <meta property="article:published_time" content="2021-10-14 00:00:00 &#43;0200 &#43;0200" />
+
+
+
+
+
+
+
+
+
+
+
+
+</head>
+<body class="green">
+
+
+<div class="container headings--one-size">
+
+  <header class="header">
+  <div class="header__inner">
+    <div class="header__logo">
+      <a href="/">
+  <div class="logo">
+    Datenschauer
+  </div>
+</a>
+
+    </div>
+    
+  </div>
+  
+</header>
+
+
+  <div class="content">
+    
+<div class="post">
+  <h1 class="post-title">
+    <a href="https://datenschauer.de/posts/emacs-basics-tastenkombinationen/">Emacs Basics - Tastenkombinationen</a></h1>
+  <div class="post-meta">
+    
+      <span class="post-date">
+        2021-10-14 
+      </span>
+    
+    
+    <span class="post-author">:: [Stefan Boehringer]</span>
+    
+  </div>
+
+  
+  <span class="post-tags">
+    
+    #<a href="https://datenschauer.de/tags/tutorial/">Tutorial</a>&nbsp;
+    
+    #<a href="https://datenschauer.de/tags/anf%C3%A4nger/">Anfänger</a>&nbsp;
+    
+  </span>
+  
+
+  
+
+  
+
+  <div class="post-content"><div>
+        <h2 id="c-und-m">&ldquo;C&rdquo; und &ldquo;M&rdquo;<a href="#c-und-m" class="hanchor" ariaLabel="Anchor">&#8983;</a> </h2>
+<p>In Emacs &ldquo;bewegt&rdquo; man sich viel über Tastenkombinationen. Dafür werden vor allem die Strg-Taste und die Alt- oder Esc-Taste gedrückt. Die Strg-Taste heißt im Englischen &ldquo;Control&rdquo; = &ldquo;Ctrl&rdquo; und wird daher mit &ldquo;C-&rdquo; abgekürzt. Wenn man also irgendwo die Tastenkombination <code>C-x</code> liest so heißt das: &ldquo;Drücke die Tasten &lsquo;Strg&rsquo; und &lsquo;x&rsquo; gleichzeitig.&rdquo; Achtung: gibt es Kombinationen mit Großbuchstaben, so müssen drei Tasten gleichzeitig gedrückt werden. So meint <code>C-X</code> das gleichzeitige Drücken von &ldquo;Strg&rdquo;, &ldquo;Shift&rdquo; und &ldquo;x&rdquo;.</p>
+<p>Eine weitere wichtige Taste ist die &ldquo;Meta-Taste&rdquo;. Sie gibt es auf heutigen Tastaturen nicht mehr und ist ein Relikte aus den frühen achziger Jahren. Dort gab es die Taste auf Keyboards sogenannter LISP-Machines. Da die Taste auf heutigen Tastaturen fehlt muss natürlich Ersatz her. In eine Standard Emacs Installation ist die Meta Taste die Alt- oder die ESC-(Escape-)Taste. Sie wird mit &ldquo;M&rdquo; für &ldquo;Meta&rdquo; abgekürzt. List man also irgenwo <code>M-x</code> so meint das: &ldquo;Drücke die Alt-Taste und die Taste &lsquo;x&rsquo; gleichzeitig!&rdquo;</p>
+<h2 id="die-wichtigsten-bewegungen">Die wichtigsten Bewegungen<a href="#die-wichtigsten-bewegungen" class="hanchor" ariaLabel="Anchor">&#8983;</a> </h2>
+<p>Hier eine kleine Liste der wichtigsten Bewegungen in Emacs:</p>
+<table>
+<thead>
+<tr>
+<th>Tasten</th>
+<th>Funktion</th>
+<th>Bewegung</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td><code>C-f</code></td>
+<td>forward-char</td>
+<td>ein Zeichen nach rechts</td>
+</tr>
+<tr>
+<td><code>C-b</code></td>
+<td>backward-char</td>
+<td>ein Zeichen nach links</td>
+</tr>
+<tr>
+<td><code>C-n</code></td>
+<td>next-line</td>
+<td>eine Zeile nach unten</td>
+</tr>
+<tr>
+<td><code>C-p</code></td>
+<td>previous-line</td>
+<td>eine Zeile nach oben</td>
+</tr>
+<tr>
+<td><code>M-f</code></td>
+<td>forward-word</td>
+<td>ein Wort nach rechts</td>
+</tr>
+<tr>
+<td><code>M-b</code></td>
+<td>backward-word</td>
+<td>ein Wort nach links</td>
+</tr>
+<tr>
+<td><code>C-v</code></td>
+<td>scroll-up-command</td>
+<td>Seite nach unten (= nach oben scrollen)</td>
+</tr>
+<tr>
+<td><code>M-v</code></td>
+<td>scroll-down-command</td>
+<td>Seite nach oben (= nach unten scrollen)</td>
+</tr>
+<tr>
+<td><code>C-l</code></td>
+<td>recenter-top-bottom</td>
+<td>Seite auf Cursor Position zentrieren</td>
+</tr>
+<tr>
+<td><code>M-</code></td>
+<td>beginning-of-buffer</td>
+<td>an den Anfang des Buffers springen</td>
+</tr>
+<tr>
+<td><code>M-</code></td>
+<td>end-of-buffer</td>
+<td>an das Ende des Buffers springen</td>
+</tr>
+</tbody>
+</table>
+<h2 id="weitere-wichtige-tastenkombinationen">weitere wichtige Tastenkombinationen<a href="#weitere-wichtige-tastenkombinationen" class="hanchor" ariaLabel="Anchor">&#8983;</a> </h2>
+<table>
+<thead>
+<tr>
+<th>Tasten</th>
+<th>Funktion</th>
+<th>Beschreibung</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td><code>C-x C-f</code></td>
+<td>find-file</td>
+<td>Datei öffnen</td>
+</tr>
+<tr>
+<td><code>C-x C-s</code></td>
+<td>save-buffer</td>
+<td>Datei speichern</td>
+</tr>
+<tr>
+<td><code>C-x s</code></td>
+<td>save-some-buffers</td>
+<td>alle Buffer speichern</td>
+</tr>
+<tr>
+<td><code>C-x C-c</code></td>
+<td>save-buffers-kill-terminal</td>
+<td>alle Buffer speichern und Emacs beenden</td>
+</tr>
+<tr>
+<td><code>M-x</code></td>
+<td>execute-extended-command</td>
+<td>einen Befehl eingeben</td>
+</tr>
+<tr>
+<td><code>C-x b</code></td>
+<td>switch-to-buffer</td>
+<td>zu einem anderen Buffer wechseln</td>
+</tr>
+<tr>
+<td><code>C-x C-b</code></td>
+<td>list-buffers</td>
+<td>alle Buffer auflisten</td>
+</tr>
+<tr>
+<td><code>C-x o</code></td>
+<td>other-window</td>
+<td>in ein anderes Fenster springen</td>
+</tr>
+<tr>
+<td><code>C-x 0</code></td>
+<td>delete-window</td>
+<td>ein Fenster schließen</td>
+</tr>
+<tr>
+<td><code>C-x 1</code></td>
+<td>delete-other-windows</td>
+<td>alle Fenster bis auf das akttuelle schließen</td>
+</tr>
+<tr>
+<td><code>C-x 2</code></td>
+<td>split-window-below</td>
+<td>Fenster horizontal teilen</td>
+</tr>
+<tr>
+<td><code>C-x 3</code></td>
+<td>split-window-right</td>
+<td>Fenster vertikal teilen</td>
+</tr>
+</tbody>
+</table>
+
+      </div></div>
+
+  
+  
+  
+
+  
+
+</div>
+
+  </div>
+
+  
+    <footer class="footer">
+  <div class="footer__inner">
+    
+      <div class="copyright">
+        <span>© 2021 Powered by <a href="http://gohugo.io">Hugo</a></span>
+    
+        <span>:: Theme made by <a href="https://twitter.com/panr">panr</a></span>
+      </div>
+  </div>
+</footer>
+
+<script src="https://datenschauer.de/assets/main.js"></script>
+<script src="https://datenschauer.de/assets/prism.js"></script>
+
+
+
+
+
+
+
+  
+</div>
+
+</body>
+</html>
