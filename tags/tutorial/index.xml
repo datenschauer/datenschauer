@@ -1,0 +1,29 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes"?>
+<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
+  <channel>
+    <title>Tutorial on Datenschauer</title>
+    <link>https://datenschauer.de/tags/tutorial/</link>
+    <description>Recent content in Tutorial on Datenschauer</description>
+    <generator>Hugo -- gohugo.io</generator>
+    <language>de-DE</language>
+    <lastBuildDate>Thu, 14 Oct 2021 00:00:00 +0200</lastBuildDate><atom:link href="https://datenschauer.de/tags/tutorial/index.xml" rel="self" type="application/rss+xml" />
+    <item>
+      <title>Emacs von Grund auf - #01</title>
+      <link>https://datenschauer.de/posts/emacs-von-grund-auf-01/</link>
+      <pubDate>Thu, 14 Oct 2021 00:00:00 +0200</pubDate>
+      
+      <guid>https://datenschauer.de/posts/emacs-von-grund-auf-01/</guid>
+      <description>Das ist eine erste Überschrift In Emacs &amp;ldquo;bewegt&amp;rdquo; man sich viel über Tastenkombinationen. Dafür werden vor allem die Strg-Taste und die Alt- oder Esc-Taste gedrückt. Die Strg-Taste heißt im Englischen &amp;ldquo;Control&amp;rdquo; = &amp;ldquo;Ctrl&amp;rdquo; und wird daher mit &amp;ldquo;C-&amp;rdquo; abgekürzt. Wenn man also irgendwo die Tastenkombination C-x liest so heißt das: &amp;ldquo;Drücke die Tasten &amp;lsquo;Strg&amp;rsquo; und &amp;lsquo;x&amp;rsquo; gleichzeitig.&amp;rdquo; Achtung: gibt es Kombinationen mit Großbuchstaben, so müssen drei Tasten gleichzeitig gedrückt werden. So meint C-X das gleichzeitige Drücken von &amp;ldquo;Strg&amp;rdquo;, &amp;ldquo;Shift&amp;rdquo; und &amp;ldquo;x&amp;rdquo;.</description>
+      <content>&lt;h2 id=&#34;das-ist-eine-erste-überschrift&#34;&gt;Das ist eine erste Überschrift&lt;/h2&gt;
+&lt;p&gt;In Emacs &amp;ldquo;bewegt&amp;rdquo; man sich viel über Tastenkombinationen. Dafür werden vor allem die Strg-Taste und die Alt- oder Esc-Taste gedrückt. Die Strg-Taste heißt im Englischen &amp;ldquo;Control&amp;rdquo; = &amp;ldquo;Ctrl&amp;rdquo; und wird daher mit &amp;ldquo;C-&amp;rdquo; abgekürzt. Wenn man also irgendwo die Tastenkombination &lt;code&gt;C-x&lt;/code&gt; liest so heißt das: &amp;ldquo;Drücke die Tasten &amp;lsquo;Strg&amp;rsquo; und &amp;lsquo;x&amp;rsquo; gleichzeitig.&amp;rdquo; Achtung: gibt es Kombinationen mit Großbuchstaben, so müssen drei Tasten gleichzeitig gedrückt werden. So meint &lt;code&gt;C-X&lt;/code&gt; das gleichzeitige Drücken von &amp;ldquo;Strg&amp;rdquo;, &amp;ldquo;Shift&amp;rdquo; und &amp;ldquo;x&amp;rdquo;.&lt;/p&gt;
+&lt;p&gt;Eine weitere wichtige Taste ist die &amp;ldquo;Meta-Taste&amp;rdquo;. Sie gibt es auf heutigen Tastaturen nicht mehr und ist ein Relikte aus den frühen achziger Jahren. Dort gab es die Taste auf Keyboards sogenannter LISP-Machines. Da die Taste auf heutigen Tastaturen fehlt muss natürlich Ersatz her. In eine Standard Emacs Installation ist die Meta Taste die Alt- oder die ESC-(Escape-)Taste. Sie wird mit &amp;ldquo;M&amp;rdquo; für &amp;ldquo;Meta&amp;rdquo; abgekürzt. Lesen Sie also irgenwo &lt;code&gt;M-x&lt;/code&gt; so meint das: &amp;ldquo;Drücken sie die Alt-Taste und die Taste &amp;lsquo;x&amp;rsquo; gleichzeitig.&amp;rdquo;&lt;/p&gt;
+&lt;div class=&#34;highlight&#34;&gt;&lt;pre tabindex=&#34;0&#34; style=&#34;color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4&#34;&gt;&lt;code class=&#34;language-python&#34; data-lang=&#34;python&#34;&gt;&lt;span style=&#34;color:#66d9ef&#34;&gt;def&lt;/span&gt; &lt;span style=&#34;color:#a6e22e&#34;&gt;test&lt;/span&gt;(x):
+    &lt;span style=&#34;color:#66d9ef&#34;&gt;return&lt;/span&gt; &lt;span style=&#34;color:#e6db74&#34;&gt;&amp;#34;Hallo, das ist &lt;/span&gt;&lt;span style=&#34;color:#e6db74&#34;&gt;{}&lt;/span&gt;&lt;span style=&#34;color:#e6db74&#34;&gt;.&amp;#34;&lt;/span&gt;&lt;span style=&#34;color:#f92672&#34;&gt;.&lt;/span&gt;format(x)
+
+print(test(&lt;span style=&#34;color:#e6db74&#34;&gt;&amp;#34;Stefan&amp;#34;&lt;/span&gt;))
+&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;&lt;div class=&#34;highlight&#34;&gt;&lt;pre tabindex=&#34;0&#34; style=&#34;color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4&#34;&gt;&lt;code class=&#34;language-text&#34; data-lang=&#34;text&#34;&gt;Hallo, das ist Stefan.
+&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;</content>
+    </item>
+    
+  </channel>
+</rss>
