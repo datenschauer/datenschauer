@@ -1,0 +1,1781 @@
+<?xml version="1.0" encoding="utf-8"?>
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Strict//EN"
+"http://www.w3.org/TR/xhtml1/DTD/xhtml1-strict.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml" lang="de" xml:lang="de">
+<head>
+<!-- 2021-10-15 Fri 14:17 -->
+<meta http-equiv="Content-Type" content="text/html;charset=utf-8" />
+<meta name="viewport" content="width=device-width, initial-scale=1" />
+<title>Programmieren für alle!</title>
+<meta name="generator" content="Org mode" />
+<meta name="author" content="Stefan Böhringer" />
+<style type="text/css">
+ <!--/*--><![CDATA[/*><!--*/
+  .title  { text-align: center;
+             margin-bottom: .2em; }
+  .subtitle { text-align: center;
+              font-size: medium;
+              font-weight: bold;
+              margin-top:0; }
+  .todo   { font-family: monospace; color: red; }
+  .done   { font-family: monospace; color: green; }
+  .priority { font-family: monospace; color: orange; }
+  .tag    { background-color: #eee; font-family: monospace;
+            padding: 2px; font-size: 80%; font-weight: normal; }
+  .timestamp { color: #bebebe; }
+  .timestamp-kwd { color: #5f9ea0; }
+  .org-right  { margin-left: auto; margin-right: 0px;  text-align: right; }
+  .org-left   { margin-left: 0px;  margin-right: auto; text-align: left; }
+  .org-center { margin-left: auto; margin-right: auto; text-align: center; }
+  .underline { text-decoration: underline; }
+  #postamble p, #preamble p { font-size: 90%; margin: .2em; }
+  p.verse { margin-left: 3%; }
+  pre {
+    border: 1px solid #ccc;
+    box-shadow: 3px 3px 3px #eee;
+    padding: 8pt;
+    font-family: monospace;
+    overflow: auto;
+    margin: 1.2em;
+  }
+  pre.src {
+    position: relative;
+    overflow: auto;
+    padding-top: 1.2em;
+  }
+  pre.src:before {
+    display: none;
+    position: absolute;
+    background-color: white;
+    top: -10px;
+    right: 10px;
+    padding: 3px;
+    border: 1px solid black;
+  }
+  pre.src:hover:before { display: inline; margin-top: 14px;}
+  /* Languages per Org manual */
+  pre.src-asymptote:before { content: 'Asymptote'; }
+  pre.src-awk:before { content: 'Awk'; }
+  pre.src-C:before { content: 'C'; }
+  /* pre.src-C++ doesn't work in CSS */
+  pre.src-clojure:before { content: 'Clojure'; }
+  pre.src-css:before { content: 'CSS'; }
+  pre.src-D:before { content: 'D'; }
+  pre.src-ditaa:before { content: 'ditaa'; }
+  pre.src-dot:before { content: 'Graphviz'; }
+  pre.src-calc:before { content: 'Emacs Calc'; }
+  pre.src-emacs-lisp:before { content: 'Emacs Lisp'; }
+  pre.src-fortran:before { content: 'Fortran'; }
+  pre.src-gnuplot:before { content: 'gnuplot'; }
+  pre.src-haskell:before { content: 'Haskell'; }
+  pre.src-hledger:before { content: 'hledger'; }
+  pre.src-java:before { content: 'Java'; }
+  pre.src-js:before { content: 'Javascript'; }
+  pre.src-latex:before { content: 'LaTeX'; }
+  pre.src-ledger:before { content: 'Ledger'; }
+  pre.src-lisp:before { content: 'Lisp'; }
+  pre.src-lilypond:before { content: 'Lilypond'; }
+  pre.src-lua:before { content: 'Lua'; }
+  pre.src-matlab:before { content: 'MATLAB'; }
+  pre.src-mscgen:before { content: 'Mscgen'; }
+  pre.src-ocaml:before { content: 'Objective Caml'; }
+  pre.src-octave:before { content: 'Octave'; }
+  pre.src-org:before { content: 'Org mode'; }
+  pre.src-oz:before { content: 'OZ'; }
+  pre.src-plantuml:before { content: 'Plantuml'; }
+  pre.src-processing:before { content: 'Processing.js'; }
+  pre.src-python:before { content: 'Python'; }
+  pre.src-R:before { content: 'R'; }
+  pre.src-ruby:before { content: 'Ruby'; }
+  pre.src-sass:before { content: 'Sass'; }
+  pre.src-scheme:before { content: 'Scheme'; }
+  pre.src-screen:before { content: 'Gnu Screen'; }
+  pre.src-sed:before { content: 'Sed'; }
+  pre.src-sh:before { content: 'shell'; }
+  pre.src-sql:before { content: 'SQL'; }
+  pre.src-sqlite:before { content: 'SQLite'; }
+  /* additional languages in org.el's org-babel-load-languages alist */
+  pre.src-forth:before { content: 'Forth'; }
+  pre.src-io:before { content: 'IO'; }
+  pre.src-J:before { content: 'J'; }
+  pre.src-makefile:before { content: 'Makefile'; }
+  pre.src-maxima:before { content: 'Maxima'; }
+  pre.src-perl:before { content: 'Perl'; }
+  pre.src-picolisp:before { content: 'Pico Lisp'; }
+  pre.src-scala:before { content: 'Scala'; }
+  pre.src-shell:before { content: 'Shell Script'; }
+  pre.src-ebnf2ps:before { content: 'ebfn2ps'; }
+  /* additional language identifiers per "defun org-babel-execute"
+       in ob-*.el */
+  pre.src-cpp:before  { content: 'C++'; }
+  pre.src-abc:before  { content: 'ABC'; }
+  pre.src-coq:before  { content: 'Coq'; }
+  pre.src-groovy:before  { content: 'Groovy'; }
+  /* additional language identifiers from org-babel-shell-names in
+     ob-shell.el: ob-shell is the only babel language using a lambda to put
+     the execution function name together. */
+  pre.src-bash:before  { content: 'bash'; }
+  pre.src-csh:before  { content: 'csh'; }
+  pre.src-ash:before  { content: 'ash'; }
+  pre.src-dash:before  { content: 'dash'; }
+  pre.src-ksh:before  { content: 'ksh'; }
+  pre.src-mksh:before  { content: 'mksh'; }
+  pre.src-posh:before  { content: 'posh'; }
+  /* Additional Emacs modes also supported by the LaTeX listings package */
+  pre.src-ada:before { content: 'Ada'; }
+  pre.src-asm:before { content: 'Assembler'; }
+  pre.src-caml:before { content: 'Caml'; }
+  pre.src-delphi:before { content: 'Delphi'; }
+  pre.src-html:before { content: 'HTML'; }
+  pre.src-idl:before { content: 'IDL'; }
+  pre.src-mercury:before { content: 'Mercury'; }
+  pre.src-metapost:before { content: 'MetaPost'; }
+  pre.src-modula-2:before { content: 'Modula-2'; }
+  pre.src-pascal:before { content: 'Pascal'; }
+  pre.src-ps:before { content: 'PostScript'; }
+  pre.src-prolog:before { content: 'Prolog'; }
+  pre.src-simula:before { content: 'Simula'; }
+  pre.src-tcl:before { content: 'tcl'; }
+  pre.src-tex:before { content: 'TeX'; }
+  pre.src-plain-tex:before { content: 'Plain TeX'; }
+  pre.src-verilog:before { content: 'Verilog'; }
+  pre.src-vhdl:before { content: 'VHDL'; }
+  pre.src-xml:before { content: 'XML'; }
+  pre.src-nxml:before { content: 'XML'; }
+  /* add a generic configuration mode; LaTeX export needs an additional
+     (add-to-list 'org-latex-listings-langs '(conf " ")) in .emacs */
+  pre.src-conf:before { content: 'Configuration File'; }
+
+  table { border-collapse:collapse; }
+  caption.t-above { caption-side: top; }
+  caption.t-bottom { caption-side: bottom; }
+  td, th { vertical-align:top;  }
+  th.org-right  { text-align: center;  }
+  th.org-left   { text-align: center;   }
+  th.org-center { text-align: center; }
+  td.org-right  { text-align: right;  }
+  td.org-left   { text-align: left;   }
+  td.org-center { text-align: center; }
+  dt { font-weight: bold; }
+  .footpara { display: inline; }
+  .footdef  { margin-bottom: 1em; }
+  .figure { padding: 1em; }
+  .figure p { text-align: center; }
+  .equation-container {
+    display: table;
+    text-align: center;
+    width: 100%;
+  }
+  .equation {
+    vertical-align: middle;
+  }
+  .equation-label {
+    display: table-cell;
+    text-align: right;
+    vertical-align: middle;
+  }
+  .inlinetask {
+    padding: 10px;
+    border: 2px solid gray;
+    margin: 10px;
+    background: #ffffcc;
+  }
+  #org-div-home-and-up
+   { text-align: right; font-size: 70%; white-space: nowrap; }
+  textarea { overflow-x: auto; }
+  .linenr { font-size: smaller }
+  .code-highlighted { background-color: #ffff00; }
+  .org-info-js_info-navigation { border-style: none; }
+  #org-info-js_console-label
+    { font-size: 10px; font-weight: bold; white-space: nowrap; }
+  .org-info-js_search-highlight
+    { background-color: #ffff00; color: #000000; font-weight: bold; }
+  .org-svg { width: 90%; }
+  /*]]>*/-->
+</style>
+<link rel="stylesheet" type="text/css" href="https://fniessen.github.io/org-html-themes/src/readtheorg_theme/css/htmlize.css"/>
+<link rel="stylesheet" type="text/css" href="https://fniessen.github.io/org-html-themes/src/readtheorg_theme/css/readtheorg.css"/>
+<script src="https://ajax.googleapis.com/ajax/libs/jquery/2.1.3/jquery.min.js"></script>
+<script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.4/js/bootstrap.min.js"></script>
+<script type="text/javascript" src="https://fniessen.github.io/org-html-themes/src/lib/js/jquery.stickytableheaders.min.js"></script>
+<script type="text/javascript" src="https://fniessen.github.io/org-html-themes/src/readtheorg_theme/js/readtheorg.js"></script>
+<script type="text/javascript">
+// @license magnet:?xt=urn:btih:1f739d935676111cfff4b4693e3816e664797050&amp;dn=gpl-3.0.txt GPL-v3-or-Later
+<!--/*--><![CDATA[/*><!--*/
+     function CodeHighlightOn(elem, id)
+     {
+       var target = document.getElementById(id);
+       if(null != target) {
+         elem.classList.add("code-highlighted");
+         target.classList.add("code-highlighted");
+       }
+     }
+     function CodeHighlightOff(elem, id)
+     {
+       var target = document.getElementById(id);
+       if(null != target) {
+         elem.classList.remove("code-highlighted");
+         target.classList.remove("code-highlighted");
+       }
+     }
+    /*]]>*///-->
+// @license-end
+</script>
+<script type="text/x-mathjax-config">
+    MathJax.Hub.Config({
+        displayAlign: "center",
+        displayIndent: "0em",
+
+        "HTML-CSS": { scale: 100,
+                        linebreaks: { automatic: "false" },
+                        webFont: "TeX"
+                       },
+        SVG: {scale: 100,
+              linebreaks: { automatic: "false" },
+              font: "TeX"},
+        NativeMML: {scale: 100},
+        TeX: { equationNumbers: {autoNumber: "AMS"},
+               MultLineWidth: "85%",
+               TagSide: "right",
+               TagIndent: ".8em"
+             }
+});
+</script>
+<script type="text/javascript"
+        src="https://cdnjs.cloudflare.com/ajax/libs/mathjax/2.7.0/MathJax.js?config=TeX-AMS_HTML"></script>
+</head>
+<body>
+<div id="content">
+<h1 class="title">Programmieren für alle!
+<br />
+<span class="subtitle">Einführung in die Programmierung und algorithmisches Denken mit Python.</span>
+</h1>
+<div id="table-of-contents">
+<h2>Inhaltsverzeichnis</h2>
+<div id="text-table-of-contents">
+<ul>
+<li><a href="#org85cdc67">1. Einleitung </a>
+<ul>
+<li><a href="#org864a187">1.1. Ziel und Aufbau des Kurses</a></li>
+<li><a href="#orgc418345">1.2. Python - ein kurzer Überblick</a>
+<ul>
+<li><a href="#org2823f2b">1.2.1. Die Anfänge</a></li>
+</ul>
+</li>
+<li><a href="#org391a0e5">1.3. Installation </a>
+<ul>
+<li><a href="#org71a4ee2">1.3.1. Standard Python </a></li>
+<li><a href="#orgcbc7895">1.3.2. Anaconda </a></li>
+</ul>
+</li>
+<li><a href="#org1b88d9f">1.4. Editoren</a></li>
+<li><a href="#org8e8f2e1">1.5. Become a Pythonista! das Python Zen</a></li>
+<li><a href="#orga326159">1.6. Hilfe und Training.</a>
+<ul>
+<li><a href="#org790f4c6">1.6.1. Wo bekomme ich Hilfe.</a></li>
+<li><a href="#org471f1b1">1.6.2. Training, Training, Training!</a></li>
+</ul>
+</li>
+</ul>
+</li>
+<li><a href="#orgb51a5c7">2. Erste Schritte </a>
+<ul>
+<li><a href="#orgda58021">2.1. Python Code ausführen </a>
+<ul>
+<li><a href="#org3b2f5ff">2.1.1. Die REPL</a></li>
+<li><a href="#org1b03957">2.1.2. Python Skripte</a></li>
+<li><a href="#org01b217b">2.1.3. Jupyter Notebooks</a></li>
+</ul>
+</li>
+<li><a href="#org4130e3d">2.2. Python erweitern </a>
+<ul>
+<li><a href="#org8c292a9">2.2.1. Das Import Statement</a></li>
+<li><a href="#org292a4ca">2.2.2. Paketmanager </a></li>
+</ul>
+</li>
+<li><a href="#org64adbb0">2.3. Variablen</a></li>
+<li><a href="#orgf8274b7">2.4. Datentypen </a>
+<ul>
+<li><a href="#org9ce292e">2.4.1. Zahlen</a></li>
+<li><a href="#org8912510">2.4.2. Strings</a></li>
+<li><a href="#orgd13dc50">2.4.3. Booleans</a></li>
+<li><a href="#org477d2a7">2.4.4. Datum und Zeit</a></li>
+<li><a href="#org76e0bde">2.4.5. Type Casting</a></li>
+<li><a href="#org5507bc7">2.4.6. Type Conversions</a></li>
+</ul>
+</li>
+<li><a href="#org374f8ab">2.5. Mathematische Operationen</a></li>
+<li><a href="#orgdaa504b">2.6. Logische Operatoren</a></li>
+<li><a href="#orgffa7124">2.7. Become a Pythonista! Logische Verknüpfungen</a></li>
+<li><a href="#org6bede2a">2.8. Aufgaben</a></li>
+</ul>
+</li>
+<li><a href="#orgd502f0d">3. Kontrollstrukturen </a>
+<ul>
+<li><a href="#orgbd730ad">3.1. Die <code>while</code> Schleife</a></li>
+<li><a href="#orgf7e071c">3.2. Die <code>for</code> Schleife</a></li>
+<li><a href="#org4e462bb">3.3. <code>if</code> Verzweigungen</a></li>
+<li><a href="#orgf89c429">3.4. Become a Pythonista!</a></li>
+<li><a href="#org2956865">3.5. Aufgaben</a>
+<ul>
+<li><a href="#org7d424a5">3.5.1. Listen Differenzen</a></li>
+<li><a href="#org1f95142">3.5.2. Pangramme</a></li>
+<li><a href="#org0adbdca">3.5.3. BMI Klassifikation</a></li>
+<li><a href="#orgd4aed57">3.5.4. BMI Klassifikation - die pythonésque Art</a></li>
+</ul>
+</li>
+</ul>
+</li>
+<li><a href="#orgfd20696">4. Datenstrukturen </a>
+<ul>
+<li><a href="#org4db4e80">4.1. Listen</a></li>
+<li><a href="#org2eb7671">4.2. Tupel</a></li>
+<li><a href="#org61715d5">4.3. Dictionaries</a></li>
+<li><a href="#org2441c67">4.4. Sets</a></li>
+<li><a href="#org8633dd9">4.5. Der <code>in</code> Operator</a></li>
+<li><a href="#org27a4bc7">4.6. Collections sortieren</a></li>
+<li><a href="#org9f5b6a9">4.7. Become a Pythonista!</a>
+<ul>
+<li><a href="#orga1720ee">4.7.1. Slicing</a></li>
+<li><a href="#org9be6ebe">4.7.2. List Comprehensions</a></li>
+<li><a href="#orga897fc2">4.7.3. Verzweigungen vermeiden</a></li>
+<li><a href="#orga0fce35">4.7.4. Benutze ein Dict als Switch-Statement</a></li>
+</ul>
+</li>
+<li><a href="#org88aef51">4.8. Aufgaben </a>
+<ul>
+<li><a href="#org867eb57">4.8.1. Ausschuss zählen</a></li>
+</ul>
+</li>
+</ul>
+</li>
+<li><a href="#org5d301f7">5. Funktionen </a>
+<ul>
+<li><a href="#org7a30a3f">5.1. Funktionen definieren</a></li>
+<li><a href="#org62cc66b">5.2. Scope von Funktionen</a></li>
+<li><a href="#org6ca9c27">5.3. Rückgabewerte</a></li>
+<li><a href="#org7beadf5">5.4. Parameter</a></li>
+<li><a href="#org45a5eeb">5.5. Exception Handling</a>
+<ul>
+<li><a href="#orgef6d524">5.5.1. try &#x2026; catch</a></li>
+<li><a href="#org946ef50">5.5.2. das With-Statement</a></li>
+</ul>
+</li>
+<li><a href="#orgd27ff9c">5.6. Become a Pythonista!</a>
+<ul>
+<li><a href="#org9b8a6e2">5.6.1. Entpacken von Argumenten (zip)</a></li>
+<li><a href="#orgacfb062">5.6.2. Lambdas</a></li>
+<li><a href="#orgd106bf7">5.6.3. Funktionale Programmierung</a></li>
+</ul>
+</li>
+<li><a href="#orge10b2cc">5.7. Aufgaben</a>
+<ul>
+<li><a href="#org28be182">5.7.1. Summe zwischen zwei beliebigen Ganzzahlen</a></li>
+<li><a href="#org055b41f">5.7.2. Liste in gleiche Summen aufteilen</a></li>
+<li><a href="#org90d4ae0">5.7.3. Eine Switch Funktion mit Python realisieren.</a></li>
+</ul>
+</li>
+</ul>
+</li>
+<li><a href="#org3f968d1">6. Mit Dateien arbeiten</a></li>
+<li><a href="#org8c6e0b4">7. Data Science Grundlagen </a>
+<ul>
+<li><a href="#orgc75f9a9">7.1. Numerisches Python mit NumPy </a>
+<ul>
+<li><a href="#org70dfdd3">7.1.1. Arrays</a></li>
+<li><a href="#orge82cbbe">7.1.2. Vektoren und Matrizen</a></li>
+<li><a href="#org27b4f54">7.1.3. Lineare Algebra</a></li>
+</ul>
+</li>
+<li><a href="#org5fedc07">7.2. Dataframes mit Pandas</a></li>
+<li><a href="#orgdd03d28">7.3. Graphen mit Matplotlib</a></li>
+<li><a href="#orgf5666e2">7.4. Become a Pythonista!</a></li>
+<li><a href="#org7b0bdfd">7.5. Aufgaben</a></li>
+</ul>
+</li>
+<li><a href="#org77c2fb7">8. Datenmanagement </a>
+<ul>
+<li><a href="#org038c0c3">8.1. Daten bereitstellen und einlesen </a>
+<ul>
+<li><a href="#org3489d9f">8.1.1. FLatfiles (CSV, Excel, JSON)</a></li>
+<li><a href="#org875780f">8.1.2. Relationale Datenbanken (SQL)</a></li>
+<li><a href="#org5b7444a">8.1.3. NoSQL Datenbanken</a></li>
+<li><a href="#orge687076">8.1.4. Daten über REST API beziehen</a></li>
+</ul>
+</li>
+<li><a href="#orgf997944">8.2. Daten aufbereiten</a></li>
+<li><a href="#org3eea82a">8.3. Daten analysíeren</a></li>
+<li><a href="#org080a5ce">8.4. Daten visualisieren</a></li>
+</ul>
+</li>
+<li><a href="#orga09d1c9">9. Statistik </a>
+<ul>
+<li><a href="#org7cd4078">9.1. Deskriptive Statistik</a></li>
+<li><a href="#org5747797">9.2. Inferenzielle Statistik</a></li>
+</ul>
+</li>
+<li><a href="#org39bdb1c">10. Maschinelles Lernen </a>
+<ul>
+<li><a href="#org9a7d5da">10.1. Scikit-Learn</a></li>
+</ul>
+</li>
+<li><a href="#orgd8dc7ed">11. Code debuggen und testen </a></li>
+<li><a href="#orge191b78">12. Lösungen zu den Aufgaben </a>
+<ul>
+<li><a href="#org49968b7">12.1. Kapitel: Datenstrukturen</a>
+<ul>
+<li><a href="#orgb2c05b8">12.1.1. Ausschuss zählen</a></li>
+</ul>
+</li>
+<li><a href="#orgdc19d16">12.2. Kapitel: Kontrollstrukutren</a>
+<ul>
+<li><a href="#orgac22cac">12.2.1. Listen Differenzen</a></li>
+<li><a href="#orgcd24b4d">12.2.2. Pangramme</a></li>
+<li><a href="#org1e3c273">12.2.3. BMI Berechnung</a></li>
+</ul>
+</li>
+<li><a href="#orga09707b">12.3. Kapitel: Funktionen</a>
+<ul>
+<li><a href="#orgd4cb7a9">12.3.1. Summe zwischen zwei beliebigen Ganzzahlen</a></li>
+<li><a href="#org17c327c">12.3.2. Liste in gleiche Summen aufteilen</a></li>
+</ul>
+</li>
+</ul>
+</li>
+<li><a href="#org368151d">13. Weiterführende Literatur</a>
+<ul>
+<li><a href="#org6efa2a4">13.1. Einführende Literatur</a></li>
+<li><a href="#org0cd2425">13.2. Für Fortgeschrittene</a></li>
+<li><a href="#org4f18d7d">13.3. Data Science</a></li>
+<li><a href="#orgdac2ffd">13.4. Webseiten</a></li>
+</ul>
+</li>
+</ul>
+</div>
+</div>
+
+<div id="org4400833" class="figure">
+<p><img src="figs/pythonista-logo.png" alt="pythonista-logo.png" />
+</p>
+</div>
+
+<div id="outline-container-org85cdc67" class="outline-2">
+<h2 id="org85cdc67"><span class="section-number-2">1.</span> Einleitung </h2>
+<div class="outline-text-2" id="text-1">
+</div>
+
+<div id="outline-container-org864a187" class="outline-3">
+<h3 id="org864a187"><span class="section-number-3">1.1.</span> Ziel und Aufbau des Kurses</h3>
+<div class="outline-text-3" id="text-1-1">
+<p>
+Dies ist ein Kurs für Programmieranfänger*innen ohne Vorkenntnisse. Genau aus diesem Grund habe ich auch die Programmiersprache Python gewählt. Python ist durch seine Schlichtheit perfekt geeignet die wichtigsten Programmierparadigmen Einsteigern zu vermitteln. Python ist aber gleichzeitig so komplex, erweiterbar und verbreitet, dass man damit (fast) alles programmieren kann und man somit ein mächtiges Werkzeug in Händen hält, das man viele (Programmier-)Jahre später immer noch brauchen kann und - da bin ich mir sicher - lange nicht ausgelernt hat.
+</p>
+
+<p>
+Sie können Python unter verwenden, um:
+</p>
+<ul class="org-ul">
+<li>Ihren administrativen Alltag am Computer zu erleichtern und viele Aufgaben zu automatisieren,</li>
+<li>Web- und Desktopanwendungen zu entwickeln,</li>
+<li>im Bereich Data Science, Maschinelles Lernen, KI und Spracherkennung zu arbeiten,</li>
+<li>um Erweiterungen für viele Programme, wie Cinema 4D, Paint Shop Pro oder GIMP zu schreiben,</li>
+<li>oder um ihren RaspBerry Pi zu steuern.</li>
+</ul>
+
+<p>
+Neben dem Programmieren mit Python soll der Blick in diesem Kurs aber auch auf das Programmieren &bdquo;an sich&ldquo; gerichtet sein. Was heißt Programmieren eigentlich? Was geschieht da am Computer? Welche Konzepte tauchen unabhängig von der tatsächlich verwendeten Prorammiersprache immer wieder auf? Wie kann man von Anfang an einen guten Programmierstil erlernen? Und welche Fallstricke tauchen immer wieder auf? Kurzum, ich möchte Ihnen zeigen, wie Sie von Anfang an &bdquo;weniger schlecht programmieren&ldquo;, wie auch ein Titel des <a href="https://oreilly.de/produkt/weniger-schlecht-programmieren/">sehr guten Buches</a> von <i>Kathrin Passig</i> und <i>Johannes Jander</i> heißt.
+</p>
+</div>
+</div>
+
+<div id="outline-container-orgc418345" class="outline-3">
+<h3 id="orgc418345"><span class="section-number-3">1.2.</span> Python - ein kurzer Überblick</h3>
+<div class="outline-text-3" id="text-1-2">
+<p>
+Viele Studien und Nutzerbefragungen der letzten Jahre zeigen, dass
+Python zu <b>den</b> top Programmiersprachen gehört, die erstens
+tatsächlich im Berufsalltag verwendet werden, die zweitens ganz
+weit vorne auf der Wunschliste vieler Programmier*innen steht und
+drittens dabei tatsächlich auch noch Spaß machen soll. Auch auf dem
+berühmten <a href="https://www.tiobe.com/tiobe-index/">TIOBE Index</a> ist Python seit gut 5 Jahren unter den ersten
+Plätzen zu finden. Das bedeutet, dass Python nun auch in der
+Industrie angekommen ist.
+</p>
+
+
+<div id="orgd8a0ae1" class="figure">
+<p><img src="figs/stack_survey_usage.png" alt="stack_survey_usage.png" />
+</p>
+<p><span class="figure-number">Abbildung 1: </span>Python ist auf Platz 4 der am häufigsten verwendeten Programmiersprachen im Berufsalltag von Programmier*innen weltweit. (Quelle: <a href="https://insights.stackoverflow.com/survey/2020#technology-programming-scripting-and-markup-languages-professional-developers">https://insights.stackoverflow.com/survey/2020#technology-programming-scripting-and-markup-languages-professional-developers</a>)</p>
+</div>
+
+
+<div id="orga2ae233" class="figure">
+<p><img src="figs/stack_survey_wanted.png" alt="stack_survey_wanted.png" />
+</p>
+<p><span class="figure-number">Abbildung 2: </span>Python ist aber auch ganz weit vorne, wenn es um die Frage geht, was Programmierer:innen unbedingt noch lernen wollen. (Quelle: <a href="https://insights.stackoverflow.com/survey/2020#technology-most-loved-dreaded-and-wanted-languages-wanted">https://insights.stackoverflow.com/survey/2020#technology-most-loved-dreaded-and-wanted-languages-wanted</a>)</p>
+</div>
+
+
+<div id="orgec5b766" class="figure">
+<p><img src="figs/stack_survey_loved.png" alt="stack_survey_loved.png" />
+</p>
+<p><span class="figure-number">Abbildung 3: </span>Und bei alledem scheint Python auch noch richtig Spaß zu machen. (Quelle: siehe Abbildung oben.)</p>
+</div>
+
+
+<div id="org2807aa9" class="figure">
+<p><img src="figs/tiobe_index.png" alt="tiobe_index.png" />
+</p>
+<p><span class="figure-number">Abbildung 4: </span>Neben C und Java ist Python nun unter den Top 3 Programmiersprachen, noch vor C++.</p>
+</div>
+
+<p>
+Wie konnte es zu diesem Aufstieg in den letzten Jahren kommen?
+</p>
+</div>
+
+<div id="outline-container-org2823f2b" class="outline-4">
+<h4 id="org2823f2b"><span class="section-number-4">1.2.1.</span> Die Anfänge</h4>
+<div class="outline-text-4" id="text-1-2-1">
+<p>
+Die Sprache <i>Python</i> erblickte laut <a href="https://de.wikipedia.org/wiki/Python_(Programmiersprache)">Wikipedia</a> am 20. Februar 1991 durch seinen niederländischen Schöpfer <i>Guido van Rossum</i> am <i>Centrum voor Wiskunde</i> das Licht der Welt. Ursprünglich war es als Skriptsprache für das Betriebssystem <i>Amoeba</i> gedacht. <i>Van Rossum</i> hatte zuvor schon an der Programmiersprache <i>ABC</i> mitgewirtk, die so einfach sein sollte, dass sie von jedem interessierten Laien benutzt werden konnte. Diese Erfahrungen konnte er für die Entwicklung von Python nutzen. Python sollte so einfach wie möglich zu erlernen aber gleichzeitig so mächtig wie nötig sein, um sie <b>wirklich</b> in so gut wie allen Projekten einzusetzen. <a href="#org8e8f2e1">Weiter unten</a> kann die &bdquo;Philosophie&ldquo; Pythons im <i>Zen of Python</i> nachlesen.
+</p>
+
+<p>
+Auf Youtube findet sich ein kurzes <a href="https://youtu.be/J0Aq44Pze-w">Interview mit Guido van Rossum</a> zur Entstehung von Python.
+</p>
+</div>
+</div>
+</div>
+
+
+<div id="outline-container-org391a0e5" class="outline-3">
+<h3 id="org391a0e5"><span class="section-number-3">1.3.</span> Installation </h3>
+<div class="outline-text-3" id="text-1-3">
+</div>
+
+<div id="outline-container-org71a4ee2" class="outline-4">
+<h4 id="org71a4ee2"><span class="section-number-4">1.3.1.</span> Standard Python </h4>
+<div class="outline-text-4" id="text-1-3-1">
+<p>
+Es gibt leider nicht <b>die</b> eine Art Python zu installieren. Man mag glauben, es reiche, auf <a href="https://python.org">https://python.org</a> zu gehen, das Installationsskript für das eigene Betriebssystem herunterzuladen und zu installieren. Das ist zwar möglich, aber oft sind danach noch ein paar Anpassungen - je nach System - nötig. Ich versuche daher, die einfachste Methode für die Systeme Windows (ab Version 10), MacOs (ab Mojave) und Linux (verschiedenste Derivate) zu beschreiben.
+</p>
+</div>
+
+<div id="outline-container-org666028e" class="outline-5">
+<h5 id="org666028e">Windows</h5>
+<div class="outline-text-5" id="text-org666028e">
+<p>
+Unter Windows 10/11 ist am leichtesten, Python über den Windows Store zu installieren. Klicken Sie dazu auf das Windowsmenü oder drücken Sie die Windows-Taste und geben &bdquo;Store&ldquo; ein. Klicken Sie auf &bdquo;Microsoft Store&ldquo; und geben in die Suche &bdquo;Python&ldquo; ein. Es werden Ihnen mehrere Versionen angezeigt. Sie können ruhig die neuste installieren (Version 3.10 [Stand: 14.10.2021]) mindestens aber Version 3.9.
+</p>
+
+
+<div id="org973fb48" class="figure">
+<p><img src="figs/ms_store_python_dl.png" alt="ms_store_python_dl.png" />
+</p>
+</div>
+
+<p>
+Klicken Sie auf <b>Herunterladen</b>.
+</p>
+
+
+<div id="org5feebc4" class="figure">
+<p><img src="figs/ms_store_python_dl2.png" alt="ms_store_python_dl2.png" />
+</p>
+</div>
+
+
+<div id="org468c84d" class="figure">
+<p><img src="figs/ms_store_python_dl3.png" alt="ms_store_python_dl3.png" />
+</p>
+</div>
+
+<p>
+Nach der Installation können Sie über das Windows Startmenü Python starten. Es öffnet sich dann eine Konsole, mit der Sie Ihren ersten Python Code eingeben und ausführen können.
+</p>
+
+
+<div id="org219fae2" class="figure">
+<p><img src="figs/python_console_win.png" alt="python_console_win.png" />
+</p>
+</div>
+</div>
+</div>
+
+
+<div id="outline-container-orga74962e" class="outline-5">
+<h5 id="orga74962e">Mac OSX</h5>
+</div>
+
+
+<div id="outline-container-org88bbf22" class="outline-5">
+<h5 id="org88bbf22">Linux</h5>
+</div>
+</div>
+
+
+<div id="outline-container-orgcbc7895" class="outline-4">
+<h4 id="orgcbc7895"><span class="section-number-4">1.3.2.</span> Anaconda </h4>
+<div class="outline-text-4" id="text-1-3-2">
+</div>
+<div id="outline-container-orgf8e0317" class="outline-5">
+<h5 id="orgf8e0317">Windows</h5>
+</div>
+
+
+<div id="outline-container-org7c07ec5" class="outline-5">
+<h5 id="org7c07ec5">Mac OSX</h5>
+</div>
+
+
+<div id="outline-container-orgf7f9146" class="outline-5">
+<h5 id="orgf7f9146">Linux</h5>
+</div>
+</div>
+</div>
+
+
+<div id="outline-container-org1b88d9f" class="outline-3">
+<h3 id="org1b88d9f"><span class="section-number-3">1.4.</span> Editoren</h3>
+</div>
+
+
+<div id="outline-container-org8e8f2e1" class="outline-3">
+<h3 id="org8e8f2e1"><span class="section-number-3">1.5.</span> Become a Pythonista! das Python Zen</h3>
+<div class="outline-text-3" id="text-1-5">
+<p>
+Starten Sie die Python Eingabeaufforderung und geben Sie folgendes
+ein.
+</p>
+
+<div class="org-src-container">
+<pre class="src src-python"><span style="color: #b6a0ff;">import</span> this
+</pre>
+</div>
+
+<p>
+Danach sollte folgende Liste erscheinen:
+</p>
+
+<pre class="example" id="orga7b881a">
+The Zen of Python, by Tim Peters
+
+Beautiful is better than ugly.
+Explicit is better than implicit.
+Simple is better than complex.
+Complex is better than complicated.
+Flat is better than nested.
+Sparse is better than dense.
+Readability counts.
+Special cases aren't special enough to break the rules.
+Although practicality beats purity.
+Errors should never pass silently.
+Unless explicitly silenced.
+In the face of ambiguity, refuse the temptation to guess.
+There should be one-- and preferably only one --obvious way to do it.
+Although that way may not be obvious at first unless you're Dutch.
+Now is better than never.
+Although never is often better than *right* now.
+If the implementation is hard to explain, it's a bad idea.
+If the implementation is easy to explain, it may be a good idea.
+Namespaces are one honking great idea -- let's do more of those!
+</pre>
+</div>
+</div>
+
+
+<div id="outline-container-orga326159" class="outline-3">
+<h3 id="orga326159"><span class="section-number-3">1.6.</span> Hilfe und Training.</h3>
+<div class="outline-text-3" id="text-1-6">
+</div>
+<div id="outline-container-org790f4c6" class="outline-4">
+<h4 id="org790f4c6"><span class="section-number-4">1.6.1.</span> Wo bekomme ich Hilfe.</h4>
+</div>
+
+<div id="outline-container-org471f1b1" class="outline-4">
+<h4 id="org471f1b1"><span class="section-number-4">1.6.2.</span> Training, Training, Training!</h4>
+<div class="outline-text-4" id="text-1-6-2">
+<p>
+Programmieren lernen geschieht, wie auch beim Sprachenlernen, durch viele Wiederholungen. Repetitive Übungen helfen, die Sprache metaphorisch &bdquo;in die Finger zu bekommen&ldquo;. <i>Muscle memory</i> ist eine wichtige, oft unbedachte Komponente erfolgreichen Programmierens. Repititive Aufgaben sollten aber auch Spaß machen. Wer erinnert sich nicht an so manchen Sprachunterricht in der Schule mit sturem Auswendiglernen von Vokabeln. Und seien wir ehrlich: so etwas würde doch beim Programmieren gar nicht funktionieren, einfach bestimmte Funktionsnamen, Konstrukte etc. auswendig zu lernen. Zum guten Programmieren gehört noch einen weiterer Skill, der so würden manche sagen, vielleicht sogar deckungsgleich ist mit der Tätigkeit des Programmierens an sich. Es ist der des Problemlösens, oder auf englisch noch viel treffender beschrieben als <i>algorithmic thinking</i>; also das &bdquo;Denken in Algorithmen&ldquo;.
+</p>
+</div>
+
+
+<div id="outline-container-orgcd84743" class="outline-5">
+<h5 id="orgcd84743">Gute Webseiten und Bücher zum Programmieren Trainieren</h5>
+<div class="outline-text-5" id="text-orgcd84743">
+<ul class="org-ul">
+<li>[Buch:] <a href="https://www.regensburger-katalog.de/TouchPoint/perma.do?q=+1035%3D%22BV044752581%22+IN+%5B2%5D&amp;v=ubr&amp;l=de">Lo Iacono et.al.: Programmieren Traninieren mit über 120 Workouts in Java und Python</a></li>
+<li>[Webseite:] <a href="https://adventofcode.com/">Advent of Code</a> Seit 2015 gibt Eric Wastl einen Adventskalender heraus mit 24 Problemen, die programmatisch gelöst werden sollen. Die Sprache, in der ein Problem gelöst wird ist völlig frei wählbar.</li>
+</ul>
+</div>
+</div>
+</div>
+</div>
+</div>
+
+<div id="outline-container-orgb51a5c7" class="outline-2">
+<h2 id="orgb51a5c7"><span class="section-number-2">2.</span> Erste Schritte </h2>
+<div class="outline-text-2" id="text-2">
+</div>
+<div id="outline-container-orgda58021" class="outline-3">
+<h3 id="orgda58021"><span class="section-number-3">2.1.</span> Python Code ausführen </h3>
+<div class="outline-text-3" id="text-2-1">
+</div>
+<div id="outline-container-org3b2f5ff" class="outline-4">
+<h4 id="org3b2f5ff"><span class="section-number-4">2.1.1.</span> Die REPL</h4>
+<div class="outline-text-4" id="text-2-1-1">
+<p>
+Tippen Sie einfach in der Kommando zeile folgendes ein und
+bestätigen Sie mit ENTER:
+</p>
+
+<div class="org-src-container">
+<pre class="src src-python"><span style="color: #00d3d0;">haustiere</span> = [<span style="color: #79a8ff;">"Hund"</span>, <span style="color: #79a8ff;">"Katze"</span>, <span style="color: #79a8ff;">"Kaninchen"</span>]
+
+<span style="color: #b6a0ff;">for</span> tier <span style="color: #b6a0ff;">in</span> haustiere:
+    <span style="color: #b6a0ff;">print</span>(tier)
+</pre>
+</div>
+</div>
+</div>
+
+
+<div id="outline-container-org1b03957" class="outline-4">
+<h4 id="org1b03957"><span class="section-number-4">2.1.2.</span> Python Skripte</h4>
+</div>
+
+
+<div id="outline-container-org01b217b" class="outline-4">
+<h4 id="org01b217b"><span class="section-number-4">2.1.3.</span> Jupyter Notebooks</h4>
+</div>
+</div>
+
+
+<div id="outline-container-org4130e3d" class="outline-3">
+<h3 id="org4130e3d"><span class="section-number-3">2.2.</span> Python erweitern </h3>
+<div class="outline-text-3" id="text-2-2">
+</div>
+<div id="outline-container-org8c292a9" class="outline-4">
+<h4 id="org8c292a9"><span class="section-number-4">2.2.1.</span> Das Import Statement</h4>
+</div>
+
+
+<div id="outline-container-org292a4ca" class="outline-4">
+<h4 id="org292a4ca"><span class="section-number-4">2.2.2.</span> Paketmanager </h4>
+<div class="outline-text-4" id="text-2-2-2">
+</div>
+<div id="outline-container-org5105ce7" class="outline-5">
+<h5 id="org5105ce7">PIP und PyPi</h5>
+</div>
+
+
+<div id="outline-container-org16a1a44" class="outline-5">
+<h5 id="org16a1a44">Conda</h5>
+</div>
+</div>
+</div>
+
+
+<div id="outline-container-org64adbb0" class="outline-3">
+<h3 id="org64adbb0"><span class="section-number-3">2.3.</span> Variablen</h3>
+</div>
+
+
+<div id="outline-container-orgf8274b7" class="outline-3">
+<h3 id="orgf8274b7"><span class="section-number-3">2.4.</span> Datentypen </h3>
+<div class="outline-text-3" id="text-2-4">
+</div>
+<div id="outline-container-org9ce292e" class="outline-4">
+<h4 id="org9ce292e"><span class="section-number-4">2.4.1.</span> Zahlen</h4>
+</div>
+
+
+<div id="outline-container-org8912510" class="outline-4">
+<h4 id="org8912510"><span class="section-number-4">2.4.2.</span> Strings</h4>
+</div>
+
+
+<div id="outline-container-orgd13dc50" class="outline-4">
+<h4 id="orgd13dc50"><span class="section-number-4">2.4.3.</span> Booleans</h4>
+</div>
+
+
+<div id="outline-container-org477d2a7" class="outline-4">
+<h4 id="org477d2a7"><span class="section-number-4">2.4.4.</span> Datum und Zeit</h4>
+</div>
+
+
+<div id="outline-container-org76e0bde" class="outline-4">
+<h4 id="org76e0bde"><span class="section-number-4">2.4.5.</span> Type Casting</h4>
+</div>
+
+
+<div id="outline-container-org5507bc7" class="outline-4">
+<h4 id="org5507bc7"><span class="section-number-4">2.4.6.</span> Type Conversions</h4>
+</div>
+</div>
+
+
+<div id="outline-container-org374f8ab" class="outline-3">
+<h3 id="org374f8ab"><span class="section-number-3">2.5.</span> Mathematische Operationen</h3>
+</div>
+
+
+<div id="outline-container-orgdaa504b" class="outline-3">
+<h3 id="orgdaa504b"><span class="section-number-3">2.6.</span> Logische Operatoren</h3>
+</div>
+
+
+<div id="outline-container-orgffa7124" class="outline-3">
+<h3 id="orgffa7124"><span class="section-number-3">2.7.</span> Become a Pythonista! Logische Verknüpfungen</h3>
+</div>
+
+
+<div id="outline-container-org6bede2a" class="outline-3">
+<h3 id="org6bede2a"><span class="section-number-3">2.8.</span> Aufgaben</h3>
+</div>
+</div>
+
+
+<div id="outline-container-orgd502f0d" class="outline-2">
+<h2 id="orgd502f0d"><span class="section-number-2">3.</span> Kontrollstrukturen </h2>
+<div class="outline-text-2" id="text-3">
+</div>
+<div id="outline-container-orgbd730ad" class="outline-3">
+<h3 id="orgbd730ad"><span class="section-number-3">3.1.</span> Die <code>while</code> Schleife</h3>
+<div class="outline-text-3" id="text-3-1">
+<div class="org-src-container">
+<pre class="src src-python"><span style="color: #00d3d0;">i</span> = 0
+
+<span style="color: #b6a0ff;">while</span> i &lt; 3:
+    <span style="color: #b6a0ff;">print</span>(i)
+    <span style="color: #00d3d0;">i</span> += 1
+</pre>
+</div>
+
+<pre class="example">
+0
+1
+2
+</pre>
+
+
+<p>
+<b>Was ist passiert?</b>
+</p>
+
+<p>
+Die <code>while</code> Schleife führt eine Anweisung so lange
+aus, so lange eine logische Bedingung <i>wahr</i> ergibt.
+</p>
+</div>
+</div>
+
+
+<div id="outline-container-orgf7e071c" class="outline-3">
+<h3 id="orgf7e071c"><span class="section-number-3">3.2.</span> Die <code>for</code> Schleife</h3>
+</div>
+
+
+<div id="outline-container-org4e462bb" class="outline-3">
+<h3 id="org4e462bb"><span class="section-number-3">3.3.</span> <code>if</code> Verzweigungen</h3>
+</div>
+
+
+<div id="outline-container-orgf89c429" class="outline-3">
+<h3 id="orgf89c429"><span class="section-number-3">3.4.</span> Become a Pythonista!</h3>
+</div>
+
+
+<div id="outline-container-org2956865" class="outline-3">
+<h3 id="org2956865"><span class="section-number-3">3.5.</span> Aufgaben</h3>
+<div class="outline-text-3" id="text-3-5">
+</div>
+<div id="outline-container-org7d424a5" class="outline-4">
+<h4 id="org7d424a5"><span class="section-number-4">3.5.1.</span> Listen Differenzen</h4>
+<div class="outline-text-4" id="text-3-5-1">
+<p>
+Gegeben sind zwei Listen A und B. Bilden Sie die Differenz A minus
+B und geben diese als Liste zurück.
+</p>
+
+<p>
+<i>Beispiele:</i>
+</p>
+
+<p>
+Sei A <code>[1, 2, 2]</code> und B <code>[2]</code> dann soll die Liste <code>[1]</code>
+ausgegeben werden.
+</p>
+
+<p>
+Sei A = <code>[2, 3, 4]</code> und B <code>[]</code> dann soll die Liste <code>[2, 3, 4]</code>
+ausgegeben werden.
+</p>
+
+<p>
+Sei A <code>[3, 8, 1, 8, 9]</code> und B <code>[1, 8]</code> dann soll die Liste <code>[3,
+    9]</code> zurückgegeben werden.
+</p>
+</div>
+</div>
+
+
+<div id="outline-container-org1f95142" class="outline-4">
+<h4 id="org1f95142"><span class="section-number-4">3.5.2.</span> Pangramme</h4>
+<div class="outline-text-4" id="text-3-5-2">
+<p>
+Ein Pangramm ist ein Satz, der alle Buchstaben des Alphabets
+beinhaltet. Schreiben Sie ein kleiner Programm, das prüft, ob in
+einem Satz alle Buchstaben des Alphabets enthalten sind. Groß-,
+Kleinschreibung soll keine Rolle spielen, genauso wenig wie
+Interpunktion. Der Einfachheit halber, gehen wir vom englischen
+Alphabet aus, das im ASCII Standard definiert ist und somit die
+Buchstaben &bdquo;abcdefghijklmnopqrstuvwxyz&ldquo; umfasst. Ein Beispiel für
+ein Pangram ist der Satz: &bdquo;The quick brown fox jumps over the lazy
+dog&ldquo;.
+</p>
+
+<p>
+Schauen Sie, ob Ihnen die offizielle &bdquo;String&ldquo; Klasse weiterhilft
+(<code>import string</code>). Mehr zu dieser Klasse finden Sie auf der <a href="https://docs.python.org/3/library/string.html">Webseite der Python Foundation</a>.
+</p>
+</div>
+</div>
+
+<div id="outline-container-org0adbdca" class="outline-4">
+<h4 id="org0adbdca"><span class="section-number-4">3.5.3.</span> BMI Klassifikation</h4>
+<div class="outline-text-4" id="text-3-5-3">
+<p>
+Der sog. Body-Mass-Index, kurz BMI, berechnet sich durch folgende
+Formel:
+</p>
+
+<p>
+\[bmi = weight / height^2 \]
+</p>
+
+<p>
+Schreiben Sie ein kleines Programm, das zwei Zahlen (<code>float</code>) als
+Eingabe entgegen nimmt - eine Zahl für das Gewicht in kg; eine
+Zahl für die Größe in m. Die Eingabe darf nicht negativ oder null
+sein! Dann soll entschieden werden, wie der BMI klassifiziert
+wird. Folgende Klassifikationen gibt es:
+</p>
+<ul class="org-ul">
+<li>Untergewicht (\(BMI < 20\))</li>
+<li>Normalgewicht (\(20 < BMI < 25\))</li>
+<li>Übergewicht (\(25 < BMI < 30\))</li>
+<li>Adipositas (\(BMI > 40\))</li>
+</ul>
+
+<p>
+Berechnen Sie den BMI und geben Sie die Klassifikation mit einem
+<code>print()</code> Befehl aus.
+</p>
+</div>
+</div>
+
+
+<div id="outline-container-orgd4aed57" class="outline-4">
+<h4 id="orgd4aed57"><span class="section-number-4">3.5.4.</span> BMI Klassifikation - die pythonésque Art</h4>
+<div class="outline-text-4" id="text-3-5-4">
+<p>
+Sehr wahrscheinlich haben Sie obige Aufgabe mit Hilfe einer <code>if-elif-else</code> Kontrollstruktur gelöst. Sehen Sie sich folgenden Code an und überlegen Sie, weshalb dieser auch zu einem richtigen Ergebnis führt:
+</p>
+
+<div class="org-src-container">
+<pre class="src src-python"><span style="color: #00d3d0;">bmi</span> = weight / height ** 2
+<span style="color: #00d3d0;">bmi_class</span> = [<span style="color: #79a8ff;">'Untergewicht'</span>, <span style="color: #79a8ff;">'Normalgewicht'</span>, <span style="color: #79a8ff;">'&#220;bergewicht'</span>, <span style="color: #79a8ff;">'Adipositas'</span>][(bmi &gt; 30) + (bmi &gt; 25) + (bmi &gt; 20)]
+<span style="color: #b6a0ff;">print</span>(bmi_class)
+
+</pre>
+</div>
+
+<p>
+<b>Tipp:</b> Denken Sie daran, was wir über <i>Type Casting</i> und den Index von Listen gelernt haben.
+</p>
+</div>
+</div>
+</div>
+</div>
+
+
+<div id="outline-container-orgfd20696" class="outline-2">
+<h2 id="orgfd20696"><span class="section-number-2">4.</span> Datenstrukturen </h2>
+<div class="outline-text-2" id="text-4">
+</div>
+<div id="outline-container-org4db4e80" class="outline-3">
+<h3 id="org4db4e80"><span class="section-number-3">4.1.</span> Listen</h3>
+</div>
+
+
+<div id="outline-container-org2eb7671" class="outline-3">
+<h3 id="org2eb7671"><span class="section-number-3">4.2.</span> Tupel</h3>
+<div class="outline-text-3" id="text-4-2">
+<div class="org-src-container">
+<pre class="src src-python"><span style="color: #b6a0ff;">def</span> <span style="color: #feacd0;">sum_and_product</span>(x, y):
+    <span style="color: #b6a0ff;">return</span> x + y, x * y
+
+<span style="color: #00d3d0;">sp</span> = sum_and_product(3, 5)
+<span style="color: #b6a0ff;">print</span>(sp)
+
+<span style="color: #00d3d0;">s</span>, <span style="color: #00d3d0;">p</span> = sum_and_product(3, 5)
+<span style="color: #b6a0ff;">print</span>(s, p)
+</pre>
+</div>
+</div>
+</div>
+
+
+<div id="outline-container-org61715d5" class="outline-3">
+<h3 id="org61715d5"><span class="section-number-3">4.3.</span> Dictionaries</h3>
+</div>
+
+
+<div id="outline-container-org2441c67" class="outline-3">
+<h3 id="org2441c67"><span class="section-number-3">4.4.</span> Sets</h3>
+</div>
+
+
+<div id="outline-container-org8633dd9" class="outline-3">
+<h3 id="org8633dd9"><span class="section-number-3">4.5.</span> Der <code>in</code> Operator</h3>
+</div>
+
+
+<div id="outline-container-org27a4bc7" class="outline-3">
+<h3 id="org27a4bc7"><span class="section-number-3">4.6.</span> Collections sortieren</h3>
+</div>
+
+
+<div id="outline-container-org9f5b6a9" class="outline-3">
+<h3 id="org9f5b6a9"><span class="section-number-3">4.7.</span> Become a Pythonista!</h3>
+<div class="outline-text-3" id="text-4-7">
+</div>
+<div id="outline-container-orga1720ee" class="outline-4">
+<h4 id="orga1720ee"><span class="section-number-4">4.7.1.</span> Slicing</h4>
+</div>
+
+
+<div id="outline-container-org9be6ebe" class="outline-4">
+<h4 id="org9be6ebe"><span class="section-number-4">4.7.2.</span> List Comprehensions</h4>
+</div>
+
+
+<div id="outline-container-orga897fc2" class="outline-4">
+<h4 id="orga897fc2"><span class="section-number-4">4.7.3.</span> Verzweigungen vermeiden</h4>
+<div class="outline-text-4" id="text-4-7-3">
+<p>
+Einer Variablen <code>bool</code> wird der Wert <code>False</code> oder <code>True</code> zugeordnet. Je nachdem soll dann der String &bdquo;Nein!&ldquo; oder &bdquo;Ja!&ldquo; ausgegeben werden.
+Mit einer <code>if</code> Verzweigung würde der Code in etwas so aussehen:
+</p>
+
+<div class="org-src-container">
+<pre class="src src-python"><span style="color: #b6a0ff;">if</span> <span style="color: #f78fe7;">bool</span>:
+    <span style="color: #b6a0ff;">print</span>(<span style="color: #79a8ff;">"Ja!"</span>)
+<span style="color: #b6a0ff;">else</span>:
+    <span style="color: #b6a0ff;">print</span>(<span style="color: #79a8ff;">"Nein!"</span>)
+</pre>
+</div>
+
+<p>
+Noch kürzer könnte das auch so mit Hilfe des &bdquo;ugly&ldquo; <i>ternären Operators</i> geschrieben werden:
+</p>
+
+<div class="org-src-container">
+<pre class="src src-python"><span style="color: #b6a0ff;">print</span>(<span style="color: #79a8ff;">"Ja!"</span> <span style="color: #b6a0ff;">if</span> <span style="color: #f78fe7;">bool</span> <span style="color: #b6a0ff;">else</span> <span style="color: #79a8ff;">"Nein!"</span>)
+</pre>
+</div>
+
+<p>
+Wir können aber auch die Tatsache ausnutzen, dass Python die Booleans <code>True</code> und <code>False</code> immer auch als Integerwerte \(0\) und \(1\) interpretiert.
+</p>
+
+<p>
+Erinnern wir uns: auf Listenelemente können wir mit Hilfe von eckigen Klammern und dem Index zugreifen, also z.B. <code>list[0]</code> erstes Element und <code>list[1]</code> zweites Element. Somit können wir auch folgenden Code schreiben, ohne eine <code>if</code> Verzweigung zu benutzen:
+</p>
+
+<div class="org-src-container">
+<pre class="src src-python"><span style="color: #b6a0ff;">print</span>([<span style="color: #79a8ff;">"Nein!"</span>, <span style="color: #79a8ff;">"Ja!"</span>][<span style="color: #f78fe7;">bool</span>])
+</pre>
+</div>
+
+<p>
+Wir haben also eine Liste mit den zwei String Elementen &bdquo;Nein!&ldquo; und &bdquo;Ja!&ldquo; und greifen auf dessen Elemente über den Index zu. Ist <code>bool</code> gleich <code>False</code>, konvertiert Python diesen Boolean auf den Interger \(0\). Es wird somit auf den Index \(0\) und damit auf das erste Element &bdquo;Nein!&ldquo; zugegriffen. Genau das, was wir haben wollten. Ist <code>bool</code> allerdings <code>True</code> so konvertiert der Interpreter zu \(1\). Wir greifen damit auf das zweite Element zu; also auf &bdquo;Ja!&ldquo;. Et voilá: es funktioniert auch ohne Schleife.
+</p>
+
+<p>
+Es gäbe aber auch noch eine weitere Variante mit Hilfe eines Dictionaries:
+</p>
+
+<div class="org-src-container">
+<pre class="src src-python"><span style="color: #b6a0ff;">print</span>({<span style="color: #00bcff;">True</span>: <span style="color: #79a8ff;">"Ja!"</span>, <span style="color: #00bcff;">False</span>: <span style="color: #79a8ff;">"Nein!"</span>}.get(<span style="color: #f78fe7;">bool</span>))
+</pre>
+</div>
+
+<p>
+Bei diesem Beispiel verhält es sich ähnlich wie oben mit der Liste. Allerdings wird hier über die Variable <code>bool</code> direkt auf den <i>Key</i> des Dictonaries zugegriffen.
+</p>
+
+<p>
+Ich denke, dass gerade Beispiele 2 (ternärer Operator) und 3 (Dictonary) echt <i>pythonésque</i> Programmierweisen darstellen. Ob sie aber dem <i>Python Zen</i> für gut lesbaren Code darstellen, überlasse ich den Überlegungen des Lesers.
+</p>
+</div>
+</div>
+
+
+
+<div id="outline-container-orga0fce35" class="outline-4">
+<h4 id="orga0fce35"><span class="section-number-4">4.7.4.</span> Benutze ein Dict als Switch-Statement</h4>
+</div>
+</div>
+
+
+<div id="outline-container-org88aef51" class="outline-3">
+<h3 id="org88aef51"><span class="section-number-3">4.8.</span> Aufgaben </h3>
+<div class="outline-text-3" id="text-4-8">
+</div>
+<div id="outline-container-org867eb57" class="outline-4">
+<h4 id="org867eb57"><span class="section-number-4">4.8.1.</span> Ausschuss zählen</h4>
+<div class="outline-text-4" id="text-4-8-1">
+<p>
+Am Ende einer Fließbandproduktion für Rechnerchips werden die Ausschüße des Produktionstages gezählt. Die Zählung wird in einer Liste gespeichert. Immer wenn ein Chip verworfen wird, wird der Boolean <code>True</code> in die Liste geschrieben, wenn der Chip aber durchgelassen wird, dann wird ein <code>False</code> gespeichert. Die Liste mit dem Ausschuss der letzten Stunde könnte z.B. wie folgt aussehen:
+</p>
+
+<div class="org-src-container">
+<pre class="src src-python">      <span style="color: #00d3d0;">ausschuss</span> = [<span style="color: #00bcff;">False</span>, <span style="color: #00bcff;">False</span>, <span style="color: #00bcff;">False</span>, <span style="color: #00bcff;">True</span>, <span style="color: #00bcff;">False</span>, <span style="color: #00bcff;">False</span>, <span style="color: #00bcff;">False</span>, <span style="color: #00bcff;">False</span>,
+                   <span style="color: #00bcff;">True</span>, <span style="color: #00bcff;">True</span>, <span style="color: #00bcff;">False</span>, <span style="color: #00bcff;">False</span>, <span style="color: #00bcff;">False</span>, <span style="color: #00bcff;">False</span>, <span style="color: #00bcff;">True</span>, <span style="color: #00bcff;">False</span>,
+                   <span style="color: #00bcff;">False</span>, <span style="color: #00bcff;">False</span>, <span style="color: #00bcff;">True</span>]
+</pre>
+</div>
+
+<p>
+Geben Sie aus, wie viel Ausschuss es gab. Zählen Sie also die <code>True</code> Werte in der Liste <code>ausschuss</code>.
+</p>
+</div>
+</div>
+</div>
+</div>
+
+
+<div id="outline-container-org5d301f7" class="outline-2">
+<h2 id="org5d301f7"><span class="section-number-2">5.</span> Funktionen </h2>
+<div class="outline-text-2" id="text-5">
+<p>
+Funktionen sind&#x2026;
+</p>
+
+<p>
+Eigentlich habe wir Funktionen schon die ganze Zeit verwendet. Zum
+Beispiel <code>print()</code>, <code>sum()</code>, <code>max()</code>, usw. Dies sind &bdquo;built-in
+functions&ldquo;, also in der Basisklasse von Python direkt implementierte
+Funktionen, die nicht erst mit einem <code>import</code> Befehl geladen werden
+müssen. Einen Überblick über alle &bdquo;eingebauten&ldquo; Funktionen gibt die
+entsprechende <a href="https://docs.python.org/3/library/functions.html">Seite der Python Dokumentation</a>.
+</p>
+</div>
+
+<div id="outline-container-org7a30a3f" class="outline-3">
+<h3 id="org7a30a3f"><span class="section-number-3">5.1.</span> Funktionen definieren</h3>
+</div>
+
+
+<div id="outline-container-org62cc66b" class="outline-3">
+<h3 id="org62cc66b"><span class="section-number-3">5.2.</span> Scope von Funktionen</h3>
+</div>
+
+
+<div id="outline-container-org6ca9c27" class="outline-3">
+<h3 id="org6ca9c27"><span class="section-number-3">5.3.</span> Rückgabewerte</h3>
+</div>
+
+
+<div id="outline-container-org7beadf5" class="outline-3">
+<h3 id="org7beadf5"><span class="section-number-3">5.4.</span> Parameter</h3>
+</div>
+
+
+<div id="outline-container-org45a5eeb" class="outline-3">
+<h3 id="org45a5eeb"><span class="section-number-3">5.5.</span> Exception Handling</h3>
+<div class="outline-text-3" id="text-5-5">
+</div>
+<div id="outline-container-orgef6d524" class="outline-4">
+<h4 id="orgef6d524"><span class="section-number-4">5.5.1.</span> try &#x2026; catch</h4>
+</div>
+
+
+<div id="outline-container-org946ef50" class="outline-4">
+<h4 id="org946ef50"><span class="section-number-4">5.5.2.</span> das With-Statement</h4>
+</div>
+</div>
+
+
+<div id="outline-container-orgd27ff9c" class="outline-3">
+<h3 id="orgd27ff9c"><span class="section-number-3">5.6.</span> Become a Pythonista!</h3>
+<div class="outline-text-3" id="text-5-6">
+</div>
+<div id="outline-container-org9b8a6e2" class="outline-4">
+<h4 id="org9b8a6e2"><span class="section-number-4">5.6.1.</span> Entpacken von Argumenten (zip)</h4>
+</div>
+
+
+<div id="outline-container-orgacfb062" class="outline-4">
+<h4 id="orgacfb062"><span class="section-number-4">5.6.2.</span> Lambdas</h4>
+</div>
+
+
+<div id="outline-container-orgd106bf7" class="outline-4">
+<h4 id="orgd106bf7"><span class="section-number-4">5.6.3.</span> Funktionale Programmierung</h4>
+</div>
+</div>
+
+
+<div id="outline-container-orge10b2cc" class="outline-3">
+<h3 id="orge10b2cc"><span class="section-number-3">5.7.</span> Aufgaben</h3>
+<div class="outline-text-3" id="text-5-7">
+</div>
+<div id="outline-container-org28be182" class="outline-4">
+<h4 id="org28be182"><span class="section-number-4">5.7.1.</span> Summe zwischen zwei beliebigen Ganzzahlen</h4>
+<div class="outline-text-4" id="text-5-7-1">
+<p>
+Schreiben Sie eine Funktion <code>get_sum()</code>, die zwei beliebe Integer \(a, b \in \mathbb{Z}\) entgegennimmt, und die Summe von \(a\) und \(b\) <i>inklusive</i> aller ganzer Zahlen dazwischen angibt. Sollten \(a\) und \(b\) gleich sein, so soll eines der beiden Integer zurückgegeben werden
+<i>Beispiel:</i>
+</p>
+
+<div class="org-src-container">
+<pre class="src src-python"><span style="color: #b6a0ff;">def</span> <span style="color: #feacd0;">get_sum</span>(a,b):
+    <span style="color: #a8a8a8;"># </span><span style="color: #a8a8a8;">Ihr Code hier ...</span>
+
+<span style="color: #b6a0ff;">print</span>(get_sum(0, -2))
+<span style="color: #a8a8a8;"># </span><span style="color: #a8a8a8;">-3, da 0 + -1 + -2</span>
+
+<span style="color: #b6a0ff;">print</span>(get_sum(2, 4))
+<span style="color: #a8a8a8;"># </span><span style="color: #a8a8a8;">9, da 2 + 3 + 4</span>
+
+<span style="color: #b6a0ff;">print</span>(get_sum(1, 1))
+<span style="color: #a8a8a8;"># </span><span style="color: #a8a8a8;">1, da beide Integer gleich</span>
+</pre>
+</div>
+</div>
+</div>
+
+
+<div id="outline-container-org055b41f" class="outline-4">
+<h4 id="org055b41f"><span class="section-number-4">5.7.2.</span> Liste in gleiche Summen aufteilen</h4>
+<div class="outline-text-4" id="text-5-7-2">
+<p>
+Gegeben ist eine Liste mit beliebigen Ganzzahlen \(\{i_1, i_2, \dots,
+    i_n\} \in \mathbb{Z}\). Schreiben Sie eine Funktion, die den Index
+zurückgibt, bei dem die Summe der Ganzzahlen links davon der Summe
+der Ganzzahlen rechts davon entspricht. Gibt es mehrere solcher
+Indices, geben Sie den niedrigsten an. Lässt kein solch eine Index
+finden, geben sie \(-1\) zurück.
+</p>
+
+<p>
+<i>Beispiele:</i>
+</p>
+
+<p>
+Für die Liste <code>[1, 2, 3, 4, 3, 2, 1]</code> sollte die Funktion den Index
+\(3\) zurückgegeben, da an dieser Position die Summe der linken
+Seite \((1+2+3) = 6)\) gleich der rechten Seite \((3+2+1) = 6\) ist.
+</p>
+
+<p>
+Für die Liste <code>[100, 0, 50, -52, 1, 1]</code> sollte der Index \(0\)
+zurückgegeben werden, da an dieser Position die Summe der linken
+Seite gleich \(0\) ist und ebenfall \(0\) ist die Summe der rechten
+Seite.
+</p>
+</div>
+</div>
+
+
+<div id="outline-container-org90d4ae0" class="outline-4">
+<h4 id="org90d4ae0"><span class="section-number-4">5.7.3.</span> Eine Switch Funktion mit Python realisieren.</h4>
+</div>
+</div>
+</div>
+
+
+<div id="outline-container-org3f968d1" class="outline-2">
+<h2 id="org3f968d1"><span class="section-number-2">6.</span> Mit Dateien arbeiten</h2>
+</div>
+
+
+<div id="outline-container-org8c6e0b4" class="outline-2">
+<h2 id="org8c6e0b4"><span class="section-number-2">7.</span> Data Science Grundlagen </h2>
+<div class="outline-text-2" id="text-7">
+<p>
+Der Data Science Stack von Python baut auf zwei grundlegenden
+Paketen auf: <i>Numpy</i> und <i>Matplotlib</i>. Numpy bildet die Basis für
+numerische Berechnungen mit Vektoren und Matrizen, wie sie für
+Statistik und Maschinelles Lernen unabdingbar sind. Matplotlib
+steuert die Fähigkeiten bei, Ergebnisse zu visualisieren und
+verschiedene Graphen zu plotten. Doch das Arbeiten mit Daten bedarf
+auch spezieller Werkzeuge um vor allem mit großen tabellarischen
+Daten zu manipulieren, zu filtern und zu säubern. Dies alles kann
+das Modul <i>Pandas</i>. Es bedient sich dabei den Datenstrukturen von
+Numpy und kann von Matplotlib leicht verarbeitet werden. Das Paket
+<i>Sci-Py</i> nun erweitert NumPy um weitere spezielle Funktionen für
+wissenschaftliches Arbeiten, wie Optimierung, Lineare Algebra,
+Integration, Interpolation und vieles mehr. Zu guter Letzt sei das
+Modul <i>SciKit-Learn</i> erwähnt. Es beinhaltet alles, was man für das
+Modellieren für maschinelles Lernen braucht.
+</p>
+
+<p>
+Den Python Data Science Stack kann man in folgendem Bild zusammenfassen:
+</p>
+</div>
+
+<div id="outline-container-orgc75f9a9" class="outline-3">
+<h3 id="orgc75f9a9"><span class="section-number-3">7.1.</span> Numerisches Python mit NumPy </h3>
+<div class="outline-text-3" id="text-7-1">
+</div>
+<div id="outline-container-org70dfdd3" class="outline-4">
+<h4 id="org70dfdd3"><span class="section-number-4">7.1.1.</span> Arrays</h4>
+</div>
+
+<div id="outline-container-orge82cbbe" class="outline-4">
+<h4 id="orge82cbbe"><span class="section-number-4">7.1.2.</span> Vektoren und Matrizen</h4>
+</div>
+
+<div id="outline-container-org27b4f54" class="outline-4">
+<h4 id="org27b4f54"><span class="section-number-4">7.1.3.</span> Lineare Algebra</h4>
+</div>
+</div>
+
+
+<div id="outline-container-org5fedc07" class="outline-3">
+<h3 id="org5fedc07"><span class="section-number-3">7.2.</span> Dataframes mit Pandas</h3>
+</div>
+
+
+<div id="outline-container-orgdd03d28" class="outline-3">
+<h3 id="orgdd03d28"><span class="section-number-3">7.3.</span> Graphen mit Matplotlib</h3>
+</div>
+
+
+<div id="outline-container-orgf5666e2" class="outline-3">
+<h3 id="orgf5666e2"><span class="section-number-3">7.4.</span> Become a Pythonista!</h3>
+</div>
+
+
+<div id="outline-container-org7b0bdfd" class="outline-3">
+<h3 id="org7b0bdfd"><span class="section-number-3">7.5.</span> Aufgaben</h3>
+</div>
+</div>
+
+
+<div id="outline-container-org77c2fb7" class="outline-2">
+<h2 id="org77c2fb7"><span class="section-number-2">8.</span> Datenmanagement </h2>
+<div class="outline-text-2" id="text-8">
+</div>
+<div id="outline-container-org038c0c3" class="outline-3">
+<h3 id="org038c0c3"><span class="section-number-3">8.1.</span> Daten bereitstellen und einlesen </h3>
+<div class="outline-text-3" id="text-8-1">
+</div>
+<div id="outline-container-org3489d9f" class="outline-4">
+<h4 id="org3489d9f"><span class="section-number-4">8.1.1.</span> FLatfiles (CSV, Excel, JSON)</h4>
+</div>
+
+
+<div id="outline-container-org875780f" class="outline-4">
+<h4 id="org875780f"><span class="section-number-4">8.1.2.</span> Relationale Datenbanken (SQL)</h4>
+</div>
+
+
+<div id="outline-container-org5b7444a" class="outline-4">
+<h4 id="org5b7444a"><span class="section-number-4">8.1.3.</span> NoSQL Datenbanken</h4>
+</div>
+
+
+<div id="outline-container-orge687076" class="outline-4">
+<h4 id="orge687076"><span class="section-number-4">8.1.4.</span> Daten über REST API beziehen</h4>
+</div>
+</div>
+
+
+<div id="outline-container-orgf997944" class="outline-3">
+<h3 id="orgf997944"><span class="section-number-3">8.2.</span> Daten aufbereiten</h3>
+</div>
+
+
+<div id="outline-container-org3eea82a" class="outline-3">
+<h3 id="org3eea82a"><span class="section-number-3">8.3.</span> Daten analysíeren</h3>
+</div>
+
+<div id="outline-container-org080a5ce" class="outline-3">
+<h3 id="org080a5ce"><span class="section-number-3">8.4.</span> Daten visualisieren</h3>
+</div>
+</div>
+
+
+<div id="outline-container-orga09d1c9" class="outline-2">
+<h2 id="orga09d1c9"><span class="section-number-2">9.</span> Statistik </h2>
+<div class="outline-text-2" id="text-9">
+</div>
+<div id="outline-container-org7cd4078" class="outline-3">
+<h3 id="org7cd4078"><span class="section-number-3">9.1.</span> Deskriptive Statistik</h3>
+</div>
+
+<div id="outline-container-org5747797" class="outline-3">
+<h3 id="org5747797"><span class="section-number-3">9.2.</span> Inferenzielle Statistik</h3>
+</div>
+</div>
+
+
+<div id="outline-container-org39bdb1c" class="outline-2">
+<h2 id="org39bdb1c"><span class="section-number-2">10.</span> Maschinelles Lernen </h2>
+<div class="outline-text-2" id="text-10">
+</div>
+<div id="outline-container-org9a7d5da" class="outline-3">
+<h3 id="org9a7d5da"><span class="section-number-3">10.1.</span> Scikit-Learn</h3>
+</div>
+</div>
+
+
+<div id="outline-container-orgd8dc7ed" class="outline-2">
+<h2 id="orgd8dc7ed"><span class="section-number-2">11.</span> Code debuggen und testen </h2>
+</div>
+
+
+<div id="outline-container-orge191b78" class="outline-2">
+<h2 id="orge191b78"><span class="section-number-2">12.</span> Lösungen zu den Aufgaben </h2>
+<div class="outline-text-2" id="text-12">
+</div>
+<div id="outline-container-org49968b7" class="outline-3">
+<h3 id="org49968b7"><span class="section-number-3">12.1.</span> Kapitel: Datenstrukturen</h3>
+<div class="outline-text-3" id="text-12-1">
+</div>
+<div id="outline-container-orgb2c05b8" class="outline-4">
+<h4 id="orgb2c05b8"><span class="section-number-4">12.1.1.</span> Ausschuss zählen</h4>
+<div class="outline-text-4" id="text-12-1-1">
+<p>
+Lassen Sie sich bitte nicht dazu verleiten, per <code>for</code> oder <code>while</code> Schleife über die einzelnen Elemente der Liste zu iterieren und eine Variable  hochzuzählen, wenn ein Listenelement gleich <code>True</code> ist. Dafür hat Python die eigene Listenmethode <code>.count()</code>, die auch auf Geschwindigkeit optimiert ist. Also:
+</p>
+
+<div class="org-src-container">
+<pre class="src src-python"><span style="color: #b6a0ff;">print</span>(ausschuss.count(<span style="color: #00bcff;">True</span>))
+</pre>
+</div>
+</div>
+</div>
+</div>
+
+<div id="outline-container-orgdc19d16" class="outline-3">
+<h3 id="orgdc19d16"><span class="section-number-3">12.2.</span> Kapitel: Kontrollstrukutren</h3>
+<div class="outline-text-3" id="text-12-2">
+</div>
+<div id="outline-container-orgac22cac" class="outline-4">
+<h4 id="orgac22cac"><span class="section-number-4">12.2.1.</span> Listen Differenzen</h4>
+<div class="outline-text-4" id="text-12-2-1">
+<p>
+Am besten lässt sich die Aufgabe durch eine einfache List
+Comprehension und den <code>in</code> Operator.
+</p>
+
+<div class="org-src-container">
+<pre class="src src-python"><span style="color: #00d3d0;">a</span> = [1, 2, 2, 3, 5, 7, 7]
+
+<span style="color: #00d3d0;">b</span> = [2, 7]
+
+<span style="color: #00d3d0;">new_list</span> = [x <span style="color: #b6a0ff;">for</span> x <span style="color: #b6a0ff;">in</span> a <span style="color: #b6a0ff;">if</span> x <span style="color: #b6a0ff;">not</span> <span style="color: #b6a0ff;">in</span> b]
+
+<span style="color: #b6a0ff;">print</span>(new_list)
+</pre>
+</div>
+
+<pre class="example">
+[1, 3, 5]
+</pre>
+</div>
+</div>
+
+<div id="outline-container-orgcd24b4d" class="outline-4">
+<h4 id="orgcd24b4d"><span class="section-number-4">12.2.2.</span> Pangramme</h4>
+<div class="outline-text-4" id="text-12-2-2">
+<div class="org-src-container">
+<pre class="src src-python"><span style="color: #b6a0ff;">import</span> string
+
+<span style="color: #a8a8a8;"># </span><span style="color: #a8a8a8;">als Teststring nehmen wir uns einmal das Beispiel aus der Aufgabe</span>
+<span style="color: #a8a8a8;"># </span><span style="color: #a8a8a8;">und einmal das Beispiel ohne "z" und "y".</span>
+
+<span style="color: #00d3d0;">s_pangram</span> = <span style="color: #79a8ff;">"The quick brown fox jumps over the lazy dog!"</span>.lower()
+<span style="color: #00d3d0;">s_no_pangram</span> = <span style="color: #79a8ff;">"The quick brown fox jumps over the la dog!"</span>.lower()
+
+<span style="color: #a8a8a8;"># </span><span style="color: #a8a8a8;">wir brauchen noch eine Liste mit allen ASCII Buchstaben</span>
+<span style="color: #a8a8a8;"># </span><span style="color: #a8a8a8;">diese gibt uns das String Attribut ascii_lowercase</span>
+
+<span style="color: #00d3d0;">asciis</span> = string.ascii_lowercase
+
+<span style="color: #a8a8a8;"># </span><span style="color: #a8a8a8;">wir bilden nun eine Liste aus dem m&#246;glichen Satz, die dann so viele</span>
+<span style="color: #a8a8a8;"># </span><span style="color: #a8a8a8;">Elemente haben sollte wie die ASCII Liste, wenn es sich um ein Pangramm</span>
+<span style="color: #a8a8a8;"># </span><span style="color: #a8a8a8;">handelt.</span>
+
+<span style="color: #00d3d0;">ascii_count</span> = [x <span style="color: #b6a0ff;">for</span> x <span style="color: #b6a0ff;">in</span> asciis <span style="color: #b6a0ff;">if</span> x <span style="color: #b6a0ff;">in</span> s_pangram]
+
+<span style="color: #b6a0ff;">print</span>(<span style="color: #f78fe7;">len</span>(ascii_count) == <span style="color: #f78fe7;">len</span>(asciis))
+
+<span style="color: #a8a8a8;"># </span><span style="color: #a8a8a8;">das ganze machen wir jetzt noch einmal mit dem Satz, der kein Pangramm ist</span>
+
+<span style="color: #00d3d0;">ascii_count</span> = [x <span style="color: #b6a0ff;">for</span> x <span style="color: #b6a0ff;">in</span> asciis <span style="color: #b6a0ff;">if</span> x <span style="color: #b6a0ff;">in</span> s_no_pangram]
+
+<span style="color: #b6a0ff;">print</span>(<span style="color: #f78fe7;">len</span>(ascii_count) == <span style="color: #f78fe7;">len</span>(asciis))
+</pre>
+</div>
+
+<pre class="example">
+True
+False
+</pre>
+
+
+<p>
+Es gibt aber eine noch viel klügere und ich will sagen
+<i>pythonésquere</i> Weise, die Aufgabe zu lösen. Dazu helfen uns
+Mengen und Mengenoperationen, wie wir sie oben kennengelernt
+haben.
+</p>
+
+<p>
+Sehen Sie sich folgenden Code genau an und überlegen Sie, wieso er
+zum gleichen Ergebnis führt.
+</p>
+
+<div class="org-src-container">
+<pre class="src src-python"><span style="color: #b6a0ff;">import</span> string
+
+<span style="color: #00d3d0;">s_pangram</span> = <span style="color: #79a8ff;">"The quick brown fox jumps over the lazy dog!"</span>.lower()
+<span style="color: #00d3d0;">s_no_pangram</span> = <span style="color: #79a8ff;">"The quick brown fox jumps over the la dog!"</span>.lower()
+<span style="color: #00d3d0;">asciis</span> = string.ascii_lowercase
+
+<span style="color: #b6a0ff;">print</span>(<span style="color: #f78fe7;">set</span>(asciis) &lt;= <span style="color: #f78fe7;">set</span>(s_pangram))
+<span style="color: #b6a0ff;">print</span>(<span style="color: #f78fe7;">set</span>(asciis) &lt;= <span style="color: #f78fe7;">set</span>(s_no_pangram))
+</pre>
+</div>
+
+<pre class="example">
+True
+False
+</pre>
+
+
+<p>
+Echte Poesie, oder?
+</p>
+
+<p>
+Ich möchte Sie ja nicht verwirren, aber es gibt sogar noch eine
+dritte <i>gute</i> Möglichkeit! (Wie war das schnell wieder im <i>Python
+Zen</i>: es sollte immer genau <b>eine</b> Möglichkeit geben? - Manchmal
+ist eben im echten Leben viel weniger Zen drin, als einem
+lieb ist.)
+</p>
+
+<p>
+Schauen Sie sich die Beschreibung der <code>all()</code> Funktion in der
+<a href="https://docs.python.org/3/library/functions.html#all">Python Dokumentation</a> an. Überlegen Sie dann, wie der folgende Code
+funktioniert:
+</p>
+
+<div class="org-src-container">
+<pre class="src src-python"><span style="color: #b6a0ff;">import</span> string
+
+<span style="color: #00d3d0;">s_pangram</span> = <span style="color: #79a8ff;">"The quick brown fox jumps over the lazy dog!"</span>.lower()
+<span style="color: #00d3d0;">s_no_pangram</span> = <span style="color: #79a8ff;">"The quick brown fox jumps over the la dog!"</span>.lower()
+<span style="color: #00d3d0;">asciis</span> = string.ascii_lowercase
+
+<span style="color: #b6a0ff;">print</span>(<span style="color: #f78fe7;">all</span>(x <span style="color: #b6a0ff;">in</span> s_pangram <span style="color: #b6a0ff;">for</span> x <span style="color: #b6a0ff;">in</span> asciis))
+<span style="color: #b6a0ff;">print</span>(<span style="color: #f78fe7;">all</span>(x <span style="color: #b6a0ff;">in</span> s_no_pangram <span style="color: #b6a0ff;">for</span> x <span style="color: #b6a0ff;">in</span> asciis))
+</pre>
+</div>
+
+<pre class="example">
+True
+False
+</pre>
+</div>
+</div>
+
+<div id="outline-container-org1e3c273" class="outline-4">
+<h4 id="org1e3c273"><span class="section-number-4">12.2.3.</span> BMI Berechnung</h4>
+<div class="outline-text-4" id="text-12-2-3">
+<div class="org-src-container">
+<pre class="src src-python"><span class="linenr"> 1: </span> <span style="color: #a8a8a8;"># </span><span style="color: #a8a8a8;">Wir definieren die zwei n&#246;tigen Variablen f&#252;r Gewicht und Gr&#246;&#223;e</span>
+<span class="linenr"> 2: </span>
+<span class="linenr"> 3: </span> <span style="color: #00d3d0;">weight</span>, <span style="color: #00d3d0;">height</span> = 0
+<span class="linenr"> 4: </span>
+<span class="linenr"> 5: </span> <span style="color: #a8a8a8;"># </span><span style="color: #a8a8a8;">In einer Schleife, die nur terminiert, wenn der Nutzer eine</span>
+<span class="linenr"> 6: </span> <span style="color: #a8a8a8;"># </span><span style="color: #a8a8a8;">korrekte Eingabe macht</span>
+<span class="linenr"> 7: </span> <span style="color: #a8a8a8;"># </span><span style="color: #a8a8a8;">rufen wir das Gewicht ab, ersetzen, falls n&#246;tig,</span>
+<span class="linenr"> 8: </span> <span style="color: #a8a8a8;"># </span><span style="color: #a8a8a8;">das Komma mit Punkt als Dezimaltrenner.</span>
+<span class="linenr"> 9: </span> <span style="color: #a8a8a8;"># </span><span style="color: #a8a8a8;">Au&#223;erdem wandeln wir gleich in float um</span>
+<span class="linenr">10: </span>
+<span class="linenr">11: </span> <span style="color: #b6a0ff;">while</span> weight == 0:
+<span class="linenr">12: </span>     <span style="color: #00d3d0;">weight</span> = <span style="color: #f78fe7;">float</span>(<span style="color: #f78fe7;">input</span>(<span style="color: #79a8ff;">"Eingabe Gewicht in kg: "</span>).replace(<span style="color: #79a8ff;">','</span>,<span style="color: #79a8ff;">'.'</span>))
+<span class="linenr">13: </span>
+<span class="linenr">14: </span>     <span style="color: #b6a0ff;">if</span> weight &gt; 0:
+<span class="linenr">15: </span>         <span style="color: #b6a0ff;">break</span>
+<span class="linenr">16: </span>    
+<span class="linenr">17: </span>     <span style="color: #b6a0ff;">print</span>(<span style="color: #79a8ff;">"Bitte Gewicht gr&#246;&#223;er 0 eingeben!"</span>)
+<span class="linenr">18: </span>     <span style="color: #00d3d0;">weight</span> = 0
+<span class="linenr">19: </span>
+<span class="linenr">20: </span> <span style="color: #a8a8a8;"># </span><span style="color: #a8a8a8;">selbiges machen wir f&#252;r die Gr&#246;&#223;e</span>
+<span class="linenr">21: </span>
+<span class="linenr">22: </span> <span style="color: #b6a0ff;">while</span> height == 0:
+<span class="linenr">23: </span>     <span style="color: #00d3d0;">height</span> = <span style="color: #f78fe7;">float</span>(<span style="color: #f78fe7;">input</span>(<span style="color: #79a8ff;">"Eingabe Gr&#246;&#223;e in m: "</span>).replace(<span style="color: #79a8ff;">','</span>,<span style="color: #79a8ff;">'.'</span>))
+<span class="linenr">24: </span>
+<span class="linenr">25: </span>     <span style="color: #b6a0ff;">if</span> height &gt; 0:
+<span class="linenr">26: </span>         <span style="color: #b6a0ff;">break</span>
+<span class="linenr">27: </span>    
+<span class="linenr">28: </span>     <span style="color: #b6a0ff;">print</span>(<span style="color: #79a8ff;">"Bitte Gr&#246;&#223;e gr&#246;&#223;er 0 eingeben!"</span>)
+<span class="linenr">29: </span>     <span style="color: #00d3d0;">height</span> = 0
+<span class="linenr">30: </span>
+<span class="linenr">31: </span> <span style="color: #a8a8a8;"># </span><span style="color: #a8a8a8;">wir berechnen den BMI</span>
+<span class="linenr">32: </span>
+<span class="linenr">33: </span> <span style="color: #00d3d0;">bmi</span> = <span style="color: #f78fe7;">float</span>(weight / (height ** 2))
+<span class="linenr">34: </span>
+<span class="linenr">35: </span> <span style="color: #a8a8a8;"># </span><span style="color: #a8a8a8;">noch eine String Variable f&#252;r die Klassifikation definieren</span>
+<span class="linenr">36: </span>
+<span class="linenr">37: </span> <span style="color: #00d3d0;">bmi_class</span> = <span style="color: #79a8ff;">""</span>
+<span class="linenr">38: </span>
+<span class="linenr">39: </span> <span style="color: #a8a8a8;"># </span><span style="color: #a8a8a8;">die Klassifikation je nach BMI setzen</span>
+<span class="linenr">40: </span>
+<span class="linenr">41: </span> <span style="color: #b6a0ff;">if</span> bmi &lt;= 20.0:
+<span class="linenr">42: </span>     <span style="color: #00d3d0;">bmi_class</span> = <span style="color: #79a8ff;">"Untergewicht"</span>
+<span class="linenr">43: </span> <span style="color: #b6a0ff;">elif</span> bmi &lt;= 25.0:
+<span class="linenr">44: </span>     <span style="color: #00d3d0;">bmi_class</span> = <span style="color: #79a8ff;">"Normalgewicht"</span>
+<span class="linenr">45: </span> <span style="color: #b6a0ff;">elif</span> bmi &lt;= 30.0:
+<span class="linenr">46: </span>     <span style="color: #00d3d0;">bmi_class</span> = <span style="color: #79a8ff;">"&#220;bergewicht"</span>
+<span class="linenr">47: </span> <span style="color: #b6a0ff;">else</span>:
+<span class="linenr">48: </span>     <span style="color: #00d3d0;">bmi_class</span> = <span style="color: #79a8ff;">"Adipositas"</span>
+<span class="linenr">49: </span>
+<span class="linenr">50: </span> <span style="color: #a8a8a8;"># </span><span style="color: #a8a8a8;">Ausgabe der Klassifikation</span>
+<span class="linenr">51: </span>
+<span class="linenr">52: </span> <span style="color: #b6a0ff;">print</span>(bmi_class)
+</pre>
+</div>
+</div>
+</div>
+</div>
+
+<div id="outline-container-orga09707b" class="outline-3">
+<h3 id="orga09707b"><span class="section-number-3">12.3.</span> Kapitel: Funktionen</h3>
+<div class="outline-text-3" id="text-12-3">
+</div>
+<div id="outline-container-orgd4cb7a9" class="outline-4">
+<h4 id="orgd4cb7a9"><span class="section-number-4">12.3.1.</span> Summe zwischen zwei beliebigen Ganzzahlen</h4>
+<div class="outline-text-4" id="text-12-3-1">
+<p>
+Natürlich könnten Sie die Aufgabe lösen, indem Sie eine Funktion mit <code>if</code> Anweisung und <code>for</code> Schleife kombinieren. In etwas so:
+</p>
+
+<div class="org-src-container">
+<pre class="src src-python"><span style="color: #b6a0ff;">def</span> <span style="color: #feacd0;">get_sum</span>(a,b):
+    <span style="color: #b6a0ff;">if</span> a == b:
+        <span style="color: #b6a0ff;">return</span> a
+    <span style="color: #b6a0ff;">elif</span> b &lt; a:
+        <span style="color: #00d3d0;">x</span> = 0
+        <span style="color: #b6a0ff;">for</span> i <span style="color: #b6a0ff;">in</span> <span style="color: #f78fe7;">range</span>(b, a+1):
+            <span style="color: #00d3d0;">x</span> += i
+        <span style="color: #b6a0ff;">return</span> x
+    <span style="color: #b6a0ff;">else</span>:
+        <span style="color: #00d3d0;">x</span> = 0
+        <span style="color: #b6a0ff;">for</span> i <span style="color: #b6a0ff;">in</span> <span style="color: #f78fe7;">range</span>(a, b+1):
+            <span style="color: #00d3d0;">x</span> += i 
+        <span style="color: #b6a0ff;">return</span> x
+</pre>
+</div>
+
+<p>
+Denken Sie daran, bei der <code>range()</code> Funktion beim <i>Stop-Element</i> unbedingt \(+1\) zu addieren, denn erinnern Sie sich: die Reihe wird nur <i>bis</i> zum Stop-Element gezählt, dieses <i>nicht</i> eingeschlossen!
+</p>
+
+<p>
+Viel eleganter als das &bdquo;Kontrollstrukturen-Monster&ldquo; ist es jedoch, ein paar mehr Python interne Funktionen zur Lösung dieser Aufgabe heranzuziehen. Dabei helfen Ihnen die Funktionen <code>min()</code>, <code>max()</code> und <code>sum()</code>. Alle drei Funktionen nehmen <i>Iterables</i> entgegen und geben (a) das Minimum, (b) das Maximum und (c) die Summe des Objekts zurück. <code>min()</code> und <code>max()</code> können darüber hinaus eine kommaseparierte Liste von Einzelargumenten z.B. <code>max(3,5)</code> entgegen nehmen.
+</p>
+
+<p>
+Die Umsetzung mit diesen drei Funktionen sieht dann wie folgt aus:
+</p>
+
+<div class="org-src-container">
+<pre class="src src-python"><span style="color: #b6a0ff;">def</span> <span style="color: #feacd0;">get_sum</span>(a,b):
+    <span style="color: #b6a0ff;">return</span> <span style="color: #f78fe7;">sum</span>(<span style="color: #f78fe7;">range</span>(<span style="color: #f78fe7;">min</span>(a,b), <span style="color: #f78fe7;">max</span>(a,b)+1))
+</pre>
+</div>
+
+<p>
+Viel eleganter, meinen Sie nicht?
+</p>
+</div>
+</div>
+
+<div id="outline-container-org17c327c" class="outline-4">
+<h4 id="org17c327c"><span class="section-number-4">12.3.2.</span> Liste in gleiche Summen aufteilen</h4>
+<div class="outline-text-4" id="text-12-3-2">
+<p>
+Bevor Sie sich ein Konstrukt mit Variablen für <i>linke Seite</i> und
+<i>rechte Seite</i> ausdenken, seien Sie schlau, und benutzen Sie die
+Möglichkeite des <i>Slicings</i> von Python.
+</p>
+
+<div class="org-src-container">
+<pre class="src src-python"><span style="color: #b6a0ff;">def</span> <span style="color: #feacd0;">find_even_index</span>(arr):
+    <span style="color: #a8a8a8;"># </span><span style="color: #a8a8a8;">wir iterieren &#252;ber die einzelnen Indices der Liste</span>
+    <span style="color: #b6a0ff;">for</span> i <span style="color: #b6a0ff;">in</span> <span style="color: #f78fe7;">range</span>(<span style="color: #f78fe7;">len</span>(arr)):
+        <span style="color: #a8a8a8;"># </span><span style="color: #a8a8a8;">wenn die Summe links vom aktuellen Index</span>
+        <span style="color: #a8a8a8;"># </span><span style="color: #a8a8a8;">gleich der Summe rechts ist</span>
+        <span style="color: #b6a0ff;">if</span> <span style="color: #f78fe7;">sum</span>(arr[:i]) == <span style="color: #f78fe7;">sum</span>(arr[i+1:]):
+            <span style="color: #a8a8a8;"># </span><span style="color: #a8a8a8;">dann gib den aktuellen Index zur&#252;ck</span>
+            <span style="color: #a8a8a8;"># </span><span style="color: #a8a8a8;">da wir links beginnen ist das auch immer der kleinste</span>
+            <span style="color: #a8a8a8;"># </span><span style="color: #a8a8a8;">beachten Sie: ein return statement terminiert die Funktion</span>
+            <span style="color: #b6a0ff;">return</span> i
+    <span style="color: #a8a8a8;"># </span><span style="color: #a8a8a8;">wenn die for-Schleife erfolglos durchlaufen wurde, geben wir -1 zur&#252;ck   </span>
+    <span style="color: #b6a0ff;">return</span> -1
+</pre>
+</div>
+</div>
+</div>
+</div>
+</div>
+
+
+<div id="outline-container-org368151d" class="outline-2">
+<h2 id="org368151d"><span class="section-number-2">13.</span> Weiterführende Literatur</h2>
+<div class="outline-text-2" id="text-13">
+</div>
+<div id="outline-container-org6efa2a4" class="outline-3">
+<h3 id="org6efa2a4"><span class="section-number-3">13.1.</span> Einführende Literatur</h3>
+</div>
+
+
+<div id="outline-container-org0cd2425" class="outline-3">
+<h3 id="org0cd2425"><span class="section-number-3">13.2.</span> Für Fortgeschrittene</h3>
+</div>
+
+
+<div id="outline-container-org4f18d7d" class="outline-3">
+<h3 id="org4f18d7d"><span class="section-number-3">13.3.</span> Data Science</h3>
+</div>
+
+
+<div id="outline-container-orgdac2ffd" class="outline-3">
+<h3 id="orgdac2ffd"><span class="section-number-3">13.4.</span> Webseiten</h3>
+</div>
+</div>
+</div>
+<div id="postamble" class="status">
+<p class="author">Autor: Stefan Böhringer</p>
+<p class="date">Created: 2021-10-15 Fri 14:17</p>
+<p class="creator"><a href="https://www.gnu.org/software/emacs/">Emacs</a> 27.2 (<a href="https://orgmode.org">Org</a> mode 9.4.6)</p>
+<p class="validation"><a href="https://validator.w3.org/check?uri=referer">Validate</a></p>
+</div>
+</body>
+</html>
