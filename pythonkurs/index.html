@@ -3,7 +3,7 @@
 "http://www.w3.org/TR/xhtml1/DTD/xhtml1-strict.dtd">
 <html xmlns="http://www.w3.org/1999/xhtml" lang="de" xml:lang="de">
 <head>
-<!-- 2022-02-13 So 19:51 -->
+<!-- 2022-02-17 Do 17:32 -->
 <meta http-equiv="Content-Type" content="text/html;charset=utf-8" />
 <meta name="viewport" content="width=device-width, initial-scale=1" />
 <title>Programmieren für alle!</title>
@@ -231,257 +231,264 @@
 <h2>Inhaltsverzeichnis</h2>
 <div id="text-table-of-contents" role="doc-toc">
 <ul>
-<li><a href="#org6b728f3">1. Einleitung </a>
+<li><a href="#org95a7d28">1. Einleitung </a>
 <ul>
-<li><a href="#org12f7346">1.1. Ziel und Aufbau des Kurses</a></li>
-<li><a href="#orgeb2ebc7">1.2. Python - ein kurzer Überblick</a>
+<li><a href="#orgba761a1">1.1. Ziel und Aufbau des Kurses</a></li>
+<li><a href="#orga7c9b11">1.2. Python - ein kurzer Überblick</a>
 <ul>
-<li><a href="#org8dd39f6">1.2.1. Die Anfänge</a></li>
-<li><a href="#org60a1b3f">1.2.2. Python heute</a></li>
+<li><a href="#org141fd2b">1.2.1. Die Anfänge</a></li>
+<li><a href="#org0fd6e0c">1.2.2. Python heute</a></li>
 </ul>
 </li>
-<li><a href="#org3634855">1.3. Installation </a>
+<li><a href="#orgc1467ee">1.3. Installation </a>
 <ul>
-<li><a href="#org203b0c4">1.3.1. Windows</a></li>
-<li><a href="#org96763e7">1.3.2. Mac OSX</a></li>
-<li><a href="#orga5821e6">1.3.3. Linux</a></li>
+<li><a href="#orgcd3dd43">1.3.1. Windows</a></li>
+<li><a href="#org8eb30a0">1.3.2. Mac OSX</a></li>
+<li><a href="#orgf79d79a">1.3.3. Linux</a></li>
 </ul>
 </li>
-<li><a href="#org5bb3133">1.4. Pythons Philosophie: das Python Zen</a></li>
-<li><a href="#orgc664feb">1.5. Hilfe und Training.</a>
+<li><a href="#org9a11445">1.4. Pythons Philosophie: das Python Zen</a></li>
+<li><a href="#org5b67a06">1.5. Hilfe und Training.</a>
 <ul>
-<li><a href="#org08ee807">1.5.1. Wo bekomme ich Hilfe?</a></li>
-<li><a href="#org817bb00">1.5.2. Training, Training, Training!</a></li>
-</ul>
-</li>
-</ul>
-</li>
-<li><a href="#org58197af">2. Erste Schritte und Grundlagen </a>
-<ul>
-<li><a href="#org2ed62a7">2.1. Die REPL</a></li>
-<li><a href="#org0a10216">2.2. Mathematische Operationen</a>
-<ul>
-<li><a href="#org3d242d2">2.2.1. Addition und Subtraktion</a></li>
-<li><a href="#org7a87756">2.2.2. Multiplikation und Division</a></li>
-<li><a href="#orgaa77532">2.2.3. Modulo, Exponent und floor Division</a></li>
-<li><a href="#org5df8d56">2.2.4. Klammersetzung</a></li>
-<li><a href="#org26da13e">2.2.5. Zusammenfassung</a></li>
-</ul>
-</li>
-<li><a href="#org07c26b8">2.3. Logische Operatoren</a>
-<ul>
-<li><a href="#org547921e">2.3.1. Logisches &bdquo;Und&ldquo;</a></li>
-<li><a href="#orgf686c07">2.3.2. Logisches &bdquo;Oder&ldquo;</a></li>
-<li><a href="#orge7515ad">2.3.3. Logisches &bdquo;Nicht&ldquo;</a></li>
-<li><a href="#org0f7b27b">2.3.4. Zusammenfassung: Wahrheitstabelle</a></li>
-</ul>
-</li>
-<li><a href="#org00654c2">2.4. Variablen </a>
-<ul>
-<li><a href="#orgb508782">2.4.1. Ergebnisse u. Werte speichern</a></li>
-<li><a href="#org13d146c">2.4.2. Variablen benennen</a></li>
-<li><a href="#org5235114">2.4.3. Was geschieht im Hintergrund?</a></li>
-</ul>
-</li>
-<li><a href="#org82ceb16">2.5. Übungen</a></li>
-</ul>
-</li>
-<li><a href="#orgd6b7901">3. Funktionen und Methoden</a></li>
-<li><a href="#orgae1e23b">4. Datentypen </a>
-<ul>
-<li><a href="#orgfd6005a">4.1. Zahlen</a></li>
-<li><a href="#org7e93484">4.2. Strings </a>
-<ul>
-<li><a href="#org45ad911">4.2.1. Escape Sequenzen</a></li>
-<li><a href="#orgefc073a">4.2.2. String Indexing und Slicing</a></li>
-<li><a href="#org2c96a71">4.2.3. Mathematische und logische Operatoren für Strings</a></li>
-<li><a href="#orge6d3d9b">4.2.4. Variablen in Strings integrieren</a></li>
-<li><a href="#orgb01a1a1">4.2.5. Wichtige String Methoden</a></li>
-<li><a href="#orgb8ba76f">4.2.6. Übungen</a></li>
-</ul>
-</li>
-<li><a href="#orgb78b3ed">4.3. Der <code>in</code> Operator</a></li>
-<li><a href="#orga9bd66f">4.4. Type Conversions</a></li>
-<li><a href="#org3432c60">4.5. Eingaben vom Benutzer lesen</a></li>
-</ul>
-</li>
-<li><a href="#org0981b91">5. Python erweitern </a>
-<ul>
-<li><a href="#orgb08f465">5.1. Grundfunktionalitäten nachladen (Import)</a></li>
-<li><a href="#orge6d52cf">5.2. Der Paketmanager PIP </a></li>
-<li><a href="#org12c0f03">5.3. Übung</a></li>
-</ul>
-</li>
-<li><a href="#orgf1d2815">6. Skripte erstellen und ausführen </a>
-<ul>
-<li><a href="#org56118d5">6.1. Python Skripte</a></li>
-<li><a href="#org6d730ef">6.2. Was passiert beim Ausführen eines Skripts?</a>
-<ul>
-<li><a href="#orgb0dcbfe">6.2.1. Ein kleiner historischer Abriss</a></li>
-<li><a href="#org1edefa9">6.2.2. Die Rolle des &bdquo;Compilers&ldquo;</a></li>
-<li><a href="#orgde11b97">6.2.3. Was ist ein &bdquo;Programm&ldquo;?</a></li>
-</ul>
-</li>
-<li><a href="#orgb49e976">6.3. Editoren</a>
-<ul>
-<li><a href="#org8d70d57">6.3.1. Warum einen speziellen Editor verwenden?</a></li>
-<li><a href="#org4eba398">6.3.2. Welchen Editor sollte man verwenden?</a></li>
-</ul>
-</li>
-<li><a href="#orga79b22a">6.4. Kommentare setzen</a></li>
-<li><a href="#orga8cd858">6.5. Wie sollte &bdquo;guter&ldquo; Code aussehen?</a></li>
-<li><a href="#org8641577">6.6. Aufgaben</a>
-<ul>
-<li><a href="#org8f4ac4b">6.6.1. Wann ist Ostern?</a></li>
-<li><a href="#org0c52482">6.6.2. Wie hoch ist die Blutalkoholkonzentration?</a></li>
+<li><a href="#orgf0160d7">1.5.1. Wo bekomme ich Hilfe?</a></li>
+<li><a href="#orgb1c5375">1.5.2. Training, Training, Training!</a></li>
 </ul>
 </li>
 </ul>
 </li>
-<li><a href="#org5e41f62">7. eigene Funktionen schreiben </a>
+<li><a href="#org9ac3ccf">2. Erste Schritte und Grundlagen </a>
 <ul>
-<li><a href="#orgfcffbe1">7.1. Funktionen definieren</a></li>
-<li><a href="#org0ee3605">7.2. Scope von Funktionen</a></li>
-<li><a href="#org70c35f6">7.3. Argumente</a></li>
-<li><a href="#orgfe3f385">7.4. Klarheit mit Docstrings, Hints und Assertions</a></li>
-<li><a href="#org389fdd4">7.5. Übungen</a></li>
+<li><a href="#org7c758cf">2.1. Die REPL</a></li>
+<li><a href="#org4f76d89">2.2. Mathematische Operationen</a>
+<ul>
+<li><a href="#orgc9bc0b8">2.2.1. Addition und Subtraktion</a></li>
+<li><a href="#orgddb8ad5">2.2.2. Multiplikation und Division</a></li>
+<li><a href="#orge29a967">2.2.3. Modulo, Exponent und floor Division</a></li>
+<li><a href="#orga5e170e">2.2.4. Klammersetzung</a></li>
+<li><a href="#org3332c1c">2.2.5. Zusammenfassung</a></li>
 </ul>
 </li>
-<li><a href="#org2fa2480">8. Kontrollstrukturen </a>
+<li><a href="#org77daafd">2.3. Logische Operatoren</a>
 <ul>
-<li><a href="#orgd34d2e0">8.1. Die <code>while</code> Schleife</a></li>
-<li><a href="#orgb9fc2ea">8.2. Die <code>for</code> Schleife</a>
-<ul>
-<li><a href="#org50719ea">8.2.1. Die <code>range()</code> Funktion</a></li>
+<li><a href="#orgd8127ea">2.3.1. Logisches &bdquo;Und&ldquo;</a></li>
+<li><a href="#org27ed4af">2.3.2. Logisches &bdquo;Oder&ldquo;</a></li>
+<li><a href="#org75f2ab8">2.3.3. Logisches &bdquo;Nicht&ldquo;</a></li>
+<li><a href="#orgd432103">2.3.4. Zusammenfassung: Wahrheitstabelle</a></li>
 </ul>
 </li>
-<li><a href="#org57b373e">8.3. Verzweigungen / Fallunterscheidungen</a>
+<li><a href="#org20eddb8">2.4. Variablen </a>
 <ul>
-<li><a href="#org9051623">8.3.1. die if-Anweisung</a></li>
-<li><a href="#orge52aaa1">8.3.2. die else-Anweisung</a></li>
-<li><a href="#orgc696d42">8.3.3. weitere Bedingungen mit elif</a></li>
-<li><a href="#org8824ef8">8.3.4. Bedingungen auf Fehler prüfen</a></li>
+<li><a href="#org5f68a44">2.4.1. Ergebnisse u. Werte speichern</a></li>
+<li><a href="#org57bedb8">2.4.2. Variablen benennen</a></li>
+<li><a href="#org6d4e26e">2.4.3. Was geschieht im Hintergrund?</a></li>
 </ul>
 </li>
-<li><a href="#orgd579a4d">8.4. Aufgaben </a>
-<ul>
-<li><a href="#org2fe4ea1">8.4.1. Konsonant oder Vokal?</a></li>
-<li><a href="#org390dd41">8.4.2. Verschachtelte Schleifen</a></li>
-<li><a href="#org0d97ef1">8.4.3. Absteigende Dominosteine</a></li>
-<li><a href="#orgb3125f9">8.4.4. Quersumme berechnen</a></li>
-<li><a href="#orgeb3c235">8.4.5. Bip!, Blop!, Beeebop!</a></li>
-<li><a href="#org9b15bc5">8.4.6. Hundejahre</a></li>
-<li><a href="#org50197e4">8.4.7. Summe zwischen zwei beliebigen Ganzzahlen</a></li>
-<li><a href="#org171dd53">8.4.8. BMI Klassifikation</a></li>
-<li><a href="#org040f4cb">8.4.9. Rate es!</a></li>
-<li><a href="#org2e51496">8.4.10. Stein, Schere, Papier (Echse, Spock)</a></li>
+<li><a href="#org7b8e622">2.5. Übungen</a></li>
 </ul>
 </li>
+<li><a href="#org269bcce">3. Funktionen und Methoden</a></li>
+<li><a href="#orgdff963d">4. Datentypen </a>
+<ul>
+<li><a href="#org371a588">4.1. Zahlen</a></li>
+<li><a href="#orgeb14a45">4.2. Strings </a>
+<ul>
+<li><a href="#org981c003">4.2.1. Escape Sequenzen</a></li>
+<li><a href="#org9b008a8">4.2.2. String Indexing und Slicing</a></li>
+<li><a href="#org343c479">4.2.3. Mathematische und logische Operatoren für Strings</a></li>
+<li><a href="#orgb0818a1">4.2.4. Variablen in Strings integrieren</a></li>
+<li><a href="#orgfa1cf19">4.2.5. Wichtige String Methoden</a></li>
+<li><a href="#org01076c2">4.2.6. Übungen</a></li>
 </ul>
 </li>
-<li><a href="#org92f2550">9. Datenstrukturen: Collections </a>
-<ul>
-<li><a href="#org843f8d2">9.1. Listen </a>
-<ul>
-<li><a href="#orgfba5341">9.1.1. Listenelemente ändern</a></li>
-<li><a href="#org33a3f72">9.1.2. Elemente einer Liste</a></li>
-<li><a href="#org936957d">9.1.3. Mehrere Dimensionen</a></li>
-<li><a href="#org1cea116">9.1.4. Listenelemente sortieren</a></li>
-<li><a href="#org08100a5">9.1.5. Listen &bdquo;entpacken&ldquo;</a></li>
-<li><a href="#org3a1ea62">9.1.6. Listen und Strings</a></li>
-<li><a href="#org8158d3d">9.1.7. Übungen</a></li>
+<li><a href="#orge12f2f0">4.3. Der <code>in</code> Operator</a></li>
+<li><a href="#orgb872916">4.4. Type Conversions</a></li>
+<li><a href="#org0cb7da2">4.5. Eingaben vom Benutzer lesen</a></li>
 </ul>
 </li>
-<li><a href="#org4e812cd">9.2. Tupel</a></li>
-<li><a href="#orgde7dad6">9.3. Dictionaries </a>
+<li><a href="#org3ae65d5">5. Python erweitern </a>
 <ul>
-<li><a href="#org56126cf">9.3.1. Dictionaries erzeugen</a></li>
-<li><a href="#orga4fe601">9.3.2. Wichtige Methoden</a></li>
-<li><a href="#org7fb3449">9.3.3. Objekte in Dictionaries</a></li>
-<li><a href="#org951d719">9.3.4. Übungen</a></li>
+<li><a href="#orgf48dfde">5.1. Grundfunktionalitäten nachladen (Import)</a></li>
+<li><a href="#org34b9e1d">5.2. Der Paketmanager PIP </a></li>
+<li><a href="#org414d608">5.3. Übung</a></li>
 </ul>
 </li>
-<li><a href="#orgeac8cf8">9.4. Sets</a></li>
-<li><a href="#orgc9cf8fe">9.5. Comprehensions</a></li>
-<li><a href="#orgc884696">9.6. Verzweigungen vermeiden</a></li>
-<li><a href="#org86ea415">9.7. Aufgaben </a>
+<li><a href="#orge7646a7">6. Skripte erstellen und ausführen </a>
 <ul>
-<li><a href="#orgdd856c7">9.7.1. Schreibe eine replace_all() Funktion</a></li>
-<li><a href="#org2bcad50">9.7.2. Ausschuss zählen</a></li>
-<li><a href="#orgb0c90fb">9.7.3. Listen Differenzen</a></li>
-<li><a href="#org19b766b">9.7.4. Pangramme</a></li>
-<li><a href="#orge275932">9.7.5. Matrizen generieren</a></li>
-<li><a href="#orgf25cf50">9.7.6. BMI Klassifikation - die pythonésque Art</a></li>
-<li><a href="#orgd29a80e">9.7.7. Liste in gleiche Summen aufteilen</a></li>
+<li><a href="#orgb8297fd">6.1. Python Skripte</a></li>
+<li><a href="#org63a22f8">6.2. Was passiert beim Ausführen eines Skripts?</a>
+<ul>
+<li><a href="#org3ce4316">6.2.1. Ein kleiner historischer Abriss</a></li>
+<li><a href="#orgde0ee81">6.2.2. Die Rolle des &bdquo;Compilers&ldquo;</a></li>
+<li><a href="#orgbf78cd9">6.2.3. Was ist ein &bdquo;Programm&ldquo;?</a></li>
 </ul>
 </li>
+<li><a href="#org82fd048">6.3. Editoren</a>
+<ul>
+<li><a href="#org55ce862">6.3.1. Warum einen speziellen Editor verwenden?</a></li>
+<li><a href="#org61b01a1">6.3.2. Welchen Editor sollte man verwenden?</a></li>
 </ul>
 </li>
-<li><a href="#org7c678cd">10. Datum und Zeit</a></li>
-<li><a href="#org9eff6ce">11. Mit Dateien arbeiten </a>
+<li><a href="#org9b2dd4e">6.4. Kommentare setzen</a></li>
+<li><a href="#orgc0284a5">6.5. Wie sollte &bdquo;guter&ldquo; Code aussehen?</a></li>
+<li><a href="#org81c7872">6.6. Aufgaben</a>
 <ul>
-<li><a href="#org752243f">11.1. Zugriff auf den eigenen Rechner</a></li>
-<li><a href="#org0438980">11.2. Dateien öffnen mit <code>open()</code></a></li>
-<li><a href="#org5b1151d">11.3. Aufgaben</a>
-<ul>
-<li><a href="#org5022842">11.3.1. Teilnehmer Anonymisierung</a></li>
+<li><a href="#orge22918a">6.6.1. Wann ist Ostern?</a></li>
+<li><a href="#orga37c51c">6.6.2. Wie hoch ist die Blutalkoholkonzentration?</a></li>
 </ul>
 </li>
 </ul>
 </li>
-<li><a href="#orga78e591">12. Lösungen zu den Aufgaben </a>
+<li><a href="#orge94e928">7. eigene Funktionen schreiben </a>
 <ul>
-<li><a href="#orgc45beb3">12.1. Kapitel: Skripte erstellen und Ausführen </a>
-<ul>
-<li><a href="#org4d9743b">12.1.1. Wann ist Ostern?</a></li>
-<li><a href="#org4aa6575">12.1.2. Wie hoch die Blutalkoholkonzentration?</a></li>
+<li><a href="#org866d461">7.1. Funktionen definieren</a></li>
+<li><a href="#org8e5fcb5">7.2. Scope von Funktionen</a></li>
+<li><a href="#orgc627f30">7.3. Argumente</a></li>
+<li><a href="#org978126b">7.4. Klarheit mit Docstrings, Hints und Assertions</a></li>
+<li><a href="#org51914ee">7.5. Übungen</a></li>
 </ul>
 </li>
-<li><a href="#org4dca00f">12.2. Kapitel: Kontrollstrukturen </a>
+<li><a href="#orga781873">8. Kontrollstrukturen </a>
 <ul>
-<li><a href="#orge4a2c7a">12.2.1. Konsonant oder Vokal?</a></li>
-<li><a href="#org7baef9e">12.2.2. Verschachtelte Schleifen</a></li>
-<li><a href="#org3ac8ced">12.2.3. Absteigende Dominosteine</a></li>
-<li><a href="#org8010f1f">12.2.4. Quersumme berechnen</a></li>
-<li><a href="#org14ff57f">12.2.5. Bip!, Blop!, Beeebop!</a></li>
-<li><a href="#orgb1ccc53">12.2.6. Hundejahre</a></li>
-<li><a href="#org4ebf63c">12.2.7. Summe zwischen zwei beliebigen Ganzzahlen</a></li>
-<li><a href="#org9c055d5">12.2.8. BMI Klassifikation</a></li>
-<li><a href="#orgc067419">12.2.9. Rate es!</a></li>
-<li><a href="#org8dc9a9c">12.2.10. Stein, Schere, Papier (Echse, Spock)</a></li>
-</ul>
-</li>
-<li><a href="#orga45e5f7">12.3. Kapitel: Datenstrukturen </a>
+<li><a href="#org3f66ff1">8.1. Die <code>while</code> Schleife</a></li>
+<li><a href="#orga9474f9">8.2. Die <code>for</code> Schleife</a>
 <ul>
-<li><a href="#org5ea28c3">12.3.1. Schreiben Sie eine replace_all() Funktion</a></li>
-<li><a href="#org639aa4c">12.3.2. Ausschuss zählen</a></li>
-<li><a href="#org92a94c2">12.3.3. Listen Differenzen</a></li>
-<li><a href="#org78bc1b2">12.3.4. Pangramme</a></li>
-<li><a href="#orgaac4487">12.3.5. Matrizen generieren</a></li>
-<li><a href="#org6083325">12.3.6. Liste in gleiche Summen aufteilen</a></li>
+<li><a href="#org9d4173a">8.2.1. Die <code>range()</code> Funktion</a></li>
 </ul>
 </li>
-<li><a href="#org1df95e3">12.4. Kapitel: Mit Dateien arbeiten </a>
+<li><a href="#orgc47851a">8.3. Verzweigungen / Fallunterscheidungen</a>
 <ul>
-<li><a href="#org04f6db6">12.4.1. Teilnehmer Anonymisierung</a></li>
+<li><a href="#org9841511">8.3.1. die if-Anweisung</a></li>
+<li><a href="#org3ca9caa">8.3.2. die else-Anweisung</a></li>
+<li><a href="#org68c9c62">8.3.3. weitere Bedingungen mit elif</a></li>
+<li><a href="#org7e7224b">8.3.4. Bedingungen auf Fehler prüfen</a></li>
 </ul>
 </li>
-</ul>
-</li>
-<li><a href="#org377eb39">13. Weiterführende Literatur</a>
+<li><a href="#org4056197">8.4. Aufgaben </a>
 <ul>
-<li><a href="#org7e409ca">13.1. Einführende Literatur</a></li>
-<li><a href="#org3877a29">13.2. Für Fortgeschrittene</a></li>
-<li><a href="#orgdd6ecaa">13.3. Data Science</a></li>
-<li><a href="#orgeebb2e9">13.4. Webseiten</a></li>
+<li><a href="#orge2d9cdc">8.4.1. Konsonant oder Vokal?</a></li>
+<li><a href="#org1f40cac">8.4.2. Verschachtelte Schleifen</a></li>
+<li><a href="#org809aea0">8.4.3. Absteigende Dominosteine</a></li>
+<li><a href="#orgd3e8892">8.4.4. Quersumme berechnen</a></li>
+<li><a href="#orgf5b0bbc">8.4.5. Bip!, Blop!, Beeebop!</a></li>
+<li><a href="#org97b146d">8.4.6. Hundejahre</a></li>
+<li><a href="#org0185785">8.4.7. Summe zwischen zwei beliebigen Ganzzahlen</a></li>
+<li><a href="#org41ec099">8.4.8. BMI Klassifikation</a></li>
+<li><a href="#org0a1e06c">8.4.9. Rate es!</a></li>
+<li><a href="#org5984d77">8.4.10. Stein, Schere, Papier (Echse, Spock)</a></li>
 </ul>
 </li>
-<li><a href="#org8273d1c">14. Rechtliches und Impressum</a></li>
+</ul>
+</li>
+<li><a href="#org3767e30">9. Datenstrukturen: Collections </a>
+<ul>
+<li><a href="#orgfb8345e">9.1. Listen </a>
+<ul>
+<li><a href="#org3048090">9.1.1. Listenelemente ändern</a></li>
+<li><a href="#orgcc77242">9.1.2. Elemente einer Liste</a></li>
+<li><a href="#org9033898">9.1.3. Mehrere Dimensionen</a></li>
+<li><a href="#org2ec237c">9.1.4. Listenelemente sortieren</a></li>
+<li><a href="#org73e22de">9.1.5. Listen &bdquo;entpacken&ldquo;</a></li>
+<li><a href="#org4d423ca">9.1.6. Listen und Strings</a></li>
+<li><a href="#orgd3c0394">9.1.7. Übungen</a></li>
+</ul>
+</li>
+<li><a href="#org66b9dbf">9.2. Tupel</a></li>
+<li><a href="#org7d1ab05">9.3. Dictionaries </a>
+<ul>
+<li><a href="#orgca5b5ff">9.3.1. Dictionaries erzeugen</a></li>
+<li><a href="#orga8b2829">9.3.2. Wichtige Methoden</a></li>
+<li><a href="#orgc31d7a6">9.3.3. Objekte in Dictionaries</a></li>
+<li><a href="#orga9d84d7">9.3.4. Übungen</a></li>
+</ul>
+</li>
+<li><a href="#org47c9bf2">9.4. Sets</a></li>
+<li><a href="#org8645866">9.5. Comprehensions</a></li>
+<li><a href="#orgb0037b7">9.6. Verzweigungen vermeiden</a></li>
+<li><a href="#org69ada7c">9.7. Aufgaben </a>
+<ul>
+<li><a href="#org4f1cec3">9.7.1. Schreibe eine replace_all() Funktion</a></li>
+<li><a href="#orgc5bdf21">9.7.2. Ausschuss zählen</a></li>
+<li><a href="#org793e51d">9.7.3. Listen Differenzen</a></li>
+<li><a href="#org9e5bb2c">9.7.4. Pangramme</a></li>
+<li><a href="#org111e251">9.7.5. Matrizen generieren</a></li>
+<li><a href="#org2b6ed61">9.7.6. BMI Klassifikation - die pythonésque Art</a></li>
+<li><a href="#org6ef08f5">9.7.7. Liste in gleiche Summen aufteilen</a></li>
+</ul>
+</li>
+</ul>
+</li>
+<li><a href="#org90a10cc">10. Datum und Zeit</a></li>
+<li><a href="#org883b8ea">11. Mit Dateien arbeiten </a>
+<ul>
+<li><a href="#org49b41bd">11.1. Zugriff auf den eigenen Rechner</a></li>
+<li><a href="#org4a8ee3b">11.2. Dateien öffnen mit <code>open()</code></a></li>
+<li><a href="#orgd642a29">11.3. Dateien einlesen</a></li>
+<li><a href="#orgc114291">11.4. Funktionen für CSV und JSON</a>
+<ul>
+<li><a href="#orgc03dbc2">11.4.1. Modul csv</a></li>
+<li><a href="#org988ef34">11.4.2. Modul json</a></li>
+</ul>
+</li>
+<li><a href="#org584a615">11.5. Aufgaben</a>
+<ul>
+<li><a href="#orgdfcd967">11.5.1. Teilnehmer Anonymisierung</a></li>
+</ul>
+</li>
+</ul>
+</li>
+<li><a href="#org586aaa8">12. Lösungen zu den Aufgaben </a>
+<ul>
+<li><a href="#org6d3d8a8">12.1. Kapitel: Skripte erstellen und Ausführen </a>
+<ul>
+<li><a href="#org206d7dd">12.1.1. Wann ist Ostern?</a></li>
+<li><a href="#orgd644cab">12.1.2. Wie hoch die Blutalkoholkonzentration?</a></li>
+</ul>
+</li>
+<li><a href="#orgf4a30e1">12.2. Kapitel: Kontrollstrukturen </a>
+<ul>
+<li><a href="#org2ae93fb">12.2.1. Konsonant oder Vokal?</a></li>
+<li><a href="#org7eb34ae">12.2.2. Verschachtelte Schleifen</a></li>
+<li><a href="#orgfa04ea7">12.2.3. Absteigende Dominosteine</a></li>
+<li><a href="#org74f2e1c">12.2.4. Quersumme berechnen</a></li>
+<li><a href="#orgc833231">12.2.5. Bip!, Blop!, Beeebop!</a></li>
+<li><a href="#orgf58c047">12.2.6. Hundejahre</a></li>
+<li><a href="#org6f96eaa">12.2.7. Summe zwischen zwei beliebigen Ganzzahlen</a></li>
+<li><a href="#org909742a">12.2.8. BMI Klassifikation</a></li>
+<li><a href="#org8c1f1c7">12.2.9. Rate es!</a></li>
+<li><a href="#org0238659">12.2.10. Stein, Schere, Papier (Echse, Spock)</a></li>
+</ul>
+</li>
+<li><a href="#org777f7de">12.3. Kapitel: Datenstrukturen </a>
+<ul>
+<li><a href="#org4613c52">12.3.1. Schreiben Sie eine replace_all() Funktion</a></li>
+<li><a href="#org7bd05b4">12.3.2. Ausschuss zählen</a></li>
+<li><a href="#org6cfb153">12.3.3. Listen Differenzen</a></li>
+<li><a href="#org999ea63">12.3.4. Pangramme</a></li>
+<li><a href="#org440456d">12.3.5. Matrizen generieren</a></li>
+<li><a href="#org55da203">12.3.6. Liste in gleiche Summen aufteilen</a></li>
+</ul>
+</li>
+<li><a href="#org24928a0">12.4. Kapitel: Mit Dateien arbeiten </a>
+<ul>
+<li><a href="#org3c0f0e5">12.4.1. Teilnehmer Anonymisierung</a></li>
+</ul>
+</li>
+</ul>
+</li>
+<li><a href="#org742a0ed">13. Weiterführende Literatur</a>
+<ul>
+<li><a href="#orge2816d4">13.1. Einführende Literatur</a></li>
+<li><a href="#org97e8e0b">13.2. Für Fortgeschrittene</a></li>
+<li><a href="#orgc2feede">13.3. Data Science</a></li>
+<li><a href="#orge79b3ee">13.4. Webseiten</a></li>
+</ul>
+</li>
+<li><a href="#orgc3f2108">14. Rechtliches und Impressum</a></li>
 </ul>
 </div>
 </div>
 
-<div id="orged0df7a" class="figure">
+<div id="orgfb676e9" class="figure">
 <p><img src="figs/fuer_alle_logo.png" alt="fuer_alle_logo.png" />
 </p>
 </div>
@@ -489,20 +496,20 @@
 <p>
 Der nachfolgende Text entstand als Skript für einen Einführungskurs
 ins Programmieren an der Universität Regensburg. Näheres zu <i>Impressum</i>
-und <i>Rechtliches</i> finden Sie <a href="#org8273d1c">hier</a>.
+und <i>Rechtliches</i> finden Sie <a href="#orgc3f2108">hier</a>.
 </p>
 
 <p>
 Ich wünsche viel Spaß beim Lesen und Durcharbeiten des Skriptes.
 </p>
 
-<div id="outline-container-org6b728f3" class="outline-2">
-<h2 id="org6b728f3"><span class="section-number-2">1.</span> Einleitung </h2>
+<div id="outline-container-org95a7d28" class="outline-2">
+<h2 id="org95a7d28"><span class="section-number-2">1.</span> Einleitung </h2>
 <div class="outline-text-2" id="text-1">
 </div>
 
-<div id="outline-container-org12f7346" class="outline-3">
-<h3 id="org12f7346"><span class="section-number-3">1.1.</span> Ziel und Aufbau des Kurses</h3>
+<div id="outline-container-orgba761a1" class="outline-3">
+<h3 id="orgba761a1"><span class="section-number-3">1.1.</span> Ziel und Aufbau des Kurses</h3>
 <div class="outline-text-3" id="text-1-1">
 <p>
 Dies ist ein Kurs für Programmieranfänger*innen ohne Vorkenntnisse.
@@ -567,8 +574,8 @@ hin. Drei solcher Kästen gibt es:
 </div>
 
 
-<div id="outline-container-orgeb2ebc7" class="outline-3">
-<h3 id="orgeb2ebc7"><span class="section-number-3">1.2.</span> Python - ein kurzer Überblick</h3>
+<div id="outline-container-orga7c9b11" class="outline-3">
+<h3 id="orga7c9b11"><span class="section-number-3">1.2.</span> Python - ein kurzer Überblick</h3>
 <div class="outline-text-3" id="text-1-2">
 <p>
 Viele Studien und Nutzerbefragungen der letzten Jahre zeigen, dass
@@ -582,28 +589,28 @@ Industrie angekommen ist.
 </p>
 
 
-<div id="orgba3fbda" class="figure">
+<div id="orgafccb1e" class="figure">
 <p><img src="figs/stack_survey_usage.png" alt="stack_survey_usage.png" />
 </p>
 <p><span class="figure-number">Abbildung 1: </span>Python ist auf Platz 4 der am häufigsten verwendeten Programmiersprachen im Berufsalltag von Programmier*innen weltweit. (Quelle: <a href="https://insights.stackoverflow.com/survey/2020#technology-programming-scripting-and-markup-languages-professional-developers">https://insights.stackoverflow.com/survey/2020#technology-programming-scripting-and-markup-languages-professional-developers</a>)</p>
 </div>
 
 
-<div id="org42a3f37" class="figure">
+<div id="org510e680" class="figure">
 <p><img src="figs/stack_survey_wanted.png" alt="stack_survey_wanted.png" />
 </p>
 <p><span class="figure-number">Abbildung 2: </span>Python ist aber auch ganz weit vorne, wenn es um die Frage geht, was Programmierer:innen unbedingt noch lernen wollen. (Quelle: <a href="https://insights.stackoverflow.com/survey/2020#technology-most-loved-dreaded-and-wanted-languages-wanted">https://insights.stackoverflow.com/survey/2020#technology-most-loved-dreaded-and-wanted-languages-wanted</a>)</p>
 </div>
 
 
-<div id="orgd3ef508" class="figure">
+<div id="orgf11f005" class="figure">
 <p><img src="figs/stack_survey_loved.png" alt="stack_survey_loved.png" />
 </p>
 <p><span class="figure-number">Abbildung 3: </span>Und bei alledem scheint Python auch noch richtig Spaß zu machen. (Quelle: siehe Abbildung oben.)</p>
 </div>
 
 
-<div id="org341aa80" class="figure">
+<div id="org4f2a948" class="figure">
 <p><img src="figs/tiobe_index.png" alt="tiobe_index.png" />
 </p>
 <p><span class="figure-number">Abbildung 4: </span>Neben C und Java ist Python nun unter den Top 3 Programmiersprachen, noch vor C++.</p>
@@ -614,8 +621,8 @@ Wie konnte es zu diesem Aufstieg in den letzten Jahren kommen?
 </p>
 </div>
 
-<div id="outline-container-org8dd39f6" class="outline-4">
-<h4 id="org8dd39f6"><span class="section-number-4">1.2.1.</span> Die Anfänge</h4>
+<div id="outline-container-org141fd2b" class="outline-4">
+<h4 id="org141fd2b"><span class="section-number-4">1.2.1.</span> Die Anfänge</h4>
 <div class="outline-text-4" id="text-1-2-1">
 <p>
 Die Sprache <i>Python</i> erblickte laut <a href="https://de.wikipedia.org/wiki/Python_(Programmiersprache)">Wikipedia</a> am 20. Februar 1991
@@ -627,7 +634,7 @@ einfach sein sollte, dass sie von jedem interessierten Laien
 benutzt werden konnte. Diese Erfahrungen konnte er für die
 Entwicklung von Python nutzen. Python sollte so einfach wie
 möglich zu erlernen aber gleichzeitig so mächtig wie nötig sein,
-um sie <b>wirklich</b> in so gut wie allen Projekten einzusetzen. <a href="#org5bb3133">Weiter
+um sie <b>wirklich</b> in so gut wie allen Projekten einzusetzen. <a href="#org9a11445">Weiter
 unten</a> kann die &bdquo;Philosophie&ldquo; Pythons im <i>Zen of Python</i> nachlesen.
 </p>
 
@@ -639,8 +646,8 @@ zur Entstehung von Python.
 </div>
 
 
-<div id="outline-container-org60a1b3f" class="outline-4">
-<h4 id="org60a1b3f"><span class="section-number-4">1.2.2.</span> Python heute</h4>
+<div id="outline-container-org0fd6e0c" class="outline-4">
+<h4 id="org0fd6e0c"><span class="section-number-4">1.2.2.</span> Python heute</h4>
 <div class="outline-text-4" id="text-1-2-2">
 <p>
 Mittlerweile sind wir bei der dritten Version (also 3.x) von
@@ -678,8 +685,8 @@ steht ihm auch noch eine fruchtbare und lange Zukunft bevor.
 </div>
 
 
-<div id="outline-container-org3634855" class="outline-3">
-<h3 id="org3634855"><span class="section-number-3">1.3.</span> Installation </h3>
+<div id="outline-container-orgc1467ee" class="outline-3">
+<h3 id="orgc1467ee"><span class="section-number-3">1.3.</span> Installation </h3>
 <div class="outline-text-3" id="text-1-3">
 <p>
 Python ist sehr leicht über den mitgelieferten Installer auf
@@ -690,8 +697,8 @@ Aufwand auf die aktuellste Version geupdated werden.
 </div>
 
 
-<div id="outline-container-org203b0c4" class="outline-4">
-<h4 id="org203b0c4"><span class="section-number-4">1.3.1.</span> Windows</h4>
+<div id="outline-container-orgcd3dd43" class="outline-4">
+<h4 id="orgcd3dd43"><span class="section-number-4">1.3.1.</span> Windows</h4>
 <div class="outline-text-4" id="text-1-3-1">
 <p>
 Unter Windows 10/11 lässt sich Python leicht über das auf
@@ -708,7 +715,7 @@ heruntergeladen.
 </p>
 
 
-<div id="orgfacca0d" class="figure">
+<div id="org8a48446" class="figure">
 <p><img src="figs/download_python_win.png" alt="download_python_win.png" />
 </p>
 </div>
@@ -720,7 +727,7 @@ Starten Sie das Installationsprogramm. Setzen Sie den Haken
 </p>
 
 
-<div id="orgdee8573" class="figure">
+<div id="orgd3bda94" class="figure">
 <p><img src="figs/install_python_win.png" alt="install_python_win.png" />
 </p>
 </div>
@@ -732,7 +739,7 @@ Python Code eingeben und ausführen können.
 </p>
 
 
-<div id="orgcc2c26e" class="figure">
+<div id="org659b77a" class="figure">
 <p><img src="figs/python_console_win.png" alt="python_console_win.png" />
 </p>
 </div>
@@ -748,7 +755,7 @@ Ausgabe ähnlich wie die in der nächsten Abbildung sein.
 </p>
 
 
-<div id="orgc65187c" class="figure">
+<div id="orgb00236b" class="figure">
 <p><img src="figs/win_cmd.png" alt="win_cmd.png" />
 </p>
 </div>
@@ -757,8 +764,8 @@ Ausgabe ähnlich wie die in der nächsten Abbildung sein.
 
 
 
-<div id="outline-container-org96763e7" class="outline-4">
-<h4 id="org96763e7"><span class="section-number-4">1.3.2.</span> Mac OSX</h4>
+<div id="outline-container-org8eb30a0" class="outline-4">
+<h4 id="org8eb30a0"><span class="section-number-4">1.3.2.</span> Mac OSX</h4>
 <div class="outline-text-4" id="text-1-3-2">
 <p>
 Python ist zwar unter Mac OS schon vorinstalliert, allerdings in
@@ -787,7 +794,7 @@ laden das Installationsprogramm herunter.
 </p>
 
 
-<div id="org1c18248" class="figure">
+<div id="org62be1e6" class="figure">
 <p><img src="figs/download_python_macos.png" alt="download_python_macos.png" />
 </p>
 </div>
@@ -804,9 +811,9 @@ Nach der Installation finden Sie Python installiert unter
 </div>
 
 
-<div id="outline-container-orga9e6f10" class="outline-5">
-<h5 id="orga9e6f10">Testen der Installation</h5>
-<div class="outline-text-5" id="text-orga9e6f10">
+<div id="outline-container-org6b472e6" class="outline-5">
+<h5 id="org6b472e6">Testen der Installation</h5>
+<div class="outline-text-5" id="text-org6b472e6">
 <p>
 Öffnen Sie das Mac Programm <code>Terminal</code> entweder aus Ihrem Programmordner
 oder über die Tastenkombination <code>Command-Leertaste</code>. Geben Sie dort dann
@@ -820,8 +827,8 @@ Version 3.10.1) angezeigt wird, wurde Pytho korrekt installiert.
 
 
 
-<div id="outline-container-orga5821e6" class="outline-4">
-<h4 id="orga5821e6"><span class="section-number-4">1.3.3.</span> Linux</h4>
+<div id="outline-container-orgf79d79a" class="outline-4">
+<h4 id="orgf79d79a"><span class="section-number-4">1.3.3.</span> Linux</h4>
 <div class="outline-text-4" id="text-1-3-3">
 <p>
 Unter den meisten gängigen und aktuellen Linux Distributionen
@@ -834,9 +841,9 @@ Sourcecode kompilieren.
 </p>
 </div>
 
-<div id="outline-container-orgad8650b" class="outline-5">
-<h5 id="orgad8650b">Installation aus einer Fremdquelle (am Bsp. Ubuntu)</h5>
-<div class="outline-text-5" id="text-orgad8650b">
+<div id="outline-container-orgbb71d50" class="outline-5">
+<h5 id="orgbb71d50">Installation aus einer Fremdquelle (am Bsp. Ubuntu)</h5>
+<div class="outline-text-5" id="text-orgbb71d50">
 <p>
 Für das Hinzufügen einer Fremdquelle in einer anderen Distribution
 ausser Ubuntu, befragen Sie bitte das &bdquo;allmächtige&ldquo; Google:
@@ -891,9 +898,9 @@ Testen Sie dann wie oben die installierte Version mit dem Befehl
 </div>
 
 
-<div id="outline-container-orgf4d547f" class="outline-5">
-<h5 id="orgf4d547f">Installation aus dem Sourcecode</h5>
-<div class="outline-text-5" id="text-orgf4d547f">
+<div id="outline-container-orgde8f1ec" class="outline-5">
+<h5 id="orgde8f1ec">Installation aus dem Sourcecode</h5>
+<div class="outline-text-5" id="text-orgde8f1ec">
 <p>
 Wenn Sie Python aus den Quellen installieren, haben Sie den
 großen Vorteil, dass die Installation auf ihr System optimiert
@@ -984,8 +991,8 @@ Testen Sie zuletzt die Installation über den Befehl <code>python3.10 --version<
 
 
 
-<div id="outline-container-org5bb3133" class="outline-3">
-<h3 id="org5bb3133"><span class="section-number-3">1.4.</span> Pythons Philosophie: das Python Zen</h3>
+<div id="outline-container-org9a11445" class="outline-3">
+<h3 id="org9a11445"><span class="section-number-3">1.4.</span> Pythons Philosophie: das Python Zen</h3>
 <div class="outline-text-3" id="text-1-4">
 <p>
 Starten Sie die Python Eingabeaufforderung und geben Sie folgendes
@@ -1001,7 +1008,7 @@ ein.
 Danach sollte folgendes &bdquo;Gedicht&ldquo; erscheinen:
 </p>
 
-<pre class="example" id="org13da66d">
+<pre class="example" id="org1ab669d">
 The Zen of Python, by Tim Peters
 
 Beautiful is better than ugly.
@@ -1028,13 +1035,13 @@ Namespaces are one honking great idea -- let's do more of those!
 </div>
 
 
-<div id="outline-container-orgc664feb" class="outline-3">
-<h3 id="orgc664feb"><span class="section-number-3">1.5.</span> Hilfe und Training.</h3>
+<div id="outline-container-org5b67a06" class="outline-3">
+<h3 id="org5b67a06"><span class="section-number-3">1.5.</span> Hilfe und Training.</h3>
 <div class="outline-text-3" id="text-1-5">
 </div>
 
-<div id="outline-container-org08ee807" class="outline-4">
-<h4 id="org08ee807"><span class="section-number-4">1.5.1.</span> Wo bekomme ich Hilfe?</h4>
+<div id="outline-container-orgf0160d7" class="outline-4">
+<h4 id="orgf0160d7"><span class="section-number-4">1.5.1.</span> Wo bekomme ich Hilfe?</h4>
 <div class="outline-text-4" id="text-1-5-1">
 <p>
 Erste Hilfe sollten Sie immer in der offiziellen
@@ -1076,8 +1083,8 @@ das einem weiterhelfen kann.
 </div>
 
 
-<div id="outline-container-org817bb00" class="outline-4">
-<h4 id="org817bb00"><span class="section-number-4">1.5.2.</span> Training, Training, Training!</h4>
+<div id="outline-container-orgb1c5375" class="outline-4">
+<h4 id="orgb1c5375"><span class="section-number-4">1.5.2.</span> Training, Training, Training!</h4>
 <div class="outline-text-4" id="text-1-5-2">
 <p>
 Programmieren lernen geschieht, wie auch beim Sprachenlernen,
@@ -1098,9 +1105,9 @@ als <i>algorithmic thinking</i>; also das &bdquo;Denken in Algorithmen&ldquo;.
 </div>
 
 
-<div id="outline-container-org0dff3e9" class="outline-5">
-<h5 id="org0dff3e9">Gute Webseiten und Bücher zum Programmieren Trainieren</h5>
-<div class="outline-text-5" id="text-org0dff3e9">
+<div id="outline-container-org43b0c18" class="outline-5">
+<h5 id="org43b0c18">Gute Webseiten und Bücher zum Programmieren Trainieren</h5>
+<div class="outline-text-5" id="text-org43b0c18">
 <ul class="org-ul">
 <li>[Buch:] <a href="https://www.regensburger-katalog.de/TouchPoint/perma.do?q=+1035%3D%22BV044752581%22+IN+%5B2%5D&amp;v=ubr&amp;l=de">Lo Iacono et.al.: Programmieren Traninieren mit über 120 Workouts in Java und Python</a></li>
 <li>[Buch:] <a href="https://www.regensburger-katalog.de/s/ubr/de/2/1035/BV046083782">Stephenson, Ben: The Python Workbook. A brief introduction with exercises and solutions</a></li>
@@ -1124,13 +1131,13 @@ anderem mit Python lösen.</li>
 
 
 
-<div id="outline-container-org58197af" class="outline-2">
-<h2 id="org58197af"><span class="section-number-2">2.</span> Erste Schritte und Grundlagen </h2>
+<div id="outline-container-org9ac3ccf" class="outline-2">
+<h2 id="org9ac3ccf"><span class="section-number-2">2.</span> Erste Schritte und Grundlagen </h2>
 <div class="outline-text-2" id="text-2">
 </div>
 
-<div id="outline-container-org2ed62a7" class="outline-3">
-<h3 id="org2ed62a7"><span class="section-number-3">2.1.</span> Die REPL</h3>
+<div id="outline-container-org7c758cf" class="outline-3">
+<h3 id="org7c758cf"><span class="section-number-3">2.1.</span> Die REPL</h3>
 <div class="outline-text-3" id="text-2-1">
 <p>
 Um die ersten Gehversuche mit Python zu unternehmen, genügt es, in
@@ -1212,7 +1219,7 @@ eine Eingabe gewartet.
 print(&bdquo;hallo&ldquo;)
 </p>
 
-<pre class="example" id="org3f94672">
+<pre class="example" id="org58e8319">
 &gt;&gt;&gt; 345
 345
 &gt;&gt;&gt; hallo
@@ -1236,11 +1243,11 @@ kann. Daher wird diese Zahl auch wieder zurückgegeben. Mit der
 Buchstabenfolge &bdquo;h&ldquo;, &bdquo;a&ldquo;, &bdquo;l&ldquo;, &bdquo;l&ldquo; und &bdquo;o&ldquo; kann der Interpreter aber
 nichts anfangen. Es wird eine Fehlermeldung, genauer gesagt ein
 <i>NameError</i> zurückgegeben. Was das bedeutet werden wir gleich noch im
-Kapitel <a href="#org00654c2">Variablen</a> sehen. Erst wenn man die Buchstabenfolge <i>hallo</i> mit
+Kapitel <a href="#org20eddb8">Variablen</a> sehen. Erst wenn man die Buchstabenfolge <i>hallo</i> mit
 doppelten Anführungszeichen schreibt, also <code>"hallo"</code>, so kann der
 Pythoninterpreter etwas damit anfangen und gibt <code>'hallo'</code> in einfachen
 Anführungszeichen zurück. Warum das klappt, sehen wir in den Kapiteln
-<a href="#org00654c2">Datentypen</a> und <a href="#org00654c2">Strings</a>.
+<a href="#org20eddb8">Datentypen</a> und <a href="#org20eddb8">Strings</a>.
 </p>
 
 <p>
@@ -1249,7 +1256,7 @@ die erste Funktion aufgerufen. Der Befehl <code>print()</code> veranlasst den
 Interpreter, etwas zu &bdquo;printen&ldquo;, also etwas in die Kommandozeile zu
 schreiben. Einmal schrieb <code>print</code> die Zahl 345 und einmal die
 Zeichenfolge &bdquo;hallo&ldquo;, allerdings <i>ohne</i> Anführungszeichen. Genaueres
-wie gesagt im Kapitel <a href="#org00654c2">Strings</a>.
+wie gesagt im Kapitel <a href="#org20eddb8">Strings</a>.
 </p>
 
 <p>
@@ -1277,8 +1284,8 @@ wieder in der Eingabeaufforderung zurück!
 </div>
 
 
-<div id="outline-container-org0a10216" class="outline-3">
-<h3 id="org0a10216"><span class="section-number-3">2.2.</span> Mathematische Operationen</h3>
+<div id="outline-container-org4f76d89" class="outline-3">
+<h3 id="org4f76d89"><span class="section-number-3">2.2.</span> Mathematische Operationen</h3>
 <div class="outline-text-3" id="text-2-2">
 <p>
 Wir können nun weitere Zeichen in die REPL eingeben, die von Python
@@ -1292,10 +1299,10 @@ dann das Ergebnis zurückgibt.
 </p>
 </div>
 
-<div id="outline-container-org3d242d2" class="outline-4">
-<h4 id="org3d242d2"><span class="section-number-4">2.2.1.</span> Addition und Subtraktion</h4>
+<div id="outline-container-orgc9bc0b8" class="outline-4">
+<h4 id="orgc9bc0b8"><span class="section-number-4">2.2.1.</span> Addition und Subtraktion</h4>
 <div class="outline-text-4" id="text-2-2-1">
-<pre class="example" id="orgb31822b">
+<pre class="example" id="org14471da">
 &gt;&gt;&gt; 34 + 67
 101
 &gt;&gt;&gt; 67 - 34
@@ -1314,8 +1321,8 @@ negativen Zahlenbereich.
 </div>
 
 
-<div id="outline-container-org7a87756" class="outline-4">
-<h4 id="org7a87756"><span class="section-number-4">2.2.2.</span> Multiplikation und Division</h4>
+<div id="outline-container-orgddb8ad5" class="outline-4">
+<h4 id="orgddb8ad5"><span class="section-number-4">2.2.2.</span> Multiplikation und Division</h4>
 <div class="outline-text-4" id="text-2-2-2">
 <p>
 Oben konnten sie für die Addition und Subtraktion die aus der
@@ -1324,7 +1331,7 @@ und Division werden in Python allerdings das Sternchen &bdquo;*&ldquo; und der
 Schrägstrich &bdquo;/&ldquo; (forward slash) verwendet.
 </p>
 
-<pre class="example" id="orgf8db57e">
+<pre class="example" id="orgc0ff3b8">
 &gt;&gt;&gt; 45 * 7
 315
 &gt;&gt;&gt; 315 / 7
@@ -1353,8 +1360,8 @@ Fehlermeldung aus, möchte man durch Null teilen, denn dies ist
 </div>
 
 
-<div id="outline-container-orgaa77532" class="outline-4">
-<h4 id="orgaa77532"><span class="section-number-4">2.2.3.</span> Modulo, Exponent und floor Division</h4>
+<div id="outline-container-orge29a967" class="outline-4">
+<h4 id="orge29a967"><span class="section-number-4">2.2.3.</span> Modulo, Exponent und floor Division</h4>
 <div class="outline-text-4" id="text-2-2-3">
 <p>
 Die letzten drei in Python verfügbaren mathematischen Operatoren sind
@@ -1368,7 +1375,7 @@ Dabei wird immer der Rest der Division von einer Ganzzahl durch eine
 andere zurückgegeben.
 </p>
 
-<pre class="example" id="org9dde84e">
+<pre class="example" id="orgc702183">
 &gt;&gt;&gt; 9 % 3
 0
 &gt;&gt;&gt; 9 % 4
@@ -1400,7 +1407,7 @@ Mit dem Doppelsternchen kann man einen Exponenten setzen, also
 Beispielsweise &bdquo;3 hoch 2&ldquo; \(3^2\) oder &bdquo;2 hoch 5&ldquo; \(2^5\).
 </p>
 
-<pre class="example" id="org017346a">
+<pre class="example" id="org01a811b">
 &gt;&gt;&gt; 3 ** 2
 9
 &gt;&gt;&gt; 2 ** 5
@@ -1424,7 +1431,7 @@ Bei der floor division wird dann auf &bdquo;3&ldquo; abgerundet, bzw. der
 Dezimalanteil abgeschnitten.
 </p>
 
-<pre class="example" id="org0dd3d57">
+<pre class="example" id="org83d4810">
 &gt;&gt;&gt; 14 // 4
 3
 &gt;&gt;&gt; 25 // 5.99
@@ -1434,8 +1441,8 @@ Dezimalanteil abgeschnitten.
 </div>
 
 
-<div id="outline-container-org5df8d56" class="outline-4">
-<h4 id="org5df8d56"><span class="section-number-4">2.2.4.</span> Klammersetzung</h4>
+<div id="outline-container-orga5e170e" class="outline-4">
+<h4 id="orga5e170e"><span class="section-number-4">2.2.4.</span> Klammersetzung</h4>
 <div class="outline-text-4" id="text-2-2-4">
 <p>
 Python kennt durch eine unterschiedlich starke <i>Bindung</i> von Operatoren
@@ -1451,7 +1458,7 @@ unbedingt auf die Bindungen der Operatoren verlassen und stattdessen
 lieber Klammern setzen.
 </p>
 
-<pre class="example" id="org6e4c0e5">
+<pre class="example" id="org34214f2">
 &gt;&gt;&gt; 3 + 5 * 2
 13
 &gt;&gt;&gt; (3 + 5) * 2
@@ -1467,8 +1474,8 @@ lieber Klammern setzen.
 </div>
 
 
-<div id="outline-container-org26da13e" class="outline-4">
-<h4 id="org26da13e"><span class="section-number-4">2.2.5.</span> Zusammenfassung</h4>
+<div id="outline-container-org3332c1c" class="outline-4">
+<h4 id="org3332c1c"><span class="section-number-4">2.2.5.</span> Zusammenfassung</h4>
 <div class="outline-text-4" id="text-2-2-5">
 <p>
 Folgende mathematische Operatoren gibt es von Haus aus in Python:
@@ -1526,8 +1533,8 @@ Folgende mathematische Operatoren gibt es von Haus aus in Python:
 
 
 
-<div id="outline-container-org07c26b8" class="outline-3">
-<h3 id="org07c26b8"><span class="section-number-3">2.3.</span> Logische Operatoren</h3>
+<div id="outline-container-org77daafd" class="outline-3">
+<h3 id="org77daafd"><span class="section-number-3">2.3.</span> Logische Operatoren</h3>
 <div class="outline-text-3" id="text-2-3">
 <p>
 Zusammen mit den mathematischen Operatoren bilden die <i>logischen</i>
@@ -1590,7 +1597,7 @@ folgenden sechs Vergleichsoperatoren:
 </tbody>
 </table>
 
-<pre class="example" id="org6aa52f3">
+<pre class="example" id="orgdad067c">
 &gt;&gt;&gt; 8 == 3 + 5
 True
 &gt;&gt;&gt; 9 / 2 != 4
@@ -1643,8 +1650,8 @@ nachdem zu handeln, ob die Prüfung &bdquo;wahr&ldquo; oder &bdquo;falsch&ldquo;
 </div>
 
 
-<div id="outline-container-org547921e" class="outline-4">
-<h4 id="org547921e"><span class="section-number-4">2.3.1.</span> Logisches &bdquo;Und&ldquo;</h4>
+<div id="outline-container-orgd8127ea" class="outline-4">
+<h4 id="orgd8127ea"><span class="section-number-4">2.3.1.</span> Logisches &bdquo;Und&ldquo;</h4>
 <div class="outline-text-4" id="text-2-3-1">
 <p>
 Werden Ausdrücke mit <code>and</code> verknüpft, so wird <code>True</code> nur dann
@@ -1654,7 +1661,7 @@ zurückgegeben, wenn <b>alle</b> Ausdrücke auch <code>True</code> sind, ansonst
 nur <i>ein</i> Ausdruck nicht wahr, so wird <code>False</code> zurückgegeben.
 </p>
 
-<pre class="example" id="org18bbe06">
+<pre class="example" id="orge68cfa9">
 &gt;&gt;&gt; (3 &lt; 5) and (5 &lt; 6)
 True
 &gt;&gt;&gt; True and True
@@ -1683,7 +1690,7 @@ anderen Programmiersprachen). Der Befehl heisst <code>print()</code> und nicht
 <code>Print()</code>.
 </p>
 
-<pre class="example" id="orgb058f77">
+<pre class="example" id="org979e359">
 &gt;&gt;&gt; (3 &lt; 5) == True
 True
 &gt;&gt;&gt; (3 &lt; 5) == true
@@ -1699,12 +1706,17 @@ False
 SyntaxError: invalid syntax
 </pre>
 </blockquote>
+
+<p>
+Es gibt eine Abkürzung für <code>and</code> und diese lautet: <code>&amp;</code>, also eine
+&bdquo;Kaufmanns-Und&ldquo;.
+</p>
 </div>
 </div>
 
 
-<div id="outline-container-orgf686c07" class="outline-4">
-<h4 id="orgf686c07"><span class="section-number-4">2.3.2.</span> Logisches &bdquo;Oder&ldquo;</h4>
+<div id="outline-container-org27ed4af" class="outline-4">
+<h4 id="org27ed4af"><span class="section-number-4">2.3.2.</span> Logisches &bdquo;Oder&ldquo;</h4>
 <div class="outline-text-4" id="text-2-3-2">
 <p>
 Der logische Operator <code>or</code> verhält sich dabei <i>invers</i> zum Operator
@@ -1714,7 +1726,7 @@ zurückgegeben, falls <b>alle</b> Ausdrücke, die mit <code>or</code> verknüpft
 <code>False</code> sind.
 </p>
 
-<pre class="example" id="orge6381b7">
+<pre class="example" id="org0ea2757">
 &gt;&gt;&gt; 8 &lt; 9 or 5 &gt; 9
 True
 &gt;&gt;&gt; True or False
@@ -1728,8 +1740,8 @@ False
 </div>
 
 
-<div id="outline-container-orge7515ad" class="outline-4">
-<h4 id="orge7515ad"><span class="section-number-4">2.3.3.</span> Logisches &bdquo;Nicht&ldquo;</h4>
+<div id="outline-container-org75f2ab8" class="outline-4">
+<h4 id="org75f2ab8"><span class="section-number-4">2.3.3.</span> Logisches &bdquo;Nicht&ldquo;</h4>
 <div class="outline-text-4" id="text-2-3-3">
 <p>
 Der letzte logische Operator ist <code>not</code>. <code>not</code> invertiert einfach die
@@ -1738,7 +1750,7 @@ durch ein vorangestelltes <code>not</code> falsch und ein falscher Ausdruck eben
 wahr.
 </p>
 
-<pre class="example" id="org049e98e">
+<pre class="example" id="org69c495b">
 &gt;&gt;&gt; not True
 False
 &gt;&gt;&gt; not (3 &gt; 5)
@@ -1750,8 +1762,8 @@ True
 </div>
 
 
-<div id="outline-container-org0f7b27b" class="outline-4">
-<h4 id="org0f7b27b"><span class="section-number-4">2.3.4.</span> Zusammenfassung: Wahrheitstabelle</h4>
+<div id="outline-container-orgd432103" class="outline-4">
+<h4 id="orgd432103"><span class="section-number-4">2.3.4.</span> Zusammenfassung: Wahrheitstabelle</h4>
 <div class="outline-text-4" id="text-2-3-4">
 <p>
 Die Logischen Operatoren lassen sich in folgender <i>Wahrheitstabelle</i>
@@ -1908,13 +1920,13 @@ gleichsetzen mit &bdquo;falsch&ldquo;, bzw. <code>False</code>.
 </div>
 
 
-<div id="outline-container-org00654c2" class="outline-3">
-<h3 id="org00654c2"><span class="section-number-3">2.4.</span> Variablen </h3>
+<div id="outline-container-org20eddb8" class="outline-3">
+<h3 id="org20eddb8"><span class="section-number-3">2.4.</span> Variablen </h3>
 <div class="outline-text-3" id="text-2-4">
 </div>
 
-<div id="outline-container-orgb508782" class="outline-4">
-<h4 id="orgb508782"><span class="section-number-4">2.4.1.</span> Ergebnisse u. Werte speichern</h4>
+<div id="outline-container-org5f68a44" class="outline-4">
+<h4 id="org5f68a44"><span class="section-number-4">2.4.1.</span> Ergebnisse u. Werte speichern</h4>
 <div class="outline-text-4" id="text-2-4-1">
 <p>
 Bis jetzt haben wir die Python REPL mehr oder weniger wie einen
@@ -1962,7 +1974,7 @@ an, was passiert, wenn wir die Zahl &bdquo;3&ldquo; in die REPL eingeben. Sie
 wird gelesen, <b>gespeichert</b>, evaluiert und zurückgegeben.
 </p>
 
-<pre class="example" id="org52a942b">
+<pre class="example" id="org6154cd8">
 &gt;&gt;&gt; 3
 3
 </pre>
@@ -1978,7 +1990,7 @@ werden kann, bis es entweder geändert oder, wenn es nicht mehr
 gebraucht wird, gelöscht wird.
 </p>
 
-<pre class="example" id="org65dbb9c">
+<pre class="example" id="orgbd58549">
 &gt;&gt;&gt; id(3)
 4316791088
 &gt;&gt;&gt; hex(id(3))
@@ -2001,7 +2013,7 @@ den wir oben schon kurz erwähnt haben: den <b>Zuweisungsoperator</b> &bdquo;=&l
 (Gleichheitszeichen).
 </p>
 
-<pre class="example" id="org7fb7547">
+<pre class="example" id="org0ae0a74">
 &gt;&gt;&gt; a = 5
 &gt;&gt;&gt; c = 9
 &gt;&gt;&gt; h = 4.2
@@ -2020,7 +2032,7 @@ Ausgabe der Kommandozeile schreibt, oder durch die Funktion <code>max()</code>,
 die mehrere Zahlen entgegen nimmt und die grösste ausgibt.
 </p>
 
-<pre class="example" id="org257c49c">
+<pre class="example" id="org825c620">
 &gt;&gt;&gt; id(a)
 4316791152
 &gt;&gt;&gt; id(c)
@@ -2038,8 +2050,8 @@ die mehrere Zahlen entgegen nimmt und die grösste ausgibt.
 </div>
 
 
-<div id="outline-container-org13d146c" class="outline-4">
-<h4 id="org13d146c"><span class="section-number-4">2.4.2.</span> Variablen benennen</h4>
+<div id="outline-container-org57bedb8" class="outline-4">
+<h4 id="org57bedb8"><span class="section-number-4">2.4.2.</span> Variablen benennen</h4>
 <div class="outline-text-4" id="text-2-4-2">
 <p>
 Für den Namen einer Variablen kann so gute wie jede arbiträre
@@ -2049,7 +2061,7 @@ nicht-europäische Schriftsätze und Emojis (Sonderzeichen sind bis
 auf &bdquo;_&ldquo; nicht erlaubt).
 </p>
 
-<pre class="example" id="orgc9d58c7">
+<pre class="example" id="orgef9a757">
 &gt;&gt;&gt; 東 = "Osten"
 &gt;&gt;&gt; 東
 'Osten'
@@ -2212,17 +2224,17 @@ Dort verwendet man eigentlich immer Variante 1 mit den Unterstrichen.
 </div>
 
 
-<div id="outline-container-org5235114" class="outline-4">
-<h4 id="org5235114"><span class="section-number-4">2.4.3.</span> Was geschieht im Hintergrund?</h4>
+<div id="outline-container-org6d4e26e" class="outline-4">
+<h4 id="org6d4e26e"><span class="section-number-4">2.4.3.</span> Was geschieht im Hintergrund?</h4>
 <div class="outline-text-4" id="text-2-4-3">
 <p>
 Was passiert eigentlich, wenn wir eine Variable erzeugen und darin
 einen Wert speichern? Machen wir uns das an einem Beispiel genauer
-deutlich, das wir <a href="#orgb508782">oben</a> schon betrachtet haben. Wir erzeugen eine
+deutlich, das wir <a href="#org5f68a44">oben</a> schon betrachtet haben. Wir erzeugen eine
 Variable &bdquo;n&ldquo; mit dem Wert &bdquo;300&ldquo;.
 </p>
 
-<pre class="example" id="orgd897064">
+<pre class="example" id="orgdcf013e">
 &gt;&gt;&gt; n = 300
 &gt;&gt;&gt; n
 300
@@ -2237,7 +2249,7 @@ Integerobjekt, das jetzt den Wert 300, hat identisch!
 </p>
 
 
-<div id="orgb7352a1" class="figure">
+<div id="org457b0c6" class="figure">
 <p><img src="figs/var_n_300_1.png" alt="var_n_300_1.png" />
 </p>
 </div>
@@ -2247,7 +2259,7 @@ Wir können uns nun noch eine zweite Variable kreieren, die auch auf
 das eben erzeugte Objekt verweist.
 </p>
 
-<pre class="example" id="orga3b884f">
+<pre class="example" id="orgc3c6954">
 &gt;&gt;&gt; m = n
 &gt;&gt;&gt; m
 300
@@ -2258,7 +2270,7 @@ Dass es sich dabei tatsächlich um das gleiche Objekt handelt,
 können wir mit der schon bekannten Funktion <code>id()</code> testen.
 </p>
 
-<pre class="example" id="org2de5366">
+<pre class="example" id="orgbcf9b50">
 &gt;&gt;&gt; id(m)
 4470030704
 &gt;&gt;&gt; id(n)
@@ -2273,7 +2285,7 @@ mit dem Wert 300 liegt.
 </p>
 
 
-<div id="orgbf99c69" class="figure">
+<div id="org78e7c4a" class="figure">
 <p><img src="figs/var_n_300_2.png" alt="var_n_300_2.png" />
 </p>
 </div>
@@ -2283,7 +2295,7 @@ Wir haben nun zwei Referenzen auf ein und das selbe Objekt. Was
 passiert nun, wenn wir &bdquo;m&ldquo; neu zuweisen?
 </p>
 
-<pre class="example" id="orgc219108">
+<pre class="example" id="org7182f75">
 &gt;&gt;&gt; m = 400
 &gt;&gt;&gt; m
 400
@@ -2306,7 +2318,7 @@ Dort wird bei einer Neuzuweisung ein <i>neues</i> Objekt erzeugt.
 </p>
 
 
-<div id="orga4c5e64" class="figure">
+<div id="orgd024e1f" class="figure">
 <p><img src="figs/var_n_300_3.png" alt="var_n_300_3.png" />
 </p>
 </div>
@@ -2323,7 +2335,7 @@ erzeugen!
 Was passiert nun, wenn wir auch &bdquo;n&ldquo; neu zuweisen?
 </p>
 
-<pre class="example" id="org1797358">
+<pre class="example" id="org1260012">
 &gt;&gt;&gt; n = "foo"
 &gt;&gt;&gt; n
 'foo'
@@ -2349,7 +2361,7 @@ Speicher wieder frei gegeben.
 </p>
 
 
-<div id="orgcf69956" class="figure">
+<div id="orga8d14c5" class="figure">
 <p><img src="figs/var_n_300_4.png" alt="var_n_300_4.png" />
 </p>
 </div>
@@ -2416,7 +2428,7 @@ Stellen Sie sich vor, Sie haben eine Variable <code>x</code>, der Sie eine Zahl
 Dies machen Sie so:
 </p>
 
-<pre class="example" id="org4a2528a">
+<pre class="example" id="org1d69bed">
 &gt;&gt;&gt; x = 5
 &gt;&gt;&gt; x = x + 1
 &gt;&gt;&gt; x
@@ -2428,7 +2440,7 @@ Für den Ausdruck &bdquo;x = x + 1&ldquo; können Sie auch schreiben &bdquo;x +=
 Sie tilgen also das zweite &bdquo;x&ldquo; und rücken das &bdquo;Plus&ldquo; vor das &bdquo;=&ldquo;.
 </p>
 
-<pre class="example" id="orgbcf0ff3">
+<pre class="example" id="org4df9cb6">
 &gt;&gt;&gt; x = 5
 &gt;&gt;&gt; x += 1
 &gt;&gt;&gt; x
@@ -2474,8 +2486,8 @@ Dies geht auch mit anderen mathematischen Operatoren:
 </div>
 
 
-<div id="outline-container-org82ceb16" class="outline-3">
-<h3 id="org82ceb16"><span class="section-number-3">2.5.</span> Übungen</h3>
+<div id="outline-container-org7b8e622" class="outline-3">
+<h3 id="org7b8e622"><span class="section-number-3">2.5.</span> Übungen</h3>
 <div class="outline-text-3" id="text-2-5">
 <ul class="org-ul">
 <li>Lassen Sie den Text &bdquo;Es ist schön, Python zu lernen!&ldquo; in der
@@ -2545,8 +2557,8 @@ Aussagen?
 </div>
 
 
-<div id="outline-container-orgd6b7901" class="outline-2">
-<h2 id="orgd6b7901"><span class="section-number-2">3.</span> Funktionen und Methoden</h2>
+<div id="outline-container-org269bcce" class="outline-2">
+<h2 id="org269bcce"><span class="section-number-2">3.</span> Funktionen und Methoden</h2>
 <div class="outline-text-2" id="text-3">
 <p>
 Bei unseren ersten Gehversuchen in der REPL haben wir nicht nur
@@ -2576,7 +2588,7 @@ geschrieben hat und das wir mit einem Befehl, bzw. besser: <i>Aufruf
 der Funktion</i>, ausführen können. Das Beste ist aber: wir können
 solche Funktionen selbst schreiben und damit selbst den
 Funktionsumfang von Python, oder einer anderen Programmiersprache,
-erweitern. Wie werden wir <a href="#org5e41f62">später</a> sehen. Nun wollen wir uns ein paar
+erweitern. Wie werden wir <a href="#orge94e928">später</a> sehen. Nun wollen wir uns ein paar
 Beispiele für Funktionen ansehen und lernen, wie wir sie aufrufen
 und was sie uns evtl. zurückgeben.
 </p>
@@ -2586,12 +2598,12 @@ Schauen wir uns als Beispiel die Funktion <code>max()</code> an. Sie ist eine so
 <i>built-in function</i>. Sie steht uns also zur Verfügung, sobald wir
 Python installiert haben, ohne weiteren Pythoncode nachzuladen oder
 installieren zu müssen (wie wir Python so erweitern können,
-erfahren wir <a href="#org0981b91">hier</a>). Einen Überblick über alle &bdquo;eingebauten&ldquo;
+erfahren wir <a href="#org3ae65d5">hier</a>). Einen Überblick über alle &bdquo;eingebauten&ldquo;
 Funktionen gibt übrigens die entsprechende <a href="https://docs.python.org/3/library/functions.html">Seite der Python
 Dokumentation</a>.
 </p>
 
-<pre class="example" id="org99e2e1e">
+<pre class="example" id="org821cbe0">
 &gt;&gt;&gt; max
 &lt;built-in function max&gt;
 &gt;&gt;&gt; id(max)
@@ -2630,7 +2642,7 @@ Zeichenfolgen &bdquo;Susanne&ldquo; und &bdquo;Xaver&ldquo; aus. Aber was bedeut
 &bdquo;grösser&ldquo;? Mit der Länge der Zeichenketten hat es scheinbar nichts
 zu tun, denn &bdquo;Susanne&ldquo; hat mehr Zeichen als &bdquo;Xaver&ldquo;. Können Sie
 erraten was die Funktion <code>max()</code> hier vergleicht? Die Auflösung gibt es
-spätestens dann, wenn wir uns intensiver mit <a href="#org7e93484">Strings</a> beschäftigen.
+spätestens dann, wenn wir uns intensiver mit <a href="#orgeb14a45">Strings</a> beschäftigen.
 </p>
 
 <p>
@@ -2639,7 +2651,7 @@ Namen gefolgt von runden Klammern, die optionale oder notwendige
 Argumente enthält.
 </p>
 
-<pre class="example" id="orgd2b5b88">
+<pre class="example" id="org992eebf">
     max          (3, 5)
    |   |         |    |
 Funktionsname   Argumente
@@ -2653,7 +2665,7 @@ entsprechenden Dokumentationen oder manchmal auch über die
 eingebaute Funktion <code>help()</code>.
 </p>
 
-<pre class="example" id="orgf7fa287">
+<pre class="example" id="org6b3c4b6">
 &gt;&gt;&gt; help("max")
 
 Help on built-in function max in module builtins:
@@ -2673,12 +2685,12 @@ max(...)
 In der Hilfe zu <code>max()</code> lesen wir also, dass <code>max()</code> entweder ein <i>iterable</i>
 oder mehrere Argumente entgegen nimmt und dabei das grösste Element
 zurückgibt. Was ein <i>iterable</i> ist, braucht uns an dieser Stelle noch
-nicht beschäftigen. Wie erfahren es in einem <a href="#org843f8d2">späteren Kapitel</a>.
+nicht beschäftigen. Wie erfahren es in einem <a href="#orgfb8345e">späteren Kapitel</a>.
 Weiter sehen wir aber auch, dass <code>max()</code> notwendig ein Argument
 braucht, ansonsten gibt es eine Fehlermeldung aus.
 </p>
 
-<pre class="example" id="org24526fc">
+<pre class="example" id="org654e496">
 &gt;&gt;&gt; max()
 Traceback (most recent call last):
   File "&lt;stdin&gt;", line 1, in &lt;module&gt;
@@ -2694,7 +2706,7 @@ speichern oder einer weiteren Funktion übergeben. Schauen wir uns
 das an:
 </p>
 
-<pre class="example" id="orgb9bf663">
+<pre class="example" id="org5853807">
 &gt;&gt;&gt; two = 2
 &gt;&gt;&gt; four = 4
 &gt;&gt;&gt; id(four)
@@ -2721,7 +2733,7 @@ Argumente den äußeren Funktionen übergeben. Für die letzte Zeile im
 obigen Codebespiel sieht das wie folgt aus:
 </p>
 
-<pre class="example" id="org4170292">
+<pre class="example" id="orgc382a92">
 print(id(max(four, two)))
   |   |   |    |    |
   |   |   |    4    2
@@ -2754,7 +2766,7 @@ Funktion ist folgender, dass man sie mit einem Punkt &bdquo;.&ldquo; an das
 Objekt anhängt, auf die man die Methode angewendet haben will.
 </p>
 
-<pre class="example" id="org4dd5405">
+<pre class="example" id="orge9da813">
 &gt;&gt;&gt; "Hallo".upper()
 'HALLO'
 &gt;&gt;&gt; test = "Hallo Welt!"
@@ -2768,8 +2780,8 @@ Objekt anhängt, auf die man die Methode angewendet haben will.
 </div>
 
 
-<div id="outline-container-orgae1e23b" class="outline-2">
-<h2 id="orgae1e23b"><span class="section-number-2">4.</span> Datentypen </h2>
+<div id="outline-container-orgdff963d" class="outline-2">
+<h2 id="orgdff963d"><span class="section-number-2">4.</span> Datentypen </h2>
 <div class="outline-text-2" id="text-4">
 <p>
 Wie im letzten Abschnitt über <i>Funktionen und Methoden</i> erwähnt, gibt
@@ -2784,7 +2796,7 @@ Dann wäre ja die Zahl &bdquo;6&ldquo; grösser und <code>max()</code> müsste &
 Schauen wir einmal, was Python macht:
 </p>
 
-<pre class="example" id="org2803d7a">
+<pre class="example" id="org44b4130">
 &gt;&gt;&gt; max(6, "sechs")
 Traceback (most recent call last):
   File "&lt;stdin&gt;", line 1, in &lt;module&gt;
@@ -2805,8 +2817,8 @@ Datentypen in Python vertraut machen.
 </p>
 </div>
 
-<div id="outline-container-orgfd6005a" class="outline-3">
-<h3 id="orgfd6005a"><span class="section-number-3">4.1.</span> Zahlen</h3>
+<div id="outline-container-org371a588" class="outline-3">
+<h3 id="org371a588"><span class="section-number-3">4.1.</span> Zahlen</h3>
 <div class="outline-text-3" id="text-4-1">
 <p>
 Als erster Typ in Python sind uns die Zahlen begegnet. Zahlen
@@ -2825,7 +2837,7 @@ Funktion <code>type()</code> können wir testen, von welchem Typ ein bestimmtes
 Objekt ist.
 </p>
 
-<pre class="example" id="orgfd6e365">
+<pre class="example" id="org75be2d3">
 &gt;&gt;&gt; type(3)
 &lt;class 'int'&gt;
 &gt;&gt;&gt; type(3.)
@@ -2862,7 +2874,7 @@ Normalerweise müsste drei mal 0.1 gleich 0.3 sein. Geben wir das
 jedoch in Python ein, so kommt <code>False</code> heraus:
 </p>
 
-<pre class="example" id="org6725ca9">
+<pre class="example" id="org6c5f149">
 &gt;&gt;&gt; (.1 * 3) == .3
 False
 </pre>
@@ -2871,7 +2883,7 @@ False
 Wollen Sie also mathematisch genau mit Python rechnen, so müssen
 Sie auf andere Python Module wie <code>decimal</code> und <code>fractions</code>
 zurückgreifen. Wie Sie weitere Python Module nutzen können
-erfahren Sie im Kapitel <a href="#org0981b91">&bdquo;Python erweitern&ldquo;</a>.
+erfahren Sie im Kapitel <a href="#org3ae65d5">&bdquo;Python erweitern&ldquo;</a>.
 </p>
 </blockquote>
 
@@ -2881,7 +2893,7 @@ als <i>float</i> zurückgegeben werden, auch wenn ein ganzzahliges
 Ergebnis möglich wäre.
 </p>
 
-<pre class="example" id="orgf548210">
+<pre class="example" id="org4837c19">
 &gt;&gt;&gt; 12 / 3
 4.0
 </pre>
@@ -2891,7 +2903,7 @@ Sie können aber jederzeit eine <i>Konvertierung</i> von <i>int</i> in <i>float<
 umgekehrt mit den zwei Funktionen <code>int()</code> und <code>float()</code> erzwingen:
 </p>
 
-<pre class="example" id="orgeded46d">
+<pre class="example" id="orgaaf04ac">
 &gt;&gt;&gt; val = int(12 / 3)
 &gt;&gt;&gt; val
 4
@@ -2905,7 +2917,7 @@ Eine weitere wichtige Funktion im Umgang mit Zahlen ist die
 bestimmte Anzahl Nachkommastellen runden.
 </p>
 
-<pre class="example" id="orgbb31943">
+<pre class="example" id="org7664221">
 &gt;&gt;&gt; val = 1.3456789
 &gt;&gt;&gt; round(val)
 1
@@ -2935,7 +2947,7 @@ dem Unterstrich &bdquo;_&ldquo; zu. Dieser wird bei der Evaluation der Codes
 ignoriert.
 </p>
 
-<pre class="example" id="org9778755">
+<pre class="example" id="org9887c1b">
 &gt;&gt;&gt; lange_zahl = 10_130_799
 &gt;&gt;&gt; lange_zahl
 10130799
@@ -2945,8 +2957,8 @@ ignoriert.
 </div>
 
 
-<div id="outline-container-org7e93484" class="outline-3">
-<h3 id="org7e93484"><span class="section-number-3">4.2.</span> Strings </h3>
+<div id="outline-container-orgeb14a45" class="outline-3">
+<h3 id="orgeb14a45"><span class="section-number-3">4.2.</span> Strings </h3>
 <div class="outline-text-3" id="text-4-2">
 <p>
 Neben Zahlen sind die sog. <i>Strings</i> (engl. für &bdquo;Zeichenkette&ldquo;) der
@@ -2960,7 +2972,7 @@ Strings werden in Python durch doppelte oder einfache Hochkommata
 bilden dann einen String.
 </p>
 
-<pre class="example" id="org0b2b110">
+<pre class="example" id="org69b44c8">
 &gt;&gt;&gt; h = "Hallo Welt!"
 &gt;&gt;&gt; h
 'Hallo Welt!'
@@ -2975,15 +2987,15 @@ False
 </div>
 
 
-<div id="outline-container-org45ad911" class="outline-4">
-<h4 id="org45ad911"><span class="section-number-4">4.2.1.</span> Escape Sequenzen</h4>
+<div id="outline-container-org981c003" class="outline-4">
+<h4 id="org981c003"><span class="section-number-4">4.2.1.</span> Escape Sequenzen</h4>
 <div class="outline-text-4" id="text-4-2-1">
 <p>
 Was ist nun aber, wenn Sie eine Zeichenkette bilden wollen, in
 der ein Hochkommate vorkommt. Z.B. in einer wörtlichen Rede:
 </p>
 
-<pre class="example" id="org8d2aba6">
+<pre class="example" id="orga3fdd8e">
 &gt;&gt;&gt; text = "Stefan sagte: "Das ist doch Mist!""
   File "&lt;stdin&gt;", line 1
     text = "Stefan sagte: "Das ist doch Mist!""
@@ -3004,7 +3016,7 @@ String <i>nicht</i> schließt. Dies machen wir mit einem sog. <i>Escpape
 Character</i>. In Python fungiert hierfür der <i>Backward-Slash</i> &ldquo;\&bdquo;:
 </p>
 
-<pre class="example" id="orgd0f546b">
+<pre class="example" id="orge7c5bbb">
 &gt;&gt;&gt; text = "Stefan sagte: \"Das ist doch Mist!\""
 &gt;&gt;&gt; text
 'Stefan sagte: "Das ist doch Mist!"'
@@ -3019,7 +3031,7 @@ zweimal eine Backward-Slash eingegeben werden um einen
 Backward-Slach in der Zeichensequenz zu repräsentieren.
 </p>
 
-<pre class="example" id="orgeedadb0">
+<pre class="example" id="org36dff66">
 &gt;&gt;&gt; folder = "C:\Users\Stefan\Dokumente"
   File "&lt;stdin&gt;", line 1
     folder = "C:\Users\Stefan\Dokumente"
@@ -3053,7 +3065,7 @@ benutzen muss vor dem ersten Hochkommata einfach eine &rsquo;r&rsquo;
 vorangestellt werden.
 </p>
 
-<pre class="example" id="orgcc408ea">
+<pre class="example" id="org3a414b5">
 &gt;&gt;&gt; folder = r"C:\Users\Stefan\Dokumente"
 &gt;&gt;&gt; print(folder)
 C:\Users\Stefan\Dokumente
@@ -3068,7 +3080,7 @@ das Setzen einer neuen Zeile beim Drücken von Enter.<sup><a id="fnr.4" class="f
 Escape Sequenz für eine neue Zeile ist &bdquo;\n&ldquo;.
 </p>
 
-<pre class="example" id="orga1ec0aa">
+<pre class="example" id="orgf59d976">
 &gt;&gt;&gt; text = "User:\n-----\nStefan\nKathrin"
 &gt;&gt;&gt; print(text)
 User:
@@ -3140,7 +3152,7 @@ egal) eingeleitet und wieder ausgeleitet. Die Formatierung des Text
 bleibt dabei erhalten.
 </p>
 
-<pre class="example" id="orga7ffa35">
+<pre class="example" id="orgf86f1b7">
 &gt;&gt;&gt; text = """
 ...            Regensburg, den 01.01.22
 ... 
@@ -3161,8 +3173,8 @@ Sehr geehrte Damen und Herren,
 </div>
 
 
-<div id="outline-container-orgefc073a" class="outline-4">
-<h4 id="orgefc073a"><span class="section-number-4">4.2.2.</span> String Indexing und Slicing</h4>
+<div id="outline-container-org9b008a8" class="outline-4">
+<h4 id="org9b008a8"><span class="section-number-4">4.2.2.</span> String Indexing und Slicing</h4>
 <div class="outline-text-4" id="text-4-2-2">
 <p>
 Mit Strings lernen wir unser erstes <i>Iterable</i> - ein sequentieller
@@ -3184,7 +3196,7 @@ Bauteil, der erste Waggon das zweite usw.
 </p>
 
 
-<div id="org48e42f1" class="figure">
+<div id="org15b7f61" class="figure">
 <p><img src="figs/index_zug.png" alt="index_zug.png" />
 </p>
 </div>
@@ -3202,7 +3214,7 @@ Iterable angesetzt werden. Die Syntax sieht folgendermaßen aus:
 <code>iterable[&lt;index&gt;]</code>.
 </p>
 
-<pre class="example" id="orgdfa5cd6">
+<pre class="example" id="org0837d52">
 &gt;&gt;&gt; text = "Hallo Welt!"
 &gt;&gt;&gt; text[0]
 'H'
@@ -3218,7 +3230,7 @@ Hinten&ldquo; anzufangen zu zählen. Das letzte Element hätte somit den
 Index -1, das zweitletzte den Index -2 usw.
 </p>
 
-<pre class="example" id="org3298552">
+<pre class="example" id="org5f9ee1a">
 &gt;&gt;&gt; "Yes!"[-1]
 '!'
 &gt;&gt;&gt; "Yes!"[-4]
@@ -3239,7 +3251,7 @@ werden dabei in den eckigen Klammern mit einem Doppelpunkt &bdquo;:&ldquo;
 getrennt. Die Syntax ist also: <code>iterable[start:ende]</code>.
 </p>
 
-<pre class="example" id="orgd0b43c3">
+<pre class="example" id="orge184a49">
 &gt;&gt;&gt; text = "Servus Uni Regensburg!"
 &gt;&gt;&gt; text[7:10]
 'Uni'
@@ -3277,7 +3289,7 @@ Substring der bis zum Ende geht auswählen; dann kann man den
 Startindex weglassen: <code>iterable[start:]</code>.
 </p>
 
-<pre class="example" id="org3fd460a">
+<pre class="example" id="org865eacf">
 &gt;&gt;&gt; text = "Servus Uni Regensburg!"
 &gt;&gt;&gt; text[:6]
 'Servus'
@@ -3294,7 +3306,7 @@ hinter Start- und Endpunkt wieder nach einem Doppelpunkt ein
 Intervall von Schritten angeben: <code>iterable[start:ende:schritte]</code>.
 </p>
 
-<pre class="example" id="org160ff0d">
+<pre class="example" id="org882e620">
 &gt;&gt;&gt; zahlen = "123456789"
 &gt;&gt;&gt; ungerade = zahlen[0::2]
 &gt;&gt;&gt; ungerade
@@ -3324,7 +3336,7 @@ des Intervalls eines Iterables liegt, so quittiert Python mit
 einem <i>index out of range</i> Fehler:
 </p>
 
-<pre class="example" id="orgcc28748">
+<pre class="example" id="orgbcd85c5">
 &gt;&gt;&gt; "123"[5]
 Traceback (most recent call last):
   File "&lt;stdin&gt;", line 1, in &lt;module&gt;
@@ -3333,9 +3345,9 @@ IndexError: string index out of range
 </blockquote>
 </div>
 
-<div id="outline-container-orgebe9c64" class="outline-5">
-<h5 id="orgebe9c64">Länge von Strings</h5>
-<div class="outline-text-5" id="text-orgebe9c64">
+<div id="outline-container-org0f1d9e6" class="outline-5">
+<h5 id="org0f1d9e6">Länge von Strings</h5>
+<div class="outline-text-5" id="text-org0f1d9e6">
 <p>
 Eine letzte wichtige <b>Eigenschaft von Strings</b>, bzw. generell von
 <i>Iterables</i>, die hier unbedingt erwähnt werden muss, ist die <b>Länge</b>
@@ -3346,7 +3358,7 @@ einfach über die Funktion <code>len()</code> für engl. &bdquo;length&ldquo; er
 werden.
 </p>
 
-<pre class="example" id="org999ad15">
+<pre class="example" id="org3dddf25">
 &gt;&gt;&gt; text = "Wie lange ist dieser Text?"
 &gt;&gt;&gt; len(text)
 26
@@ -3359,8 +3371,8 @@ werden.
 </div>
 
 
-<div id="outline-container-org2c96a71" class="outline-4">
-<h4 id="org2c96a71"><span class="section-number-4">4.2.3.</span> Mathematische und logische Operatoren für Strings</h4>
+<div id="outline-container-org343c479" class="outline-4">
+<h4 id="org343c479"><span class="section-number-4">4.2.3.</span> Mathematische und logische Operatoren für Strings</h4>
 <div class="outline-text-4" id="text-4-2-3">
 <p>
 In Python (und in den meisten anderen Programmiersprachen auch)
@@ -3371,7 +3383,7 @@ darüber nach - eigentlich sehr intuitiv. Zwei Beispiele sollten
 genügen:
 </p>
 
-<pre class="example" id="orga79683f">
+<pre class="example" id="org5f543ce">
 &gt;&gt;&gt; str1 = "Servus"
 &gt;&gt;&gt; str2 = "Regensburg"
 &gt;&gt;&gt; print(str1 + " " + str2 + "!")
@@ -3408,7 +3420,7 @@ False
 </pre>
 
 
-<pre class="example" id="org40e8369">
+<pre class="example" id="orgea01f05">
      False
      False
 </pre>
@@ -3443,7 +3455,7 @@ Diese lässt sich mit der Funktion <code>ord()</code> anzeigen.
 </pre>
 
 
-<pre class="example" id="orga2d1bf6">
+<pre class="example" id="orgec854d4">
 100
 97
 101
@@ -3473,8 +3485,8 @@ Ordnung gefunden wurde. Der String &bdquo;8&ldquo; muss sich alphabetisch nach
 </div>
 
 
-<div id="outline-container-orge6d3d9b" class="outline-4">
-<h4 id="orge6d3d9b"><span class="section-number-4">4.2.4.</span> Variablen in Strings integrieren</h4>
+<div id="outline-container-orgb0818a1" class="outline-4">
+<h4 id="orgb0818a1"><span class="section-number-4">4.2.4.</span> Variablen in Strings integrieren</h4>
 <div class="outline-text-4" id="text-4-2-4">
 <p>
 Manchmal hat man in seinem Programm einige Variablen, die man
@@ -3486,7 +3498,7 @@ mit der Möglichkeit der Verkettung mit dem &bdquo;+&ldquo;-Operator möglich
 ist.
 </p>
 
-<pre class="example" id="org1963f48">
+<pre class="example" id="orgdaa53a3">
 &gt;&gt;&gt; user_name = "DasBoeh"
 &gt;&gt;&gt; weather = "regnerisch"
 &gt;&gt;&gt; message = "Hallo " + user_name + "! Schön, dich zu sehen!\nDas Wetter ist heute " + weather + "."
@@ -3527,7 +3539,7 @@ runden Klammern nach einem %-Zeichen. Die Syntax sieht dann wie
 folgt aus:
 </p>
 
-<pre class="example" id="orga024512">
+<pre class="example" id="org84c1f8e">
 &gt;&gt;&gt; message = "Hallo %s! Schön dich zu sehen!\nDas Wetter ist heute %s." % (user_name, weather)
 &gt;&gt;&gt; print(message)
 Hallo DasBoeh! Schön dich zu sehen!
@@ -3553,7 +3565,7 @@ man im String Platzhalter für die Variablen über geschweifte
 Klammern. Die Variablen selbst gibt man dann in der Methode an.
 </p>
 
-<pre class="example" id="org3cca334">
+<pre class="example" id="orgcb23eff">
 &gt;&gt;&gt; message = "Hallo {}! Schön, dich zu sehen!\nDas Wetter ist heute {}.".format(user_name, weather)
 &gt;&gt;&gt; print(message)
 Hallo DasBoeh! Schön, dich zu sehen!
@@ -3565,7 +3577,7 @@ Das Wetter ist heute regnerisch.
 Reihenfolge vertauschen:
 </p>
 
-<pre class="example" id="org718f01a">
+<pre class="example" id="org4ecf3e8">
 &gt;&gt;&gt; message = "Hallo {1}! Schön, dich zu sehen!\nDas Wetter ist heute {0}.".format(user_name, weather)
 &gt;&gt;&gt; print(message)
 Hallo regnerisch! Schön, dich zu sehen!
@@ -3592,7 +3604,7 @@ mit dem Vorteil, dass die Variablen direkt in den geschweiften
 Klammern stehen. Dies macht den String wesentlich leserlicher.
 </p>
 
-<pre class="example" id="org10ba5c3">
+<pre class="example" id="org78b8c45">
 &gt;&gt;&gt; message = f"Hallo {user_name}! Schön, dich zu sehen!\nDas Wetter heute ist {weather}."
 &gt;&gt;&gt; print(message)
 Hallo DasBoeh! Schön, dich zu sehen!
@@ -3606,7 +3618,7 @@ stehen können. Das macht f-Strings zu einem mächtigen und
 vielseitigen Werkzeug.
 </p>
 
-<pre class="example" id="org86319b4">
+<pre class="example" id="orgfee427d">
 &gt;&gt;&gt; messages = 24
 &gt;&gt;&gt; read_messages = 16
 &gt;&gt;&gt; welcome = f"Hallo {user_name.upper()}. Du hast {messages - read_messages} ungelesene Nachrichten!"
@@ -3624,8 +3636,8 @@ der finder <a href="https://realpython.com/python-f-strings/">hier</a> ein gutes
 </div>
 
 
-<div id="outline-container-orgb01a1a1" class="outline-4">
-<h4 id="orgb01a1a1"><span class="section-number-4">4.2.5.</span> Wichtige String Methoden</h4>
+<div id="outline-container-orgfa1cf19" class="outline-4">
+<h4 id="orgfa1cf19"><span class="section-number-4">4.2.5.</span> Wichtige String Methoden</h4>
 <div class="outline-text-4" id="text-4-2-5">
 <p>
 Weiter oben haben wir schon zwei Methoden für Strings
@@ -3634,7 +3646,7 @@ alle Alphabet Charakter einer Zeichenkette groß oder klein
 schreiben. Beide Methoden nehmen <i>keine</i> Argumente entgegen.
 </p>
 
-<pre class="example" id="org97f035f">
+<pre class="example" id="org2e5d48f">
 &gt;&gt;&gt; "Servus Uni Regensburg!".lower()
 'servus uni regensburg!'
 &gt;&gt;&gt; "Servus Uni Regensburg!".upper()
@@ -3668,7 +3680,7 @@ werden. Das Argument &bdquo;Anzahl&ldquo; ist optional.
 Anbei ein paar Beispiele:
 </p>
 
-<pre class="example" id="org5ae9772">
+<pre class="example" id="org8ee1a41">
 &gt;&gt;&gt; "Das Örtliche".replace("Ö", "Oe")
 'Das Oertliche'
 &gt;&gt;&gt; "Wesserball".replace("e", "a", 1)
@@ -3684,7 +3696,7 @@ Um mehrere verschiedene Zeichen gleichzeitig in einem Text zu
 ersetzen, muss man <code>.replace()</code> mehrfach hintereinander anwenden:
 </p>
 
-<pre class="example" id="org321cc79">
+<pre class="example" id="org55e81df">
 &gt;&gt;&gt; "örtliche Bäckerinnung".replace("ä", "ae").replace("ö", "oe")
 'oertliche Baeckerinnung'
 </pre>
@@ -3697,7 +3709,7 @@ Python ist. Die hintereinander <i>Verkettung</i> von Methoden
 funktioniert übrigens auch mit allen anderen Methoden in Python.
 </p>
 
-<pre class="example" id="orgcdc3da9">
+<pre class="example" id="org7911c4a">
 &gt;&gt;&gt; "ER IST BÖSE"[-4:].lower().replace("ö","oe")
 'boese'
 </pre>
@@ -3706,7 +3718,7 @@ funktioniert übrigens auch mit allen anderen Methoden in Python.
 Das obige Beispiel lässt sich wie folgt von links nach rechts zerlegen:
 </p>
 
-<pre class="example" id="org23c9f70">
+<pre class="example" id="org02a05c4">
 "ER IST BÖSE"[-4:].lower().replace("ö","oe")
         |             |          |
 "ER IST BÖSE"[-4:]    |          |
@@ -3742,7 +3754,7 @@ Vorkommen von Zeichen im String zu zählen. Dies machen die beiden
 Methoden <code>.find()</code>, bzw. <code>.rfind()</code> und <code>.count()</code>.
 </p>
 
-<pre class="example" id="org7420a0a">
+<pre class="example" id="org81f28c0">
 &gt;&gt;&gt; "drei Katzen trinken drei Tüten Milch".find("drei")
 0
 &gt;&gt;&gt; "drei Katzen trinken drei Tüten Milch".rfind("drei")
@@ -3763,7 +3775,7 @@ Ende eines Strings zu suchen. Genau dies machen die beiden
 Methoden <code>.startswith()</code> und <code>.endswith()</code>.
 </p>
 
-<pre class="example" id="org83f1b05">
+<pre class="example" id="orga1f8f47">
 &gt;&gt;&gt; "exceldatei.xlsx".startswith("ex")
 True
 &gt;&gt;&gt; "exceldatei.xlsx".startswith("datei")
@@ -3786,8 +3798,8 @@ Python unterstützt, finden Sie wie immer in der <a href="https://docs.python.or
 </div>
 
 
-<div id="outline-container-orgb8ba76f" class="outline-4">
-<h4 id="orgb8ba76f"><span class="section-number-4">4.2.6.</span> Übungen</h4>
+<div id="outline-container-org01076c2" class="outline-4">
+<h4 id="org01076c2"><span class="section-number-4">4.2.6.</span> Übungen</h4>
 <div class="outline-text-4" id="text-4-2-6">
 <ul class="org-ul">
 <li><p>
@@ -3825,8 +3837,8 @@ Lassen Sie sich einen &bdquo;Tannenbaum&ldquo; in der Konsole ausgeben:
 </div>
 
 
-<div id="outline-container-orgb78b3ed" class="outline-3">
-<h3 id="orgb78b3ed"><span class="section-number-3">4.3.</span> Der <code>in</code> Operator</h3>
+<div id="outline-container-orge12f2f0" class="outline-3">
+<h3 id="orge12f2f0"><span class="section-number-3">4.3.</span> Der <code>in</code> Operator</h3>
 <div class="outline-text-3" id="text-4-3">
 <p>
 Für <i>Iterables</i>, so wie Strings es sind, gibt es noch einen wichtigen
@@ -3837,7 +3849,7 @@ darin enthalten ist. Die Syntax ist denkbar einfach: <code>&lt;Zeichenfolge&gt;
    in &lt;String&gt;</code>. Zurückgegeben wird <code>True</code> oder <code>False</code>.
 </p>
 
-<pre class="example" id="orgf701a2a">
+<pre class="example" id="org59ed01e">
 &gt;&gt;&gt; text = "Dies ist ein kleiner Test Text!"
 &gt;&gt;&gt; "Test" in text
 True
@@ -3850,8 +3862,8 @@ False
 </div>
 
 
-<div id="outline-container-orga9bd66f" class="outline-3">
-<h3 id="orga9bd66f"><span class="section-number-3">4.4.</span> Type Conversions</h3>
+<div id="outline-container-orgb872916" class="outline-3">
+<h3 id="orgb872916"><span class="section-number-3">4.4.</span> Type Conversions</h3>
 <div class="outline-text-3" id="text-4-4">
 <p>
 Sie wissen nun, dass es in Python unterschiedliche Datentypen gibt.
@@ -3862,7 +3874,7 @@ können in diesem Kurs nicht behandelt werden. Bedenken Sie aber:
 wenn immer Sie Ihr Python Programm mit Modulen aus anderen Quellen
 erweitern, können auch neue Typen hinzukommen. Lesen Sie also auch
 immer erst die Einführungen und Dokumentationen der jeweiligen
-Pakete und Bibliotheken! <a href="#org0981b91">Später</a> aber mehr dazu.
+Pakete und Bibliotheken! <a href="#org3ae65d5">Später</a> aber mehr dazu.
 </p>
 
 <p>
@@ -3900,7 +3912,7 @@ Zur Umwandlung zwischen diesen Datentypen stehen uns in Python die
 folgenden Funktionen zur Verfügung: <code>int()</code>, <code>float()</code> und <code>str()</code>.
 </p>
 
-<pre class="example" id="orgeb61e05">
+<pre class="example" id="org8ea3cce">
 &gt;&gt;&gt; nachrichten = 231
 &gt;&gt;&gt; text = "Nachrichten in Ihrer Inbox: "
 &gt;&gt;&gt; text + str(nachrichten)
@@ -3992,8 +4004,8 @@ sehen.
 </div>
 
 
-<div id="outline-container-org3432c60" class="outline-3">
-<h3 id="org3432c60"><span class="section-number-3">4.5.</span> Eingaben vom Benutzer lesen</h3>
+<div id="outline-container-org0cb7da2" class="outline-3">
+<h3 id="org0cb7da2"><span class="section-number-3">4.5.</span> Eingaben vom Benutzer lesen</h3>
 <div class="outline-text-3" id="text-4-5">
 <p>
 Eine wichtige Art, Werte in ein Programm einzulesen ist die
@@ -4005,7 +4017,7 @@ der nach Möglichkeit erklären soll, was der Nutzer nun eingeben
 soll.
 </p>
 
-<pre class="example" id="org852fed6">
+<pre class="example" id="org1ad19ac">
 &gt;&gt;&gt; name = input("Geben Sie Ihren Namen ein: ")
 Geben Sie Ihren Namen ein: Stefan
 &gt;&gt;&gt; kg = float(input("Wie viel wiegen Sie in kg?: "))
@@ -4030,13 +4042,13 @@ Strings ab!).
 
 
 
-<div id="outline-container-org0981b91" class="outline-2">
-<h2 id="org0981b91"><span class="section-number-2">5.</span> Python erweitern </h2>
+<div id="outline-container-org3ae65d5" class="outline-2">
+<h2 id="org3ae65d5"><span class="section-number-2">5.</span> Python erweitern </h2>
 <div class="outline-text-2" id="text-5">
 </div>
 
-<div id="outline-container-orgb08f465" class="outline-3">
-<h3 id="orgb08f465"><span class="section-number-3">5.1.</span> Grundfunktionalitäten nachladen (Import)</h3>
+<div id="outline-container-orgf48dfde" class="outline-3">
+<h3 id="orgf48dfde"><span class="section-number-3">5.1.</span> Grundfunktionalitäten nachladen (Import)</h3>
 <div class="outline-text-3" id="text-5-1">
 <p>
 Es wurde schon öfter darauf hingewiesen, dass wenn Sie &bdquo;dies und
@@ -4059,7 +4071,7 @@ Sie diese erst <i>laden</i>.
 Dies geschieht mit dem sog. <code>import</code> Statement:
 </p>
 
-<pre class="example" id="orgf400faf">
+<pre class="example" id="org6382fed">
 &gt;&gt;&gt; import math
 &gt;&gt;&gt; pi = math.pi
 &gt;&gt;&gt; round(pi, 15)
@@ -4099,7 +4111,7 @@ Sonst weiß Python nicht mehr, was mit einem bestimmten Namen
 angesprochen werden soll.
 </p>
 
-<pre class="example" id="org32dcf0f">
+<pre class="example" id="org468f992">
 &gt;&gt;&gt; import math
 &gt;&gt;&gt; math = "Mathe ist toll"
 &gt;&gt;&gt; math.pi
@@ -4125,7 +4137,7 @@ Syntax dafür lautet: <code>from &lt;Modul&gt; import &lt;Komma separierte Liste
   Funktionsnamen&gt;</code>
 </p>
 
-<pre class="example" id="orgf748aa2">
+<pre class="example" id="org532abc6">
 &gt;&gt;&gt; from math import pi, cos
 &gt;&gt;&gt; round(pi, 10)
 3.1415926536
@@ -4139,7 +4151,7 @@ man sämtliche Funktionen eines Moduls in den eigenen Namespace
 laden:
 </p>
 
-<pre class="example" id="orgc9a13b3">
+<pre class="example" id="org24503f1">
 &gt;&gt;&gt; from string import *
 &gt;&gt;&gt; print(ascii_letters)
 abcdefghijklmnopqrstuvwxyzABCDEFGHIJKLMNOPQRSTUVWXYZ
@@ -4150,8 +4162,8 @@ abcdefghijklmnopqrstuvwxyzABCDEFGHIJKLMNOPQRSTUVWXYZ
 </div>
 
 
-<div id="outline-container-orge6d52cf" class="outline-3">
-<h3 id="orge6d52cf"><span class="section-number-3">5.2.</span> Der Paketmanager PIP </h3>
+<div id="outline-container-org34b9e1d" class="outline-3">
+<h3 id="org34b9e1d"><span class="section-number-3">5.2.</span> Der Paketmanager PIP </h3>
 <div class="outline-text-3" id="text-5-2">
 <p>
 Die Module der Standardbibliothek stehen nach der Installation von
@@ -4187,7 +4199,7 @@ Die Installation eines Paketes, das Sie auf PyPi gefunden haben,
 installiere Sie mit dem Befehl <code>pip install &lt;Modulname&gt;</code>.
 </p>
 
-<pre class="example" id="org2c3daae">
+<pre class="example" id="orgbe465d6">
 pip3 install sqlalchemy
 
 Collecting sqlalchemy
@@ -4220,7 +4232,7 @@ installieren. Dann können Sie mit dem &bdquo;Schalter&ldquo; <code>--user</code
 lokal nur für den aktuell angemeldeten Benutzer installieren.
 </p>
 
-<pre class="example" id="org4331c53">
+<pre class="example" id="org41b061d">
    pip install --user sqlalchemy
 </pre>
 
@@ -4284,7 +4296,7 @@ Die Syntax sieht so aus: <code>import &lt;Modulname&gt; as &lt;Abkürzung&gt;</c
 <code>matplotlib</code> sehe das folgendermaßen aus:
 </p>
 
-<pre class="example" id="org9655194">
+<pre class="example" id="orga9c0535">
 &gt;&gt;&gt; import matplotlib.pyplot as plt
 &gt;&gt;&gt; from matplotlib import pyplot as plt
 </pre>
@@ -4294,7 +4306,7 @@ Beide Varianten sind möglich. Man greift dann über die vergebene
 Abkürzung auf die Methoden zu.
 </p>
 
-<pre class="example" id="org4499f2c">
+<pre class="example" id="org4cf273f">
 &gt;&gt;&gt; plt.plot([2, 4, 8, 16, 32])
 [&lt;matplotlib.lines.Line2D object at 0x127cd1870&gt;]
 &gt;&gt;&gt; plt.show()
@@ -4310,8 +4322,8 @@ Standardabkürzung für <code>matplotlib.pyplot</code>.
 </div>
 
 
-<div id="outline-container-org12c0f03" class="outline-3">
-<h3 id="org12c0f03"><span class="section-number-3">5.3.</span> Übung</h3>
+<div id="outline-container-org414d608" class="outline-3">
+<h3 id="org414d608"><span class="section-number-3">5.3.</span> Übung</h3>
 <div class="outline-text-3" id="text-5-3">
 <ul class="org-ul">
 <li>Installieren Sie mit pip die Module <i>NumPy</i> und <i>Matplotlib</i>.</li>
@@ -4331,8 +4343,8 @@ Sie dann die Funktion <code>show()</code> aus <code>matplotlib.pyplot</code> auf
 </div>
 
 
-<div id="outline-container-orgf1d2815" class="outline-2">
-<h2 id="orgf1d2815"><span class="section-number-2">6.</span> Skripte erstellen und ausführen </h2>
+<div id="outline-container-orge7646a7" class="outline-2">
+<h2 id="orge7646a7"><span class="section-number-2">6.</span> Skripte erstellen und ausführen </h2>
 <div class="outline-text-2" id="text-6">
 <p>
 Nun sind wir an einem Punkt angekommen, an dem uns das Ausführen von
@@ -4344,8 +4356,8 @@ ein Compiler ist, erfahren wir gleich noch.
 </p>
 </div>
 
-<div id="outline-container-org56118d5" class="outline-3">
-<h3 id="org56118d5"><span class="section-number-3">6.1.</span> Python Skripte</h3>
+<div id="outline-container-orgb8297fd" class="outline-3">
+<h3 id="orgb8297fd"><span class="section-number-3">6.1.</span> Python Skripte</h3>
 <div class="outline-text-3" id="text-6-1">
 <p>
 Ein Python Skript ist eine einfache Textdatei, die auf <code>.py</code> endet
@@ -4357,7 +4369,7 @@ mit einem einfachen Konsolenprogramm wie <i>Vim</i>. Es gibt aber
 spezielle Editoren und sog. IDEs (Intgrated Development Environments)
 für das Programmieren. Diese bieten eine farbliche Unterscheidung
 von Codeteilen, Autovervollständigung und vieles mehr. Mehr über
-Editoren erfahren Sie <a href="#orgb49e976">weiter unten</a>.
+Editoren erfahren Sie <a href="#org82fd048">weiter unten</a>.
 </p>
 
 <p>
@@ -4393,7 +4405,7 @@ kann dann in der Kommandozeile beobachtet werden (nachdem Sie einen
 Wert für den Radius eingegeben haben).
 </p>
 
-<pre class="example" id="org44f3d2f">
+<pre class="example" id="orgf4fc031">
 Berechung des Kreisumfangs
 --------------------------
 
@@ -4440,7 +4452,7 @@ Verzeichnisses <code>cd ..\&lt;Unterverzeichnis&gt;</code>.
 </p>
 
 
-<div id="org9f5adaf" class="figure">
+<div id="org2d99bcc" class="figure">
 <p><img src="figs/folder_movement.png" alt="folder_movement.png" />
 </p>
 </div>
@@ -4457,7 +4469,7 @@ ein.
 </p>
 
 
-<div id="org5f8a024" class="figure">
+<div id="orgc9ba38c" class="figure">
 <p><img src="figs/ls_command.png" alt="ls_command.png" />
 </p>
 </div>
@@ -4516,8 +4528,8 @@ ein.
 </div>
 
 
-<div id="outline-container-org6d730ef" class="outline-3">
-<h3 id="org6d730ef"><span class="section-number-3">6.2.</span> Was passiert beim Ausführen eines Skripts?</h3>
+<div id="outline-container-org63a22f8" class="outline-3">
+<h3 id="org63a22f8"><span class="section-number-3">6.2.</span> Was passiert beim Ausführen eines Skripts?</h3>
 <div class="outline-text-3" id="text-6-2">
 <p>
 Vereinfacht gesagt führt Python den gesamten Code, der in der
@@ -4528,8 +4540,8 @@ was genau passiert im Hintergrund?
 </p>
 </div>
 
-<div id="outline-container-orgb0dcbfe" class="outline-4">
-<h4 id="orgb0dcbfe"><span class="section-number-4">6.2.1.</span> Ein kleiner historischer Abriss</h4>
+<div id="outline-container-org3ce4316" class="outline-4">
+<h4 id="org3ce4316"><span class="section-number-4">6.2.1.</span> Ein kleiner historischer Abriss</h4>
 <div class="outline-text-4" id="text-6-2-1">
 <p>
 Wird Python Code ausgeführt passieren scheinbar <i>magische</i> Dinge.
@@ -4542,7 +4554,7 @@ das, was in Ihrem Python Skript steht <i>nicht</i>. Er versteht nur sog.
 </p>
 
 
-<div id="org153e586" class="figure">
+<div id="orgac525b4" class="figure">
 <p><img src="figs/machine_code.jpeg" alt="machine_code.jpeg" />
 </p>
 </div>
@@ -4633,8 +4645,8 @@ Sprache, die der Prozessor &bdquo;versteht&ldquo;, nämlich Maschinen Code.
 </div>
 
 
-<div id="outline-container-org1edefa9" class="outline-4">
-<h4 id="org1edefa9"><span class="section-number-4">6.2.2.</span> Die Rolle des &bdquo;Compilers&ldquo;</h4>
+<div id="outline-container-orgde0ee81" class="outline-4">
+<h4 id="orgde0ee81"><span class="section-number-4">6.2.2.</span> Die Rolle des &bdquo;Compilers&ldquo;</h4>
 <div class="outline-text-4" id="text-6-2-2">
 <p>
 Wenn der Code den man in Python schreibt vom Rechner nicht
@@ -4656,7 +4668,7 @@ läuft es!
 </p>
 
 
-<div id="org3a186ea" class="figure">
+<div id="orgdc15bcd" class="figure">
 <p><img src="figs/python_compilation.png" alt="python_compilation.png" />
 </p>
 </div>
@@ -4664,8 +4676,8 @@ läuft es!
 </div>
 
 
-<div id="outline-container-orgde11b97" class="outline-4">
-<h4 id="orgde11b97"><span class="section-number-4">6.2.3.</span> Was ist ein &bdquo;Programm&ldquo;?</h4>
+<div id="outline-container-orgbf78cd9" class="outline-4">
+<h4 id="orgbf78cd9"><span class="section-number-4">6.2.3.</span> Was ist ein &bdquo;Programm&ldquo;?</h4>
 <div class="outline-text-4" id="text-6-2-3">
 <p>
 Ein Programm ist also die Abfolge von syntaktisch und semantisch
@@ -4729,7 +4741,7 @@ wir andere &bdquo;Wörter&ldquo;, um das gleiche auszudrücken.
 Und ein letzter Aspekt ist die Syntax. Im obigen Rezept habe ich
 verschiedene Formen von Sätzen benutzt. Ein Computerprogramm
 erwartet ein ganz klares Muster von Zeichenabfolgen. Ein Funktion
-in Python hat nun einmal die Form wie wir sie <a href="#orgd6b7901">oben</a> kennengelernt
+in Python hat nun einmal die Form wie wir sie <a href="#org269bcce">oben</a> kennengelernt
 haben. In der Programiersprache <a href="https://lisp-lang.org">LISP</a> beispielsweise müssen Befehle
 ganz anders aufgebaut sein: <code>(cond ((equal x 2) message "True") (t
     (message "False")))</code> Eine sehr eigentümliche Syntax, nicht wahr?
@@ -4751,13 +4763,13 @@ ausgeführt werden können.
 </div>
 
 
-<div id="outline-container-orgb49e976" class="outline-3">
-<h3 id="orgb49e976"><span class="section-number-3">6.3.</span> Editoren</h3>
+<div id="outline-container-org82fd048" class="outline-3">
+<h3 id="org82fd048"><span class="section-number-3">6.3.</span> Editoren</h3>
 <div class="outline-text-3" id="text-6-3">
 </div>
 
-<div id="outline-container-org8d70d57" class="outline-4">
-<h4 id="org8d70d57"><span class="section-number-4">6.3.1.</span> Warum einen speziellen Editor verwenden?</h4>
+<div id="outline-container-org55ce862" class="outline-4">
+<h4 id="org55ce862"><span class="section-number-4">6.3.1.</span> Warum einen speziellen Editor verwenden?</h4>
 <div class="outline-text-4" id="text-6-3-1">
 <p>
 Spezielle Texteditoren helfen uns bei unserer Arbeit, ein Programm
@@ -4776,7 +4788,7 @@ viel Code kann dies schnell sehr unübersichtlich werden, wie in
 diesem Beispiel:
 </p>
 
-<pre class="example" id="org58a14ae">
+<pre class="example" id="org70079cf">
 x = 72.56
 
 print(f"Hallo Stefan du bist {round(x)} kg schwer.")
@@ -4811,7 +4823,7 @@ etc. die man eingeben könnte.
 </p>
 
 
-<div id="orgf16eecc" class="figure">
+<div id="org9d20a53" class="figure">
 <p><img src="figs/intellisense.gif" alt="intellisense.gif" />
 </p>
 </div>
@@ -4833,7 +4845,7 @@ als <i>Linting</i>.
 </p>
 
 
-<div id="org5f5dfc3" class="figure">
+<div id="orgb54d347" class="figure">
 <p><img src="figs/vscode_linting.png" alt="vscode_linting.png" />
 </p>
 </div>
@@ -4867,8 +4879,8 @@ sind die Editoren noch durch Plugins erweiterbar.
 </div>
 
 
-<div id="outline-container-org4eba398" class="outline-4">
-<h4 id="org4eba398"><span class="section-number-4">6.3.2.</span> Welchen Editor sollte man verwenden?</h4>
+<div id="outline-container-org61b01a1" class="outline-4">
+<h4 id="org61b01a1"><span class="section-number-4">6.3.2.</span> Welchen Editor sollte man verwenden?</h4>
 <div class="outline-text-4" id="text-6-3-2">
 <p>
 Es gibt in den Weiten des Internets eine schier unüberschaubare
@@ -4954,8 +4966,8 @@ sehr schnell schlechten Programmierstil an</a>.</li>
 </div>
 
 
-<div id="outline-container-orga79b22a" class="outline-3">
-<h3 id="orga79b22a"><span class="section-number-3">6.4.</span> Kommentare setzen</h3>
+<div id="outline-container-org9b2dd4e" class="outline-3">
+<h3 id="org9b2dd4e"><span class="section-number-3">6.4.</span> Kommentare setzen</h3>
 <div class="outline-text-3" id="text-6-4">
 <p>
 Je mehr Sie programmieren und je komplexer die Aufgaben und
@@ -5064,8 +5076,8 @@ angewöhnen, die englische Sprache zu benutzen.
 </div>
 
 
-<div id="outline-container-orga8cd858" class="outline-3">
-<h3 id="orga8cd858"><span class="section-number-3">6.5.</span> Wie sollte &bdquo;guter&ldquo; Code aussehen?</h3>
+<div id="outline-container-orgc0284a5" class="outline-3">
+<h3 id="orgc0284a5"><span class="section-number-3">6.5.</span> Wie sollte &bdquo;guter&ldquo; Code aussehen?</h3>
 <div class="outline-text-3" id="text-6-5">
 <p>
 &bdquo;Guter&ldquo; Code definiert sich sicherlich nicht über das Aussehen,
@@ -5119,13 +5131,13 @@ lesen oder <a href="https://zrezai-dev.de/python/pep-8/">hier</a> eine gute Zusa
 </div>
 
 
-<div id="outline-container-org8641577" class="outline-3">
-<h3 id="org8641577"><span class="section-number-3">6.6.</span> Aufgaben</h3>
+<div id="outline-container-org81c7872" class="outline-3">
+<h3 id="org81c7872"><span class="section-number-3">6.6.</span> Aufgaben</h3>
 <div class="outline-text-3" id="text-6-6">
 </div>
 
-<div id="outline-container-org8f4ac4b" class="outline-4">
-<h4 id="org8f4ac4b"><span class="section-number-4">6.6.1.</span> Wann ist Ostern?</h4>
+<div id="outline-container-orge22918a" class="outline-4">
+<h4 id="orge22918a"><span class="section-number-4">6.6.1.</span> Wann ist Ostern?</h4>
 <div class="outline-text-4" id="text-6-6-1">
 <p>
 Schreiben Sie ein Programm, das eine Jahreszahl entgegen nimmt und
@@ -5154,8 +5166,8 @@ können Sie folgenden <i>anonymen Gregorianischen Computus</i> benutzen:
 </div>
 
 
-<div id="outline-container-org0c52482" class="outline-4">
-<h4 id="org0c52482"><span class="section-number-4">6.6.2.</span> Wie hoch ist die Blutalkoholkonzentration?</h4>
+<div id="outline-container-orga37c51c" class="outline-4">
+<h4 id="orga37c51c"><span class="section-number-4">6.6.2.</span> Wie hoch ist die Blutalkoholkonzentration?</h4>
 <div class="outline-text-4" id="text-6-6-2">
 <p>
 Schreiben Sie ein Programm, das über die sog. <a href="https://de.wikipedia.org/wiki/Blutalkoholkonzentration#Widmark-Formel">Widmark-Formel</a> die
@@ -5195,8 +5207,8 @@ wobei
 
 
 
-<div id="outline-container-org5e41f62" class="outline-2">
-<h2 id="org5e41f62"><span class="section-number-2">7.</span> eigene Funktionen schreiben </h2>
+<div id="outline-container-orge94e928" class="outline-2">
+<h2 id="orge94e928"><span class="section-number-2">7.</span> eigene Funktionen schreiben </h2>
 <div class="outline-text-2" id="text-7">
 <blockquote>
 <p>
@@ -5215,8 +5227,8 @@ ist das Schreiben eigener Funktionen.
 </blockquote>
 </div>
 
-<div id="outline-container-orgfcffbe1" class="outline-3">
-<h3 id="orgfcffbe1"><span class="section-number-3">7.1.</span> Funktionen definieren</h3>
+<div id="outline-container-org866d461" class="outline-3">
+<h3 id="org866d461"><span class="section-number-3">7.1.</span> Funktionen definieren</h3>
 <div class="outline-text-3" id="text-7-1">
 <p>
 Funktionen sind dazu da, Code, der immer wieder ausgeführt wird, zu
@@ -5245,7 +5257,7 @@ dem wir unsere Berechnungen ausführen. Die ganze Syntax sieht also
 folgendermaßen aus:
 </p>
 
-<pre class="example" id="orga18cfff">
+<pre class="example" id="org5dfba9f">
 def &lt;Name der Funktion&gt;(&lt;Argumente&gt;):
 </pre>
 
@@ -5372,8 +5384,8 @@ ist.
 </div>
 
 
-<div id="outline-container-org0ee3605" class="outline-3">
-<h3 id="org0ee3605"><span class="section-number-3">7.2.</span> Scope von Funktionen</h3>
+<div id="outline-container-org8e5fcb5" class="outline-3">
+<h3 id="org8e5fcb5"><span class="section-number-3">7.2.</span> Scope von Funktionen</h3>
 <div class="outline-text-3" id="text-7-2">
 <p>
 Eine Funktion ist mehr oder weniger in sich geschlossen. Das
@@ -5407,7 +5419,7 @@ test()
 </pre>
 </div>
 
-<pre class="example" id="org0eca7ba">
+<pre class="example" id="org7252cbc">
 Wert var ausserhalb: 2.
 ID var ausserhalb: 4345168144.
 Wert var innerhalb: 4.
@@ -5425,8 +5437,8 @@ definiert wurde.
 </div>
 
 
-<div id="outline-container-org70c35f6" class="outline-3">
-<h3 id="org70c35f6"><span class="section-number-3">7.3.</span> Argumente</h3>
+<div id="outline-container-orgc627f30" class="outline-3">
+<h3 id="orgc627f30"><span class="section-number-3">7.3.</span> Argumente</h3>
 <div class="outline-text-3" id="text-7-3">
 <p>
 Sie können einer Funktion auch Defaultwerte als Argumente mit auf
@@ -5445,7 +5457,7 @@ den Weg geben:
 </pre>
 </div>
 
-<pre class="example" id="org4c67273">
+<pre class="example" id="org508a036">
 Stefan Böhringer
 Stefan irgendwer
 So ein Böhringer
@@ -5465,7 +5477,7 @@ beliebig setzen:
 </pre>
 </div>
 
-<pre class="example" id="org41f4441">
+<pre class="example" id="org797755b">
 Böhringer Stefan
 Stefan Böhringer
 </pre>
@@ -5473,8 +5485,8 @@ Stefan Böhringer
 </div>
 
 
-<div id="outline-container-orgfe3f385" class="outline-3">
-<h3 id="orgfe3f385"><span class="section-number-3">7.4.</span> Klarheit mit Docstrings, Hints und Assertions</h3>
+<div id="outline-container-org978126b" class="outline-3">
+<h3 id="org978126b"><span class="section-number-3">7.4.</span> Klarheit mit Docstrings, Hints und Assertions</h3>
 <div class="outline-text-3" id="text-7-4">
 <p>
 Gute Namen sollten eigentlich erklären, was eine Funktion tut. Bei
@@ -5483,6 +5495,10 @@ aber so komplex, dass alleine über Namen und ist er noch so gut,
 nicht hunderprozent gesagt wird, was die Funktion tut und was man
 von ihr wortwörtlich erwarten kann (gemeint ist natürlich: was der
 Rückgabewert ist).
+</p>
+
+<p>
+<b>Docstrings</b>
 </p>
 
 <p>
@@ -5532,13 +5548,17 @@ schließender Klammer und Doppelpunkt an.
 </p>
 
 <p>
+<b>Type Hints</b>
+</p>
+
+<p>
 Was ist aber, wenn die Funktion mit einem falschen Eingabewert
 aufgerufen wird? Beispielsweise eine negative Zahl für Kilogramm
 oder ein Wert größer 2,5 für die Meter bei der Berechnung des BMI.
 </p>
 
 <p>
-Hier hilft und das Schlüsselwort <code>assert</code>. Es wird folgendermaßen
+Hier hilft uns das Schlüsselwort <code>assert</code>. Es wird folgendermaßen
 benutzt: <code>assert &lt;logische Operation, die Wahrheitswert zurückgibt&gt;,
    &lt;String für Fehlermeldung&gt;</code>.
 </p>
@@ -5558,7 +5578,7 @@ greeting(<span style="color: #79a8ff;">"bla"</span>, 200)
 </pre>
 </div>
 
-<pre class="example" id="org5184621">
+<pre class="example" id="org3e01117">
 AssertionError: Anzahl Mails kann nicht negativ sein!
 
 AssertionError: Bitte einen Usernamen mit min. 4 Zeichen eingeben!
@@ -5567,15 +5587,15 @@ AssertionError: Bitte einen Usernamen mit min. 4 Zeichen eingeben!
 </div>
 
 
-<div id="outline-container-org389fdd4" class="outline-3">
-<h3 id="org389fdd4"><span class="section-number-3">7.5.</span> Übungen</h3>
+<div id="outline-container-org51914ee" class="outline-3">
+<h3 id="org51914ee"><span class="section-number-3">7.5.</span> Übungen</h3>
 <div class="outline-text-3" id="text-7-5">
 <ul class="org-ul">
 <li>Schreiben Sie eine Funktion <code>replace_umlauts()</code>, die einen String
 entgegen nimmt und alle deutschen Umlaute (Ä,ä,Ö,ö,Ü,ü,ß), durch
 die Äquivalente (Ae,ae,Oe,oe,Ue,ue,ss) ersetzt.</li>
 <li>Schreiben Sie eine Funktion, die drei Zahlen entgegen nimmt und
-deren <i>Summe</i>, <i>Produkt</i>, sowie die kleinste und größte Zahl inder
+deren <i>Summe</i>, <i>Produkt</i>, sowie die kleinste und größte Zahl in der
 Konsole ausgibt. Wie würden Sie die Funktion nennen?</li>
 </ul>
 </div>
@@ -5583,13 +5603,13 @@ Konsole ausgibt. Wie würden Sie die Funktion nennen?</li>
 </div>
 
 
-<div id="outline-container-org2fa2480" class="outline-2">
-<h2 id="org2fa2480"><span class="section-number-2">8.</span> Kontrollstrukturen </h2>
+<div id="outline-container-orga781873" class="outline-2">
+<h2 id="orga781873"><span class="section-number-2">8.</span> Kontrollstrukturen </h2>
 <div class="outline-text-2" id="text-8">
 </div>
 
-<div id="outline-container-orgd34d2e0" class="outline-3">
-<h3 id="orgd34d2e0"><span class="section-number-3">8.1.</span> Die <code>while</code> Schleife</h3>
+<div id="outline-container-org3f66ff1" class="outline-3">
+<h3 id="org3f66ff1"><span class="section-number-3">8.1.</span> Die <code>while</code> Schleife</h3>
 <div class="outline-text-3" id="text-8-1">
 <div class="org-src-container">
 <pre class="src src-python"><span style="color: #00d3d0;">i</span> = 0
@@ -5620,7 +5640,9 @@ Doppelpunkt. Der While-Block selbst ist durch Einrückung
 gekennzeichnet. Ist der Compiler am Ende des While-Blocks
 angekommen, beginnt er wieder von vorne und prüft die Bedingung.
 Ist Sie wahr, wird der Code im While-Block wieder durchlaufen und
-ausgeführt,
+ausgeführt, und so weiter, so lange, bis die logische Prüfung am
+Kopf der Schleife einmal <code>False</code> ergibt. Dann wird die Schleife
+übersprungen und der Code nach der Schleife ausgeführt.
 </p>
 
 <blockquote>
@@ -5629,14 +5651,14 @@ ausgeführt,
 </p>
 
 <p>
-Sie müssen darauf achten, dass die Bedingung der while Schleife so
+Sie müssen darauf achten, dass die Bedingung der While-Schleife so
 gesetzt ist, dass sie durch den nachfogenden Code auch <b>falsch</b>
 werden kann und die Schleife damit zu irgendeinem Zeitpunkt
 terminiert. Ist dies nicht der Fall, so generieren Sie eine
 <b>Endlosschleife</b> die ewig läuft. Testen Sie einmal diesen Code:
 </p>
 
-<pre class="example" id="org490802c">
+<pre class="example" id="orgccf28bb">
 x = 0
 
 while x &lt;= 0:
@@ -5686,7 +5708,7 @@ uns kurz eine Beispiel damit an:
 
 
 <p>
-Wir begannen also bei 0. Damit konnten wie Index 0 im String
+Wir begannen also bei 0. Damit konnten wir Index 0 im String
 ansprechen und somit das erste Zeichen &bdquo;1&ldquo; ausgeben. Danach haben
 wir i um 1 erhöht. Dies ist wichtig, denn sonst würde die Schleife
 nicht terminieren und wir würden auch im String nicht weiter
@@ -5718,19 +5740,19 @@ Sie also gut auf Ihre Bedingungen.
 </div>
 
 
-<div id="outline-container-orgb9fc2ea" class="outline-3">
-<h3 id="orgb9fc2ea"><span class="section-number-3">8.2.</span> Die <code>for</code> Schleife</h3>
+<div id="outline-container-orga9474f9" class="outline-3">
+<h3 id="orga9474f9"><span class="section-number-3">8.2.</span> Die <code>for</code> Schleife</h3>
 <div class="outline-text-3" id="text-8-2">
 <p>
 Gerade für das Iterieren über sequentielle Datentypen wie den
-Strings, oder Listen (die wir gleich noch kenne lernen werden),
+Strings, oder Listen (die wir gleich noch kennenlernen werden),
 Arrays, Vektoren und dergleichen, gibt es eine wesentlich
 einfachere Methode, als die Verwendung einer While-Schleife.
 Hierfür benutzt man am besten eine For-Schleife.
 </p>
 
 <p>
-Die Syntax sieht wie folgt aus: <code>for &lt;temp. Variable&gt; in &lt;Iterable&gt;:</code>.
+Die Syntax sieht wie folgt aus: <code>for &lt;temporäre Variable&gt; in &lt;Iterable&gt;:</code>.
 </p>
 
 <div class="org-src-container">
@@ -5764,8 +5786,8 @@ Das macht den Code wieder lesbarer.
 </div>
 
 
-<div id="outline-container-org50719ea" class="outline-4">
-<h4 id="org50719ea"><span class="section-number-4">8.2.1.</span> Die <code>range()</code> Funktion</h4>
+<div id="outline-container-org9d4173a" class="outline-4">
+<h4 id="org9d4173a"><span class="section-number-4">8.2.1.</span> Die <code>range()</code> Funktion</h4>
 <div class="outline-text-4" id="text-8-2-1">
 <p>
 Bei der Verwendung einer For-Schleife als <i>Zählschleife</i> kommt uns
@@ -5827,7 +5849,7 @@ Wir können auch die Größe der Schritte angeben:
 </pre>
 </div>
 
-<pre class="example" id="orge5ebafc">
+<pre class="example" id="orgd69ce33">
     0
     2
     4
@@ -5861,7 +5883,7 @@ eine <i>negative Schrittzählung</i> angeben!
 </pre>
 </div>
 
-<pre class="example" id="org3573a2f">
+<pre class="example" id="org8c7f3e4">
     2
     1
     0
@@ -5876,7 +5898,7 @@ eine <i>negative Schrittzählung</i> angeben!
 </pre>
 
 <p>
-Dies können wir nun auch für das Iterieren über eine Sequent nutzen:
+Dies können wir nun auch für das Iterieren über eine Sequenz nutzen:
 </p>
 
 <div class="org-src-container">
@@ -5887,7 +5909,7 @@ Dies können wir nun auch für das Iterieren über eine Sequent nutzen:
 </pre>
 </div>
 
-<pre class="example" id="orgf0ca723">
+<pre class="example" id="orgf355b40">
 o
 c
 a
@@ -5901,16 +5923,16 @@ c
 </div>
 
 
-<div id="outline-container-org57b373e" class="outline-3">
-<h3 id="org57b373e"><span class="section-number-3">8.3.</span> Verzweigungen / Fallunterscheidungen</h3>
+<div id="outline-container-orgc47851a" class="outline-3">
+<h3 id="orgc47851a"><span class="section-number-3">8.3.</span> Verzweigungen / Fallunterscheidungen</h3>
 <div class="outline-text-3" id="text-8-3">
 </div>
 
-<div id="outline-container-org9051623" class="outline-4">
-<h4 id="org9051623"><span class="section-number-4">8.3.1.</span> die if-Anweisung</h4>
+<div id="outline-container-org9841511" class="outline-4">
+<h4 id="org9841511"><span class="section-number-4">8.3.1.</span> die if-Anweisung</h4>
 <div class="outline-text-4" id="text-8-3-1">
 <p>
-Eines der wichtigsten Konzepte beim Programmieren, das ist wir
+Eines der wichtigsten Konzepte beim Programmieren, das wir
 jetzt endlich kennen lernen, ist der Einsatz von
 Fallunterscheidungen. Hierbei kann ich fragen: &bdquo;Wenn das und das
 der Fall ist, tue dies, wenn nicht, tue das!&ldquo;
@@ -5997,7 +6019,7 @@ Der obige Code dient als gutes Beispiel für verschachtelte Blöcke.
 </p>
 
 
-<div id="orgae65bcb" class="figure">
+<div id="orgde30caa" class="figure">
 <p><img src="figs/codeblocks.png" alt="codeblocks.png" />
 </p>
 </div>
@@ -6013,11 +6035,11 @@ Code nicht anders strukturieren können.
 </div>
 
 
-<div id="outline-container-orge52aaa1" class="outline-4">
-<h4 id="orge52aaa1"><span class="section-number-4">8.3.2.</span> die else-Anweisung</h4>
+<div id="outline-container-org3ca9caa" class="outline-4">
+<h4 id="org3ca9caa"><span class="section-number-4">8.3.2.</span> die else-Anweisung</h4>
 <div class="outline-text-4" id="text-8-3-2">
 <p>
-Bis jetzt haben wir aber nur einen Weg eine If-Verzweigung
+Bis jetzt haben wir aber nur einen Weg einer If-Verzweigung
 genommen. Vielleicht sollten wir auch etwas ausgeben, wenn der/die
 Spieler*in die geheime Zahl nicht richtig erraten hat. Wir sollten
 dann eine Hilfestellung anbieten, die sagt, ob die gesuchte Zahl
@@ -6026,7 +6048,7 @@ Programm um die Logik: &bdquo;<b>Falls</b> die Eingabe gleich der geheimen Zahl
 ist, beende das Programm, <b>anderenfalls</b> gib eine Hilfestellung aus.&ldquo;
 Der englische Begriff für &bdquo;anderenfalls&ldquo; ist &bdquo;else&ldquo; und <code>else</code> ist
 auch genau das Schlüsselwort, mit dem wir den Zweig einleiten, der
-zum Tragen kommt, wenn die Falls-Bedingung nicht wahr ist.
+zum Tragen kommt, falls die Wenn-Bedingung nicht wahr ist.
 </p>
 
 <div class="org-src-container">
@@ -6040,7 +6062,7 @@ zum Tragen kommt, wenn die Falls-Bedingung nicht wahr ist.
 </pre>
 </div>
 
-<pre class="example" id="org1189eaa">
+<pre class="example" id="org3b8613c">
    Buh!
    Buh!
    Buh!
@@ -6088,7 +6110,7 @@ oder kleiner der gesuchten? <b>Wenn</b> sie kleiner ist, soll der Hinweis
 <code>hint</code> natürlich &bdquo;kleiner&ldquo; lauten, <b>anderenfalls</b> eben &bdquo;größer&ldquo;. Solch
 eine Fallunterscheidung kann man in Python direkt an den
 Zuweisungsoperator übergeben. Dies nennt man dann auch einen
-<i>Ternären Operator</i>. Auf jeden Fall macht es das ganze wesentlich
+<i>Ternären Operator</i>. Auf jeden Fall macht es das Ganze wesentlich
 einfacher zu lesen und entspricht auch irgenwie unserer natürlichen
 Sprechweise: &bdquo;&sbquo;Hint&lsquo; soll &sbquo;größer&lsquo; heißen, wenn &sbquo;inpt&lsquo; kleiner als
 &sbquo;secret&lsquo; ist, andernfall &sbquo;kleiner&lsquo;.&ldquo;
@@ -6102,21 +6124,21 @@ Sprechweise: &bdquo;&sbquo;Hint&lsquo; soll &sbquo;größer&lsquo; heißen, wenn
 <p>
 Der ternäre Operator ermöglicht eine Fallunterscheidung direkt bei
 der Zuweisung eines Wertes zu einer Variablen. Er ist
-folgendermaßen aufgabaut: <code>&lt;Variable&gt; = x if &lt;Bedingung&gt; else y</code>.
+folgendermaßen aufgebaut: <code>&lt;Variable&gt; = x if &lt;Bedingung&gt; else y</code>.
 </p>
 </blockquote>
 </div>
 </div>
 
 
-<div id="outline-container-orgc696d42" class="outline-4">
-<h4 id="orgc696d42"><span class="section-number-4">8.3.3.</span> weitere Bedingungen mit elif</h4>
+<div id="outline-container-org68c9c62" class="outline-4">
+<h4 id="org68c9c62"><span class="section-number-4">8.3.3.</span> weitere Bedingungen mit elif</h4>
 <div class="outline-text-4" id="text-8-3-3">
 <p>
 Was ist aber, wenn wir dem/der Spieler*in die Möglichkeit geben
 wollen, z.B. durch die Eingabe der &bdquo;0&ldquo;, das Spiel zu beenden. Dies
 macht in unserer Fallunterscheidung ja einen weiteren Zweig auf. Es
-gibt nun drei Möglichekeiten:
+gibt nun drei Möglichkeiten:
 </p>
 
 <ol class="org-ol">
@@ -6145,7 +6167,7 @@ Schlüsselwort <code>elif</code> ein.
 </pre>
 </div>
 
-<pre class="example" id="org01cb00c">
+<pre class="example" id="org4029ae5">
    Buh!
    Buh!
    Buh!
@@ -6192,20 +6214,21 @@ Wir erweitern unsere Schleife also wiederum um die neue zusätzliche Bedingung:
 </div>
 
 
-<div id="outline-container-org8824ef8" class="outline-4">
-<h4 id="org8824ef8"><span class="section-number-4">8.3.4.</span> Bedingungen auf Fehler prüfen</h4>
+<div id="outline-container-org7e7224b" class="outline-4">
+<h4 id="org7e7224b"><span class="section-number-4">8.3.4.</span> Bedingungen auf Fehler prüfen</h4>
 <div class="outline-text-4" id="text-8-3-4">
 <p>
 Was ist aber nun, wenn wir die Eingaben auch noch überprüfen
 wollen? Schließlich könnten in unserem Programm auch negative
 Zahlen, Dezimalzahlen oder andere Zeichenketten eingegeben werden.
 Solche unerwünschten Angaben sollten wir abfangen. Wir sollten also
-zuerst prüfen, ob die Eingabe korrekt ist, oder eine Fehlermeldung
-zurückgibt. Im Prinzip ist dies auch eine Art if-Anweisung.
-Allerdings heißt diese Anweisung in Python try-except-Anweisung.
-Der Aufbau ist ähnlich der if-else-Anweisung, nur dass der <code>try:</code>
-Block ausgeführt und auf Fehler überprüft wird. Mit <code>except</code> kann man
-auf solch einen Fehler reagieren und in dessen Fall etwas tun.
+zuerst prüfen, ob die Eingabe korrekt ist, oder Python eine
+Fehlermeldung zurückgibt. Im Prinzip ist dies auch eine Art
+if-Anweisung. Allerdings heißt diese Anweisung in Python
+try-except-Anweisung. Der Aufbau ist ähnlich der if-else-Anweisung,
+nur dass der <code>try:</code> Block ausgeführt und auf Fehler überprüft wird.
+Mit <code>except</code> kann man auf solch einen Fehler reagieren und in dessen
+Fall etwas tun.
 </p>
 
 <p>
@@ -6247,7 +6270,7 @@ das genau? Trifft der Compiler auf dieses Schlüsselwort, so wird
 der Rest der Schleife <i>übersprungen</i> und einfach wieder von vorne
 begonnen. Und genau das wollen wir ja. Wenn jemand etwas eingibt,
 das sich nicht in eine Ganzzahl überführen lässt, wollen wir beim
-Auftreten einer ValueErrors daran erinnern, dass eine Zahl
+Auftreten eines ValueErrors daran erinnern, dass eine Zahl
 eingegeben werden soll und wir wollen die Schleife wieder von vorne
 starten und erneut die Chance zur Eingabe geben. Diese falsche
 Eingabe werten wir übrigens nicht als Versuch. Wollten wir sie als
@@ -6275,7 +6298,7 @@ Anweisung. Hier ein Beispiel zur Verwendung:
 </pre>
 </div>
 
-<pre class="example" id="orgc3c3522">
+<pre class="example" id="org6805c7e">
 P
 y
 t
@@ -6292,7 +6315,9 @@ die bei negativer Prüfung ja einen <i>AssertionError</i> auswirft.
 <p>
 Unser vollständiges Programm sieht dann wie folgt aus (wir haben
 auch noch für etwas mehr Flexibilität Start- und Endpunkt des
-Intervalls hinzugefügt, sowie Type Hints):
+Intervalls als Variablen und Type Hints hinzugefügt - ausserdem
+haben wir unsere behelfsmäẞige Abbruchbedingung ersetzt und ein
+<code>break</code> gesetzt.):
 </p>
 
 <div class="org-src-container">
@@ -6305,10 +6330,9 @@ Intervalls hinzugefügt, sowie Type Hints):
 <span style="color: #f78fe7;">print</span>(<span style="color: #79a8ff;">"An welche Zahl denke ich? (Geben Sie 0 zum Beenden ein.)"</span>)
 
 <span style="color: #00d3d0;">secret</span>: <span style="color: #f78fe7;">int</span> = random.randint(start, stop)
-<span style="color: #00bcff;">exit</span>: <span style="color: #f78fe7;">bool</span> = <span style="color: #00bcff;">False</span>
 <span style="color: #00d3d0;">tries</span>: <span style="color: #f78fe7;">int</span> = 1
 
-<span style="color: #b6a0ff;">while</span> <span style="color: #b6a0ff;">not</span> <span style="color: #00bcff;">exit</span>:
+<span style="color: #b6a0ff;">while</span> <span style="color: #00bcff;">True</span>:
 
     <span style="color: #b6a0ff;">try</span>:
         inpt = <span style="color: #f78fe7;">int</span>(<span style="color: #f78fe7;">input</span>(<span style="color: #79a8ff;">"Raten Sie: "</span>))
@@ -6326,13 +6350,13 @@ Intervalls hinzugefügt, sowie Type Hints):
 
         <span style="color: #f78fe7;">print</span>(f<span style="color: #79a8ff;">"Richtig! Sie haben es in </span>{tries}<span style="color: #79a8ff;"> Versuchen erraten."</span>)
 
-        <span style="color: #00bcff;">exit</span> = <span style="color: #00bcff;">True</span>
+        <span style="color: #b6a0ff;">break</span>
 
     <span style="color: #b6a0ff;">elif</span> inpt == 0:
 
         <span style="color: #f78fe7;">print</span>(<span style="color: #79a8ff;">"Tsch&#252;ss!"</span>)
 
-        <span style="color: #00bcff;">exit</span> =<span style="color: #00bcff;">True</span>
+        <span style="color: #b6a0ff;">break</span>
 
     <span style="color: #b6a0ff;">else</span>:
 
@@ -6348,13 +6372,13 @@ Intervalls hinzugefügt, sowie Type Hints):
 </div>
 
 
-<div id="outline-container-orgd579a4d" class="outline-3">
-<h3 id="orgd579a4d"><span class="section-number-3">8.4.</span> Aufgaben </h3>
+<div id="outline-container-org4056197" class="outline-3">
+<h3 id="org4056197"><span class="section-number-3">8.4.</span> Aufgaben </h3>
 <div class="outline-text-3" id="text-8-4">
 </div>
 
-<div id="outline-container-org2fe4ea1" class="outline-4">
-<h4 id="org2fe4ea1"><span class="section-number-4">8.4.1.</span> Konsonant oder Vokal?</h4>
+<div id="outline-container-orge2d9cdc" class="outline-4">
+<h4 id="orge2d9cdc"><span class="section-number-4">8.4.1.</span> Konsonant oder Vokal?</h4>
 <div class="outline-text-4" id="text-8-4-1">
 <p>
 Schreiben Sie ein Programm, das vom Benutzer ein Zeichen entgegen
@@ -6367,8 +6391,8 @@ einen Vokal.&ldquo; ausgeben.
 </div>
 
 
-<div id="outline-container-org390dd41" class="outline-4">
-<h4 id="org390dd41"><span class="section-number-4">8.4.2.</span> Verschachtelte Schleifen</h4>
+<div id="outline-container-org1f40cac" class="outline-4">
+<h4 id="org1f40cac"><span class="section-number-4">8.4.2.</span> Verschachtelte Schleifen</h4>
 <div class="outline-text-4" id="text-8-4-2">
 <p>
 Schreiben Sie ein Programm, dass die Zahlen von 1 bis 9999 ausgibt, aber mit führenden Nullen! Also:
@@ -6396,8 +6420,8 @@ einer einzigen for-Schleife?</li>
 </div>
 
 
-<div id="outline-container-org0d97ef1" class="outline-4">
-<h4 id="org0d97ef1"><span class="section-number-4">8.4.3.</span> Absteigende Dominosteine</h4>
+<div id="outline-container-org809aea0" class="outline-4">
+<h4 id="org809aea0"><span class="section-number-4">8.4.3.</span> Absteigende Dominosteine</h4>
 <div class="outline-text-4" id="text-8-4-3">
 <p>
 Ein Dominostein soll ein String sein, der wie folgt aufgebaut ist
@@ -6408,7 +6432,7 @@ rechtsbündig sein. Setzen Sie da Ganze nur mit For-Schleifen um.
 Folgende Ausgabe sollten Sie erhalten:
 </p>
 
-<pre class="example" id="org91bafec">
+<pre class="example" id="org218eebe">
   (0|0)(0|1)(0|2)(0|3)(0|4)(0|5)(0|6)
        (1|1)(1|2)(1|3)(1|4)(1|5)(1|6)
             (2|2)(2|3)(2|4)(2|5)(2|6)
@@ -6421,8 +6445,8 @@ Folgende Ausgabe sollten Sie erhalten:
 </div>
 
 
-<div id="outline-container-orgb3125f9" class="outline-4">
-<h4 id="orgb3125f9"><span class="section-number-4">8.4.4.</span> Quersumme berechnen</h4>
+<div id="outline-container-orgd3e8892" class="outline-4">
+<h4 id="orgd3e8892"><span class="section-number-4">8.4.4.</span> Quersumme berechnen</h4>
 <div class="outline-text-4" id="text-8-4-4">
 <p>
 Schreiben Sie ein Programm, dass eine positiven Ganzzahl vom
@@ -6433,8 +6457,8 @@ Benutzer entgegen nimmt und die Quersumme berechnet. Also z.B.
 </div>
 
 
-<div id="outline-container-orgeb3c235" class="outline-4">
-<h4 id="orgeb3c235"><span class="section-number-4">8.4.5.</span> Bip!, Blop!, Beeebop!</h4>
+<div id="outline-container-orgf5b0bbc" class="outline-4">
+<h4 id="orgf5b0bbc"><span class="section-number-4">8.4.5.</span> Bip!, Blop!, Beeebop!</h4>
 <div class="outline-text-4" id="text-8-4-5">
 <p>
 Schreiben Sie ein Programm, dass eine Ganzzahl von der
@@ -6456,8 +6480,8 @@ ausgeben, sollte keine Zahl eingegeben werden.
 </div>
 
 
-<div id="outline-container-org9b15bc5" class="outline-4">
-<h4 id="org9b15bc5"><span class="section-number-4">8.4.6.</span> Hundejahre</h4>
+<div id="outline-container-org97b146d" class="outline-4">
+<h4 id="org97b146d"><span class="section-number-4">8.4.6.</span> Hundejahre</h4>
 <div class="outline-text-4" id="text-8-4-6">
 <p>
 Man sagt, ein Hundejahr zähle sieben Menschenjahre. Dabei wird
@@ -6476,8 +6500,8 @@ Menschenjahre das wären.
 </div>
 
 
-<div id="outline-container-org50197e4" class="outline-4">
-<h4 id="org50197e4"><span class="section-number-4">8.4.7.</span> Summe zwischen zwei beliebigen Ganzzahlen</h4>
+<div id="outline-container-org0185785" class="outline-4">
+<h4 id="org0185785"><span class="section-number-4">8.4.7.</span> Summe zwischen zwei beliebigen Ganzzahlen</h4>
 <div class="outline-text-4" id="text-8-4-7">
 <p>
 Schreiben Sie eine Funktion <code>get_sum()</code>, die zwei beliebe Integer
@@ -6505,8 +6529,8 @@ werden <i>Beispiel:</i>
 </div>
 
 
-<div id="outline-container-org171dd53" class="outline-4">
-<h4 id="org171dd53"><span class="section-number-4">8.4.8.</span> BMI Klassifikation</h4>
+<div id="outline-container-org41ec099" class="outline-4">
+<h4 id="org41ec099"><span class="section-number-4">8.4.8.</span> BMI Klassifikation</h4>
 <div class="outline-text-4" id="text-8-4-8">
 <p>
 Der sog. Body-Mass-Index, kurz BMI, berechnet sich durch folgende
@@ -6540,8 +6564,8 @@ Berechnen Sie den BMI und geben Sie die Klassifikation mit einem
 
 
 
-<div id="outline-container-org040f4cb" class="outline-4">
-<h4 id="org040f4cb"><span class="section-number-4">8.4.9.</span> Rate es!</h4>
+<div id="outline-container-org0a1e06c" class="outline-4">
+<h4 id="org0a1e06c"><span class="section-number-4">8.4.9.</span> Rate es!</h4>
 <div class="outline-text-4" id="text-8-4-9">
 <p>
 Schreiben Sie den Code des Ratespiels so um, dass nun der/die
@@ -6561,8 +6585,8 @@ sondern mit &bdquo;q&ldquo; beendet werden kann.
 </div>
 
 
-<div id="outline-container-org2e51496" class="outline-4">
-<h4 id="org2e51496"><span class="section-number-4">8.4.10.</span> Stein, Schere, Papier (Echse, Spock)</h4>
+<div id="outline-container-org5984d77" class="outline-4">
+<h4 id="org5984d77"><span class="section-number-4">8.4.10.</span> Stein, Schere, Papier (Echse, Spock)</h4>
 <div class="outline-text-4" id="text-8-4-10">
 <p>
 Schreiben Sie ein kleines Programm das Nutzer*innen gegen den
@@ -6596,8 +6620,8 @@ Wenn Sie Lust haben, erweitern Sie das Programm um folgende Regeln:
 </div>
 
 
-<div id="outline-container-org92f2550" class="outline-2">
-<h2 id="org92f2550"><span class="section-number-2">9.</span> Datenstrukturen: Collections </h2>
+<div id="outline-container-org3767e30" class="outline-2">
+<h2 id="org3767e30"><span class="section-number-2">9.</span> Datenstrukturen: Collections </h2>
 <div class="outline-text-2" id="text-9">
 <p>
 In Python gibt es vier Arten von Datenstrukturen, mit deren sich
@@ -6607,12 +6631,12 @@ Varianten davon sind: <b>Lists</b>, <b>Tuples, Dictionaries</b> und <b>Sets</b>.
 </p>
 </div>
 
-<div id="outline-container-org843f8d2" class="outline-3">
-<h3 id="org843f8d2"><span class="section-number-3">9.1.</span> Listen </h3>
+<div id="outline-container-orgfb8345e" class="outline-3">
+<h3 id="orgfb8345e"><span class="section-number-3">9.1.</span> Listen </h3>
 <div class="outline-text-3" id="text-9-1">
 <p>
 Stellen Sie sich vor, Sie machen eine kleine empirische Umfrage an
-in Ihrer Universität für eine Seminar. Darin sind fünf Aussagen
+Ihrer Universität für ein Seminar. Darin sind fünf Aussagen
 enthalten, die die Teilnehmer*innen der Studie von 1 (&bdquo;Stimme gar
 nicht zu!&ldquo;) bis 5 (&bdquo;Stimme voll und ganz zu!&ldquo;) bewerten können. 20
 Teilnehmer*innen konnten Sie für die Studie gewinnen. Nun wollen
@@ -6624,12 +6648,12 @@ Anzahl der gegebenen Antworten.
 
 <p>
 Wie würde nach unserem jetzigen Kenntnisstand solch ein Programm
-möglicherweise aussehen. Sie bräuchten ja für jedes Item und jeden
+möglicherweise aussehen? Sie bräuchten ja für jedes Item und jeden
 Teilnehmer eine Variable, in der sie die gegebene Antwort
 speichern.
 </p>
 
-<pre class="example" id="orgbe4a8c8">
+<pre class="example" id="orgbbdc9c2">
 item_1_user_1 = 3
 item_1_user_2 = 4
 item_1_user_3 = 4
@@ -6648,7 +6672,7 @@ lösen!
 
 <p>
 Wir bräuchten eine Art Container, oder Liste, in der wir alle Werte
-eine Items speichern und dann darauf zugreifen können. Und keine
+eine Items speichern und dann darauf zugreifen können. Und genau
 solch einen Container gibt es in Python, und dieser heißt auch noch
 <i>Liste</i>. <b>Lists</b> sind die fundamentalen Datenstrukturen in Python, in
 denen Sie multiple Werte und Objekte speichern können. Listen
@@ -6676,7 +6700,7 @@ Nachteil mehr als wett.
 </p>
 
 <p>
-Natürlich gibt es auch in Python Anwendungen, bei denen Sie in der
+Natürlich gibt es auch in Python Anwendungen, bei denen Sie bei der
 Verwendung von Listen an ihre Grenzen stoßen. Ein Beispiel sind
 numerische Operationen, z.B. die Berechnung großer Matrizen, wie
 man es im Bereich Data Science und maschinelles Lernen braucht.
@@ -6702,7 +6726,9 @@ ersten Items enthält, könnte demnach so aussehen:
 Listen sind <i>Iterables</i>, wie Strings! Und genauso wie Strings, kann
 man auf Listen über die eckigen Klammern zugreifen, per Slicing
 Teilbereiche herauslösen, die Länge ausgeben und noch viel mehr,
-wie wir gleich sehen werden.
+wie wir gleich sehen werden. Der Rückgabewert eines Slicings ist
+wieder eine Liste (!) - beim Zugriff auf eine einzelnes Objekt
+natürlich das Objekt selbst.
 </p>
 
 <div class="org-src-container">
@@ -6715,7 +6741,7 @@ wie wir gleich sehen werden.
 </pre>
 </div>
 
-<pre class="example" id="org7f1e102">
+<pre class="example" id="org5b23185">
    Das 5. Element: 1.
    Das letzte Element: 4.
    Elemente 5 bis 10: [1, 1, 5, 2, 2, 3].
@@ -6739,7 +6765,7 @@ können Sie sich dann auch schnell den Mittelwert berechnen lassen:
 </pre>
 </div>
 
-<pre class="example" id="orgdf7eec2">
+<pre class="example" id="orgae673ba">
    3.0
 </pre>
 
@@ -6763,8 +6789,8 @@ optimiert.
 </div>
 
 
-<div id="outline-container-orgfba5341" class="outline-4">
-<h4 id="orgfba5341"><span class="section-number-4">9.1.1.</span> Listenelemente ändern</h4>
+<div id="outline-container-org3048090" class="outline-4">
+<h4 id="org3048090"><span class="section-number-4">9.1.1.</span> Listenelemente ändern</h4>
 <div class="outline-text-4" id="text-9-1-1">
 <p>
 <b>Elemente direkt ändern</b>
@@ -6793,7 +6819,7 @@ dann können diese nachträglich so geändert werden:
 </pre>
 </div>
 
-<pre class="example" id="org49d2c7b">
+<pre class="example" id="org1e3abe1">
 2
 4
 [1, 3, 1]
@@ -6813,7 +6839,7 @@ Datentypen in Python nicht! (Man spricht übrigens von <i>mutable</i> und
 </pre>
 </div>
 
-<pre class="example" id="org7cd61dc">
+<pre class="example" id="orgebc33f2">
 TypeError: 'str' object does not support item assignment
 </pre>
 
@@ -6874,7 +6900,7 @@ ls.append(5)
 
 
 <p>
-append()= fügt also ein Element (hier die Zahl \(5\)) an das <i>Ende</i>
+<code>append()</code> fügt also ein Element (hier die Zahl \(5\)) an das <i>Ende</i>
 der Liste an. Möchte man ein Element aber an einer bestimmten
 Position innerhalb der Liste hinzufügen, so braucht man die
 Methode <code>.insert()</code>. <code>.insert()</code> nimmt 2 Argumente entgegen. Das erste
@@ -6891,7 +6917,7 @@ ls.insert(2, to_be_inserted)
 </pre>
 </div>
 
-<pre class="example" id="org6609011">
+<pre class="example" id="orgd349e26">
 [1, 2, 9, 3, 4, 5]
 </pre>
 
@@ -6909,7 +6935,7 @@ Speicher, ohne dass irgend etwas zurückgegeben wird.
 </pre>
 </div>
 
-<pre class="example" id="orgb5b00ff">
+<pre class="example" id="org45d31a1">
 [1, 2, 3, 4, 5]
 </pre>
 
@@ -6933,7 +6959,7 @@ und dann gelöscht.
 </pre>
 </div>
 
-<pre class="example" id="orgfe8a863">
+<pre class="example" id="orgfecdca6">
 5
 [1, 2, 3, 4]
 1
@@ -6956,19 +6982,19 @@ ls.remove(to_delete)
 </pre>
 </div>
 
-<pre class="example" id="org918f680">
+<pre class="example" id="orgeaeb2f8">
 [2, 4]
 </pre>
 </div>
 </div>
 
 
-<div id="outline-container-org33a3f72" class="outline-4">
-<h4 id="org33a3f72"><span class="section-number-4">9.1.2.</span> Elemente einer Liste</h4>
+<div id="outline-container-orgcc77242" class="outline-4">
+<h4 id="orgcc77242"><span class="section-number-4">9.1.2.</span> Elemente einer Liste</h4>
 <div class="outline-text-4" id="text-9-1-2">
 <p>
 Bis jetzt hatten wir nur Python Objekte vom Typ Integer als Elemente
-einer Liste. Aber das Tolle ist: jedes beliebige Pytho Objekt kann
+einer Liste. Aber das Tolle ist: jedes beliebige Python Objekt kann
 Teil einer Liste sein! Und: Python Listen sind, wenn sie erstellt
 werden nicht auf einen Typ angewiesen. Man kann also verschiedene
 Typen von Python Objekten in einer Liste haben.
@@ -6992,7 +7018,7 @@ Typen von Python Objekten in einer Liste haben.
 
 <p>
 Ja, Sie sehen richtig. Sie können sogar Funktionen in solch eine
-Liste packen. Vielleicht brauchen Sie ja mal solch ein Stücken
+Liste packen. Vielleicht brauchen Sie ja mal solch ein Stückchen
 Code:
 </p>
 
@@ -7024,7 +7050,7 @@ ein Element in der List vorhanden ist.
 </pre>
 </div>
 
-<pre class="example" id="orgecabef0">
+<pre class="example" id="org998db52">
     True
     False
 </pre>
@@ -7044,7 +7070,7 @@ ls.count(9)
 </pre>
 </div>
 
-<pre class="example" id="org4de957e">
+<pre class="example" id="orgc3a39cf">
     4
     0
 </pre>
@@ -7052,8 +7078,8 @@ ls.count(9)
 </div>
 
 
-<div id="outline-container-org936957d" class="outline-4">
-<h4 id="org936957d"><span class="section-number-4">9.1.3.</span> Mehrere Dimensionen</h4>
+<div id="outline-container-org9033898" class="outline-4">
+<h4 id="org9033898"><span class="section-number-4">9.1.3.</span> Mehrere Dimensionen</h4>
 <div class="outline-text-4" id="text-9-1-3">
 <p>
 Wenn man aber sämtliche Python Objekte in eine Liste packen kann,
@@ -7133,7 +7159,7 @@ Dies entspricht der Liste der Listen item_1 bis item_5: <code>[item_1,
     item_2, item_3, item_4, item_5]</code> oder ausgeschrieben:
 </p>
 
-<pre class="example" id="orgc98fd1a">
+<pre class="example" id="orgbe1c4f7">
     [
       [3, 1, ..., 4],
       [2, 2, ..., 3],
@@ -7160,13 +7186,13 @@ an einem Beispiel an:
 </pre>
 </div>
 
-<pre class="example" id="org8e27b98">
+<pre class="example" id="org0578bb7">
 Liste 0, Element 1 = 01
 Liste 1, Element 3 = 13
 Liste 2, Element 0 = 20
 </pre>
 
-<pre class="example" id="org3496f19">
+<pre class="example" id="org773e061">
       liste[0][1]
             |  |
             |  |
@@ -7191,7 +7217,7 @@ alle items beantwortet hat, müssten Sie so etwas schreiben, wie:
 </div>
 
 <p>
-Wir lernen mit den <a href="#orgc9cf8fe">List Comprehensions</a> später noch eine schönere
+Wir lernen mit den <a href="#org8645866">List Comprehensions</a> später noch eine schönere
 Methode, sich so wieder eine Liste zu generieren, die man dann im
 Code weiterverarbeiten kann (z.B. eine Grafik plotten).
 </p>
@@ -7231,7 +7257,7 @@ Hier wieder ein hoffentlich verständlicheres Beispiel:
 </pre>
 </div>
 
-<pre class="example" id="orgc5d040f">
+<pre class="example" id="org67d712d">
 Gruppe 1, Liste 0, Element 1 = 101
 Gruppe 0, Liste 1, Element 3 = 013
 Gruppe 2, Liste 2, Element 0 = 220
@@ -7251,7 +7277,7 @@ Studie die Einzelcodes der Teilnehmer*innen).
 </p>
 
 
-<div id="org4935bb1" class="figure">
+<div id="orgd55819b" class="figure">
 <p><img src="figs/rubics_cube.png" alt="rubics_cube.png" />
 </p>
 </div>
@@ -7267,8 +7293,8 @@ und so weiter.
 </div>
 
 
-<div id="outline-container-org1cea116" class="outline-4">
-<h4 id="org1cea116"><span class="section-number-4">9.1.4.</span> Listenelemente sortieren</h4>
+<div id="outline-container-org2ec237c" class="outline-4">
+<h4 id="org2ec237c"><span class="section-number-4">9.1.4.</span> Listenelemente sortieren</h4>
 <div class="outline-text-4" id="text-9-1-4">
 <p>
 Besteht eine Liste ausschließlich aus Elemente, die sich
@@ -7307,17 +7333,17 @@ Sie wird im Beispiel nur temporär innerhalb der <code>print()</code> sortiert
 und dann ausgegeben. Im Speicher bleibt sie aber in ihrem
 ursprünglichen Zustand. Bei <code>.sorted()</code> ist dies anders. Diese
 Methode sortiert die Liste und überschreibt die ursprüngliche
-Version im Speicher. Die Liste wurde als dauerhaft geändert. Sie
+Version im Speicher. Die Liste wurde also dauerhaft geändert. Sie
 sollten daher gerade mit der Methode <code>.sort()</code> vorsichtig umgehen
 oder bei <i>Collections</i> bei denen die Reihenfolge wichtig ist, lieber
-auf die <i>immutable</i> Collection <a href="#org4e812cd">Tupel</a> zurückgreifen.
+auf die <i>immutable</i> Collection <a href="#org66b9dbf">Tupel</a> zurückgreifen.
 </p>
 </div>
 </div>
 
 
-<div id="outline-container-org08100a5" class="outline-4">
-<h4 id="org08100a5"><span class="section-number-4">9.1.5.</span> Listen &bdquo;entpacken&ldquo;</h4>
+<div id="outline-container-org73e22de" class="outline-4">
+<h4 id="org73e22de"><span class="section-number-4">9.1.5.</span> Listen &bdquo;entpacken&ldquo;</h4>
 <div class="outline-text-4" id="text-9-1-5">
 <p>
 Eine einfache Möglichkeit, Elemente einer Liste in Variablen zu
@@ -7339,7 +7365,7 @@ Elementen wirft Python eine Fehlermeldung aus.
 </pre>
 
 
-<pre class="example" id="org094b7c9">
+<pre class="example" id="org013bd45">
 Hallo Welt!
 </pre>
 
@@ -7350,20 +7376,20 @@ Hallo Welt!
 </pre>
 </div>
 
-<pre class="example" id="org29505d5">
+<pre class="example" id="org4a0ea67">
 ValueError: too many values to unpack (expected 2)
 </pre>
 </div>
 </div>
 
 
-<div id="outline-container-org3a1ea62" class="outline-4">
-<h4 id="org3a1ea62"><span class="section-number-4">9.1.6.</span> Listen und Strings</h4>
+<div id="outline-container-org4d423ca" class="outline-4">
+<h4 id="org4d423ca"><span class="section-number-4">9.1.6.</span> Listen und Strings</h4>
 <div class="outline-text-4" id="text-9-1-6">
 <p>
 Python hat einige extrem nützliche Funktionen, um von Strings in
 Listen und von Listen in Strings zu konvertieren. Dies kommt uns
-vor allem später zu gute, wenn wir lernen, <a href="#org9eff6ce">Dateien zu lesen und zu
+vor allem später zu gute, wenn wir lernen, <a href="#org883b8ea">Dateien zu lesen und zu
 schreiben</a>.
 </p>
 
@@ -7400,7 +7426,7 @@ Wir haben nun eine Liste mit den Strings &bdquo; 3&ldquo;, &bdquo; 15&ldquo; usw
 störend ist noch, dass vor jeder Zahl ein Leerzeichen steht. Um
 das zu verhindern, steht uns die Methode <code>.strip()</code> zur Verfügung.
 Sie entfernt <i>Whitespace</i> (also Leer- und Steuerzeichen), der sich
-vor und hinter einem String befindet.
+am Anfang und am Ende eines Strings befindet.
 </p>
 
 <div class="org-src-container">
@@ -7421,8 +7447,8 @@ vor und hinter einem String befindet.
 
 
 <p>
-Auch hier gibt es mit List Comprehensions eine schönere Methode,
-dies zu bewerkstelligen.
+Auch hier wird es mit List Comprehensions eine schönere Methode
+geben, dies zu bewerkstelligen.
 </p>
 
 <p>
@@ -7463,11 +7489,11 @@ Eventuell müssen Sie also erst die Elemente ihrer Liste umwandeln.
 </div>
 
 
-<div id="outline-container-org8158d3d" class="outline-4">
-<h4 id="org8158d3d"><span class="section-number-4">9.1.7.</span> Übungen</h4>
+<div id="outline-container-orgd3c0394" class="outline-4">
+<h4 id="orgd3c0394"><span class="section-number-4">9.1.7.</span> Übungen</h4>
 <div class="outline-text-4" id="text-9-1-7">
 <ul class="org-ul">
-<li>Gegeben ist die Liste \(L\) <code>["12", 14, " 28 ", "74,5" 90.8]</code>.
+<li>Gegeben ist die Liste \(L\) <code>["12", 14, " 28 ", "74,5", 90.8]</code>.
 <ul class="org-ul">
 <li>Schreiben Sie eine Funktion, die für jedes Element in L
 ausgibt, ob es sich um eine Zahl oder nicht handelt.</li>
@@ -7476,8 +7502,8 @@ es ein Vielfaches von 2 ist. Die Funktion soll eine Liste
 zurückgeben, die nur die Elemente enthält, die eine vielfaches
 von 2 sind.</li>
 <li>Schreiben Sie die gleiche Funktion noch einmal, nur dieses mal
-soll die Elemente die <i>kein</i> Vielfaches von zwei sind, erhalten
-bleiben, und die anderen Elemente durch der String
+sollen die Elemente die <i>kein</i> Vielfaches von zwei sind, erhalten
+bleiben, und die anderen Elemente durch den String
 &bdquo;Platzhalter&ldquo; ersetzt werden.</li>
 <li>Schreiben Sie eine Funktion, die die Liste sortiert zurückgibt.</li>
 <li>Schreiben Sie eine Funktion, die die Liste entgegen nimmt und
@@ -7503,8 +7529,8 @@ behandelt, also an diese Stelle der Liste <code>None</code> ausgeben soll:
 </div>
 
 
-<div id="outline-container-org4e812cd" class="outline-3">
-<h3 id="org4e812cd"><span class="section-number-3">9.2.</span> Tupel</h3>
+<div id="outline-container-org66b9dbf" class="outline-3">
+<h3 id="org66b9dbf"><span class="section-number-3">9.2.</span> Tupel</h3>
 <div class="outline-text-3" id="text-9-2">
 <p>
 Die nächste Kategorie an Collections sind <i>Tupel</i>. Diese Kategorie
@@ -7534,10 +7560,10 @@ Anstatt der eckigen Klammern setzt man Tupel in runde Klammern.
 
 <p>
 Ansonsten sollten Sie noch wissen, dass viele Funktionen, die
-mehrere Werte zurückgeben dies also Tupel tun. Sie können so auch
-bei eigenen Funktionen mehrere Werte zurückgeben. Separieren sie
-die Werte, die zurückgegeben werden sollen nach dem Return
-Statement einfach mit einem Komma.
+mehrere Werte zurückgeben diese als Tupel zurückgeben. Sie können
+so auch bei eigenen Funktionen mehrere Werte zurückgeben.
+Separieren sie die Werte, die zurückgegeben werden sollen nach dem
+Return Statement einfach mit einem Komma.
 </p>
 
 <div class="org-src-container">
@@ -7555,8 +7581,8 @@ Statement einfach mit einem Komma.
 </div>
 
 
-<div id="outline-container-orgde7dad6" class="outline-3">
-<h3 id="orgde7dad6"><span class="section-number-3">9.3.</span> Dictionaries </h3>
+<div id="outline-container-org7d1ab05" class="outline-3">
+<h3 id="org7d1ab05"><span class="section-number-3">9.3.</span> Dictionaries </h3>
 <div class="outline-text-3" id="text-9-3">
 <p>
 Neben Listen ist das Dictionary die zweite wichtige Datenstruktur
@@ -7568,8 +7594,8 @@ Mathematikunterricht kennen). Man spricht dabei auch von
 </p>
 </div>
 
-<div id="outline-container-org56126cf" class="outline-4">
-<h4 id="org56126cf"><span class="section-number-4">9.3.1.</span> Dictionaries erzeugen</h4>
+<div id="outline-container-orgca5b5ff" class="outline-4">
+<h4 id="orgca5b5ff"><span class="section-number-4">9.3.1.</span> Dictionaries erzeugen</h4>
 <div class="outline-text-4" id="text-9-3-1">
 <p>
 Wir nehmen das Wort &bdquo;Dictionary&ldquo; wörtlich und erzeugen uns als
@@ -7588,13 +7614,15 @@ Beispiel ein Wörterbuch:
 </pre>
 </div>
 
-<pre class="example" id="org1a5e084">
+<pre class="example" id="orgd20ce86">
 bench
 </pre>
 
 <p>
 Dictionaries bestehen also aus einer Menge an
-<i>Schlüssel-Wert-Paaren</i>, die durch ein Komma getrennt werden. Diese Paare stehen in geschweiften Klammern &bdquo;{}&ldquo;. Schlüssel und Wert werden mit einem Doppelpunkt getrennt:
+<i>Schlüssel-Wert-Paaren</i>, die durch ein Komma getrennt werden. Diese
+Paare stehen in geschweiften Klammern &bdquo;{}&ldquo;. Schlüssel und Wert
+werden mit einem Doppelpunkt getrennt:
 </p>
 
 <p>
@@ -7647,7 +7675,7 @@ Eine For-Schleife iteriert immer über die Schlüssel:
 </pre>
 </div>
 
-<pre class="example" id="orge6e1869">
+<pre class="example" id="org6924c91">
 Tisch table
 Stuhl chair
 Bank bench
@@ -7671,7 +7699,7 @@ folgendermaßen hinzu: <code>dict[&lt;newkey&gt;] = &lt;value&gt;</code>. Und ge
 </pre>
 </div>
 
-<pre class="example" id="orgeb7cd84">
+<pre class="example" id="orgd9733a3">
 {1: 'eins', 2: 'zwei', 3: 'drei', 4: 'vier'}
 {1: 'one', 2: 'zwei', 3: 'drei', 4: 'vier'}
 </pre>
@@ -7693,7 +7721,7 @@ Bei der Generierung eines Dictionaries mit mehreren gleichen Keys
 gibt Python <b>keine Fehlermeldung</b> aus! Es wird einfach der zuletzt
 gegebene Key gespeichet!
 </p>
-<pre class="example" id="orga559ea4">
+<pre class="example" id="org5e74cbb">
 vier = {4: "four", 4: "vier"}
 print(vier)
 
@@ -7714,8 +7742,8 @@ nicht auf die Reihenfolge!
 </div>
 
 
-<div id="outline-container-orga4fe601" class="outline-4">
-<h4 id="orga4fe601"><span class="section-number-4">9.3.2.</span> Wichtige Methoden</h4>
+<div id="outline-container-orga8b2829" class="outline-4">
+<h4 id="orga8b2829"><span class="section-number-4">9.3.2.</span> Wichtige Methoden</h4>
 <div class="outline-text-4" id="text-9-3-2">
 <p>
 Wie bei Listen auch können Sie mit <code>len()</code> die Länge eines
@@ -7744,7 +7772,7 @@ bestimmte Schlüssel in einem Dictionary befinden.
 </pre>
 </div>
 
-<pre class="example" id="org870dd27">
+<pre class="example" id="orgf778423">
 4
 3
 2
@@ -7767,7 +7795,7 @@ Die Methode <code>.items()</code> gibt ein iterierbares Objekt zurück (eine Lis
 </pre>
 </div>
 
-<pre class="example" id="org6643140">
+<pre class="example" id="orgdfdad52">
 dict_items([(1, 'eins'), (2, 'zwei'), (3, 'drei')])
 </pre>
 
@@ -7784,7 +7812,7 @@ So kann man über das Iterable von <code>.items()</code> iterieren:
 </pre>
 </div>
 
-<pre class="example" id="orgb60a80c">
+<pre class="example" id="org8aaa840">
 (1, 'eins')
 (2, 'zwei')
 (3, 'drei')
@@ -7810,7 +7838,7 @@ iterrierbare Objekte aller Schlüssel und aller Werte zurück.
 </pre>
 </div>
 
-<pre class="example" id="org0d056ae">
+<pre class="example" id="org2434a58">
 dict_keys([1, 2, 3])
 dict_values(['eins', 'zwei', 'drei'])
 </pre>
@@ -7826,7 +7854,7 @@ zugreifen, der nicht existiert, einen <i>KeyError</i> zurückgibt.
 </pre>
 </div>
 
-<pre class="example" id="org52a15d9">
+<pre class="example" id="orgb6416e2">
 KeyError: 'Tasche'
 </pre>
 
@@ -7848,7 +7876,7 @@ vorhanden ist.
 </pre>
 </div>
 
-<pre class="example" id="org444cd92">
+<pre class="example" id="orgc11ff3f">
 None
 Nichts gefunden!
 </pre>
@@ -7856,8 +7884,8 @@ Nichts gefunden!
 </div>
 
 
-<div id="outline-container-org7fb3449" class="outline-4">
-<h4 id="org7fb3449"><span class="section-number-4">9.3.3.</span> Objekte in Dictionaries</h4>
+<div id="outline-container-orgc31d7a6" class="outline-4">
+<h4 id="orgc31d7a6"><span class="section-number-4">9.3.3.</span> Objekte in Dictionaries</h4>
 <div class="outline-text-4" id="text-9-3-3">
 <p>
 Als Werte eines Schlüssel-Wert-Paares lassen sich natürlich auch
@@ -7903,7 +7931,7 @@ aussehen?
 </pre>
 </div>
 
-<pre class="example" id="org5a3f403">
+<pre class="example" id="orgf872b8a">
 Harry Potter ist im Haus Gryffindor
 Ron Weasly ist im Haus Gryffindor
 Draco Malfoy ist im Haus Slytherin
@@ -7912,8 +7940,8 @@ Draco Malfoy ist im Haus Slytherin
 </div>
 
 
-<div id="outline-container-org951d719" class="outline-4">
-<h4 id="org951d719"><span class="section-number-4">9.3.4.</span> Übungen</h4>
+<div id="outline-container-orga9d84d7" class="outline-4">
+<h4 id="orga9d84d7"><span class="section-number-4">9.3.4.</span> Übungen</h4>
 <div class="outline-text-4" id="text-9-3-4">
 <ul class="org-ul">
 <li>Gegeben sei das obige Dictionary <code>pottermore</code>.
@@ -7934,8 +7962,8 @@ gibt, deren Charactere in <i>allen</i> Bänden (1-7) der Serie vorkamen.</li>
 </div>
 
 
-<div id="outline-container-orgeac8cf8" class="outline-3">
-<h3 id="orgeac8cf8"><span class="section-number-3">9.4.</span> Sets</h3>
+<div id="outline-container-org47c9bf2" class="outline-3">
+<h3 id="org47c9bf2"><span class="section-number-3">9.4.</span> Sets</h3>
 <div class="outline-text-3" id="text-9-4">
 <p>
 Die letzte Form der Collections in Python sind Sets. Diese können
@@ -8023,8 +8051,8 @@ Operation existiert auch eine equivalente Methode):
 </div>
 
 
-<div id="outline-container-orgc9cf8fe" class="outline-3">
-<h3 id="orgc9cf8fe"><span class="section-number-3">9.5.</span> Comprehensions</h3>
+<div id="outline-container-org8645866" class="outline-3">
+<h3 id="org8645866"><span class="section-number-3">9.5.</span> Comprehensions</h3>
 <div class="outline-text-3" id="text-9-5">
 <p>
 Comprehensions sind in Python eine einfache Möglichkeit, <i>Iterables</i>,
@@ -8174,8 +8202,8 @@ Comprehensions lassen sich auch ineinander verschachteln:
 </div>
 
 
-<div id="outline-container-orgc884696" class="outline-3">
-<h3 id="orgc884696"><span class="section-number-3">9.6.</span> Verzweigungen vermeiden</h3>
+<div id="outline-container-orgb0037b7" class="outline-3">
+<h3 id="orgb0037b7"><span class="section-number-3">9.6.</span> Verzweigungen vermeiden</h3>
 <div class="outline-text-3" id="text-9-6">
 <p>
 Einer Variablen <code>bool</code> wird der Wert <code>False</code> oder <code>True</code> zugeordnet. Je nachdem soll dann der String &bdquo;Nein!&ldquo; oder &bdquo;Ja!&ldquo; ausgegeben werden.
@@ -8238,13 +8266,13 @@ Ich denke, dass gerade Beispiele 2 (ternärer Operator) und 3 (Dictonary) echt <
 
 
 
-<div id="outline-container-org86ea415" class="outline-3">
-<h3 id="org86ea415"><span class="section-number-3">9.7.</span> Aufgaben </h3>
+<div id="outline-container-org69ada7c" class="outline-3">
+<h3 id="org69ada7c"><span class="section-number-3">9.7.</span> Aufgaben </h3>
 <div class="outline-text-3" id="text-9-7">
 </div>
 
-<div id="outline-container-orgdd856c7" class="outline-4">
-<h4 id="orgdd856c7"><span class="section-number-4">9.7.1.</span> Schreibe eine replace_all() Funktion</h4>
+<div id="outline-container-org4f1cec3" class="outline-4">
+<h4 id="org4f1cec3"><span class="section-number-4">9.7.1.</span> Schreibe eine replace_all() Funktion</h4>
 <div class="outline-text-4" id="text-9-7-1">
 <p>
 Schreiben einer <code>replace_all()</code> Funktion wie in der Übung mit
@@ -8263,8 +8291,8 @@ ergeben.
 
 
 
-<div id="outline-container-org2bcad50" class="outline-4">
-<h4 id="org2bcad50"><span class="section-number-4">9.7.2.</span> Ausschuss zählen</h4>
+<div id="outline-container-orgc5bdf21" class="outline-4">
+<h4 id="orgc5bdf21"><span class="section-number-4">9.7.2.</span> Ausschuss zählen</h4>
 <div class="outline-text-4" id="text-9-7-2">
 <p>
 Am Ende einer Fließbandproduktion für Rechnerchips werden die
@@ -8291,8 +8319,8 @@ Werte in der Liste <code>ausschuss</code>.
 
 
 
-<div id="outline-container-orgb0c90fb" class="outline-4">
-<h4 id="orgb0c90fb"><span class="section-number-4">9.7.3.</span> Listen Differenzen</h4>
+<div id="outline-container-org793e51d" class="outline-4">
+<h4 id="org793e51d"><span class="section-number-4">9.7.3.</span> Listen Differenzen</h4>
 <div class="outline-text-4" id="text-9-7-3">
 <p>
 Gegeben sind zwei Listen A und B. Bilden Sie die Differenz A minus
@@ -8323,8 +8351,8 @@ Sei A <code>[3, 8, 1, 8, 9]</code> und B <code>[1, 8]</code> dann soll die Liste
 
 
 
-<div id="outline-container-org19b766b" class="outline-4">
-<h4 id="org19b766b"><span class="section-number-4">9.7.4.</span> Pangramme</h4>
+<div id="outline-container-org9e5bb2c" class="outline-4">
+<h4 id="org9e5bb2c"><span class="section-number-4">9.7.4.</span> Pangramme</h4>
 <div class="outline-text-4" id="text-9-7-4">
 <p>
 Ein Pangramm ist ein Satz, der alle Buchstaben des Alphabets
@@ -8346,8 +8374,8 @@ Schauen Sie, ob Ihnen die offizielle &bdquo;String&ldquo; Klasse weiterhilft
 </div>
 
 
-<div id="outline-container-orge275932" class="outline-4">
-<h4 id="orge275932"><span class="section-number-4">9.7.5.</span> Matrizen generieren</h4>
+<div id="outline-container-org111e251" class="outline-4">
+<h4 id="org111e251"><span class="section-number-4">9.7.5.</span> Matrizen generieren</h4>
 <div class="outline-text-4" id="text-9-7-5">
 <p>
 Schreibe Sie eine Funktion <code>create_matrix(x, y)</code>, die zwei Integer x
@@ -8365,7 +8393,7 @@ create_matrix(5, 3)
 </pre>
 </div>
 
-<pre class="example" id="org43a288d">
+<pre class="example" id="org1ae3de7">
 Ausgaben:
 
 [['00', '01', '02'], ['10', '11', '12'], ['20', '21', '22'], ['30', '31', '32'], ['40', '41', '42']]
@@ -8376,11 +8404,11 @@ Ausgaben:
 
 
 
-<div id="outline-container-orgf25cf50" class="outline-4">
-<h4 id="orgf25cf50"><span class="section-number-4">9.7.6.</span> BMI Klassifikation - die pythonésque Art</h4>
+<div id="outline-container-org2b6ed61" class="outline-4">
+<h4 id="org2b6ed61"><span class="section-number-4">9.7.6.</span> BMI Klassifikation - die pythonésque Art</h4>
 <div class="outline-text-4" id="text-9-7-6">
 <p>
-Sehr wahrscheinlich haben Sie <a href="#org171dd53">obige Aufgabe</a> mit Hilfe einer
+Sehr wahrscheinlich haben Sie <a href="#org41ec099">obige Aufgabe</a> mit Hilfe einer
 <code>if-elif-else</code> Kontrollstruktur gelöst. Sehen Sie sich folgenden
 Code an und überlegen Sie, weshalb dieser auch zu einem richtigen
 Ergebnis führt:
@@ -8402,8 +8430,8 @@ von Listen gelernt haben.
 </div>
 
 
-<div id="outline-container-orgd29a80e" class="outline-4">
-<h4 id="orgd29a80e"><span class="section-number-4">9.7.7.</span> Liste in gleiche Summen aufteilen</h4>
+<div id="outline-container-org6ef08f5" class="outline-4">
+<h4 id="org6ef08f5"><span class="section-number-4">9.7.7.</span> Liste in gleiche Summen aufteilen</h4>
 <div class="outline-text-4" id="text-9-7-7">
 <p>
 Gegeben ist eine Liste mit beliebigen Ganzzahlen \(\{i_1, i_2, \dots,
@@ -8436,18 +8464,192 @@ Seite.
 </div>
 
 
-<div id="outline-container-org7c678cd" class="outline-2">
-<h2 id="org7c678cd"><span class="section-number-2">10.</span> Datum und Zeit</h2>
+
+<div id="outline-container-org90a10cc" class="outline-2">
+<h2 id="org90a10cc"><span class="section-number-2">10.</span> Datum und Zeit</h2>
+<div class="outline-text-2" id="text-10">
+<p>
+Wir können uns in diesem Kurs nur anhand ein paar Beispielen die
+Verwendung von Datum und Zeit ansehen.
+</p>
+
+<p>
+Python hat mehrere Module, um Zeit- und Datumsobjekte zu generieren:
+<code>time</code>, <code>date</code> und <code>datetime</code>. Wie die Namen schon verraten, verarbeiten
+die Funktionen in <code>time</code> nur Zeitangaben, in <code>date</code> nur Datumsangaben
+und in <code>datetime</code> eine Kombination aus Datum und Zeit. Wir werden hier
+aber nur auf das Modul <code>datetime</code> kurz eingehen, für alles weitere
+verweise ich auf die Pytho Dokumentation.
+</p>
+
+<p>
+Laden wir einmal das Modul und sehen wir, was wir damit machen können.
+</p>
+
+<div class="org-src-container">
+<pre class="src src-python"><span style="color: #b6a0ff;">from</span> datetime <span style="color: #b6a0ff;">import</span> datetime
+
+<span style="color: #f78fe7;">print</span>(datetime.now())
+</pre>
 </div>
 
+<pre class="example">
+2022-02-17 17:32:32.551505
+</pre>
 
-<div id="outline-container-org9eff6ce" class="outline-2">
-<h2 id="org9eff6ce"><span class="section-number-2">11.</span> Mit Dateien arbeiten </h2>
+
+<p>
+Es werden als das Datum mit Angabe von Jahr, Monat, Tag, Stunde, Minute,
+Sekunde ausgegeben.
+</p>
+
+<p>
+Auf diese Angaben können wir einzeln zugreifen:
+</p>
+
+<div class="org-src-container">
+<pre class="src src-python"><span style="color: #00d3d0;">now</span> = datetime.now()
+
+<span style="color: #f78fe7;">print</span>(now.year)
+<span style="color: #f78fe7;">print</span>(now.day)
+<span style="color: #f78fe7;">print</span>(now.minute)
+</pre>
+</div>
+
+<pre class="example" id="org7c11515">
+2022
+17
+10
+</pre>
+
+<p>
+Solch ein Datetimeobjekt können wir auch selbst erzeugen:
+</p>
+
+<div class="org-src-container">
+<pre class="src src-python"><span style="color: #00d3d0;">birthday</span> = datetime(1986, 5, 29, 12, 12)
+
+<span style="color: #f78fe7;">print</span>(birthday)
+</pre>
+</div>
+
+<pre class="example" id="org2e092a2">
+1986-05-29 12:12:00
+</pre>
+
+<p>
+Um ein Dateobjekt in einen String zu verwandeln können wir die
+Funktion <code>.strftime()</code> mit Angabe des Zeitformats verwenden:
+</p>
+
+<div class="org-src-container">
+<pre class="src src-python"><span style="color: #00d3d0;">birthday</span> = datetime(1986, 5, 29, 12, 12)
+
+<span style="color: #f78fe7;">print</span>(birthday.strftime(<span style="color: #79a8ff;">"%d. %B %Y um %H:%M Uhr"</span>))
+</pre>
+</div>
+
+<pre class="example" id="org151c9b7">
+29. Mai 1986 um 12:12 Uhr
+</pre>
+
+<p>
+Die wichtigsten Angaben für das Zeitformat sind:
+</p>
+
+<table border="2" cellspacing="0" cellpadding="6" rules="groups" frame="hsides">
+
+
+<colgroup>
+<col  class="org-left" />
+
+<col  class="org-left" />
+</colgroup>
+<tbody>
+<tr>
+<td class="org-left">%d</td>
+<td class="org-left">Tag des Monats mit führender Null</td>
+</tr>
+
+<tr>
+<td class="org-left">%b</td>
+<td class="org-left">Monatsname abgekürzt</td>
+</tr>
+
+<tr>
+<td class="org-left">%B</td>
+<td class="org-left">Monatsname ausgeschrieben</td>
+</tr>
+
+<tr>
+<td class="org-left">%m</td>
+<td class="org-left">Monat als Zahl mit führender Null</td>
+</tr>
+
+<tr>
+<td class="org-left">%y</td>
+<td class="org-left">Jahreszahl zweistellig</td>
+</tr>
+
+<tr>
+<td class="org-left">%Y</td>
+<td class="org-left">Jahreszahl vierstellig</td>
+</tr>
+
+<tr>
+<td class="org-left">%H</td>
+<td class="org-left">Stunden im 24 Stunden Format</td>
+</tr>
+
+<tr>
+<td class="org-left">%I</td>
+<td class="org-left">Stunden im 12 Stunden Format</td>
+</tr>
+
+<tr>
+<td class="org-left">%p</td>
+<td class="org-left">Anzeige am oder pm</td>
+</tr>
+
+<tr>
+<td class="org-left">%M</td>
+<td class="org-left">Minuten mit führender Null</td>
+</tr>
+
+<tr>
+<td class="org-left">%S</td>
+<td class="org-left">Sekunden mit führender Null</td>
+</tr>
+</tbody>
+</table>
+
+<p>
+So lassen sich auch Strings mit <code>.strptime()</code> zurückformatieren und daraus ein
+Datumsobjekt erzeugen:
+</p>
+
+<div class="org-src-container">
+<pre class="src src-python"><span style="color: #00d3d0;">datestr</span> = <span style="color: #79a8ff;">"10.10.2020 17:18"</span>
+
+<span style="color: #00d3d0;">dateobject</span> = datetime.strptime(datestr, <span style="color: #79a8ff;">"%d.%m.%Y %H:%M"</span>)
+
+<span style="color: #f78fe7;">print</span>(dateobject)
+</pre>
+</div>
+
+<pre class="example" id="orgeef121f">
+2020-10-10 17:18:00
+</pre>
+</div>
+</div>
+
+<div id="outline-container-org883b8ea" class="outline-2">
+<h2 id="org883b8ea"><span class="section-number-2">11.</span> Mit Dateien arbeiten </h2>
 <div class="outline-text-2" id="text-11">
 </div>
 
-<div id="outline-container-org752243f" class="outline-3">
-<h3 id="org752243f"><span class="section-number-3">11.1.</span> Zugriff auf den eigenen Rechner</h3>
+<div id="outline-container-org49b41bd" class="outline-3">
+<h3 id="org49b41bd"><span class="section-number-3">11.1.</span> Zugriff auf den eigenen Rechner</h3>
 <div class="outline-text-3" id="text-11-1">
 <p>
 Für viele Aufgaben, gerade wenn wir eine größere Menge an Daten,
@@ -8476,7 +8678,7 @@ Standardbibliothek enthalten) und lassen uns mit <code>getcwd()</code> (&bdquo;g
 current working directory&ldquo;) das aktuelle Verzeichnis ausgeben.
 </p>
 
-<pre class="example" id="orgbe56c5a">
+<pre class="example" id="org6d1ac06">
 In [1]: import os
 
 In [2]: os.getcwd()
@@ -8487,7 +8689,7 @@ Out[2]: '/Users/stefan'
 Anschließend listen wir alle Ordner und Dateien im Verzeichnis auf:
 </p>
 
-<pre class="example" id="org9423bfc">
+<pre class="example" id="org5b33603">
 In [3]: os.listdir()
 Out[3]: 
 ['.TheBrain',
@@ -8505,7 +8707,7 @@ Out[3]:
 Wir können nun in einen anderen Ordner wechseln:
 </p>
 
-<pre class="example" id="orgf94a4ae">
+<pre class="example" id="org8d7ef62">
 In [14]: os.chdir("/Users/stefan/Nextcloud/Dokumente/dev/python/")
 
 In [15]: os.listdir()
@@ -8531,7 +8733,7 @@ Der Ordner &bdquo;Projekte&ldquo; enthält einige Unterordner. Wir wollen mit
 durchschreiten und uns die Ausgabe ansehen.
 </p>
 
-<pre class="example" id="orge045cd8">
+<pre class="example" id="orgf83b0a8">
 In [16]: os.walk("Projekte")
 Out[16]: &lt;generator object _walk at 0x108790200&gt;
 </pre>
@@ -8544,7 +8746,7 @@ iterieren und dabei alles in einer Liste speichern oder uns per
 <code>print()</code> ausgeben lassen.
 </p>
 
-<pre class="example" id="org3b7715c">
+<pre class="example" id="orgf79c473">
 In [19]: ls = [i for i in os.walk("Projekte")]
 </pre>
 
@@ -8552,7 +8754,7 @@ In [19]: ls = [i for i in os.walk("Projekte")]
 Schauen wir uns <code>ls</code> an, sehen wir, wie <code>walk()</code> die Dateien und Ordner abspeichert.
 </p>
 
-<pre class="example" id="org64de280">
+<pre class="example" id="orgf7277ec">
 ('/Users/stefan/.conda/envs/Auswertung_FALKO-R/lib/python3.9/site-packages/notebook/static/components/MathJax/localization/sl', [], ['MathML.js', 'HTML-CSS.js', 'sl.js', 'MathMenu.js', 'HelpDialog.js', 'TeX.js', 'FontWarnings.js'])
 </pre>
 
@@ -8634,8 +8836,8 @@ Hier eine zusammenfassende Übersicht der wichtigsten Funktionen:
 </div>
 
 
-<div id="outline-container-org0438980" class="outline-3">
-<h3 id="org0438980"><span class="section-number-3">11.2.</span> Dateien öffnen mit <code>open()</code></h3>
+<div id="outline-container-org4a8ee3b" class="outline-3">
+<h3 id="org4a8ee3b"><span class="section-number-3">11.2.</span> Dateien öffnen mit <code>open()</code></h3>
 <div class="outline-text-3" id="text-11-2">
 <p>
 Um eine Datei zu lesen, müssen Sie ein Datei Objekt erzeugen und
@@ -8732,17 +8934,178 @@ f.close()
 wird die Zeichenkette &bdquo;0123456789&ldquo; an den vorhandenen Inhalt
 angehängt. In der Datei steht nun: <code>abcde0123456789</code>.
 </p>
+
+<blockquote>
+<p>
+⚠️👆 <b>Vorsicht vor Zugriffsfehlern: besser with() verwenden!</b>
+</p>
+
+<p>
+Wenn man mit <code>open()</code> ein Datei-Objekt erzeugt, muss man es auch
+immer mit <code>close()</code> schlieẞen. Denn solange das Objekt &bdquo;geöffnet&ldquo;
+ist, so lange hat Python einen Zugriff auf die Festplatte und die
+Datei <i>in Benutzung</i>. Es kann zu Dateiverlust führen, wenn man
+<code>close()</code> vergisst.
+</p>
+
+<p>
+Besser ist es daher, das sog. <code>with</code> Statement von Python zu
+verwenden. Alles, was diesem Statement im Block folgt, wird mit
+geöffneter Datei ausgeführt. Am besten speichert man sich den
+Inhalt der Datei in einer Variablen und verlässt dann den
+With-Block. <code>with</code> sorgt automatisch dafür, dass die Datei wieder
+geschlossen wird.
+</p>
+
+<p>
+Der Code sieht dann folgendermaẞen aus:
+</p>
+<pre class="example" id="org2766b09">
+   with open("file.txt", "r") as file:
+       data = file.read()
+</pre>
+</blockquote>
 </div>
 </div>
 
 
-<div id="outline-container-org5b1151d" class="outline-3">
-<h3 id="org5b1151d"><span class="section-number-3">11.3.</span> Aufgaben</h3>
+<div id="outline-container-orgd642a29" class="outline-3">
+<h3 id="orgd642a29"><span class="section-number-3">11.3.</span> Dateien einlesen</h3>
 <div class="outline-text-3" id="text-11-3">
+<p>
+Wenn ein <i>File-Objekt</i> mit open() erstellt wurde, kann man mit den
+Methoden <code>.read()</code> und <code>.readlines()</code> den Inhalt in einer
+Variablen speichern.
+</p>
+
+<p>
+Der Unterschied ist folgender: <code>.read()</code> liest die ganze Datei auf
+einmal ein. Man bekommt also einen einzig langen String zurück. Das
+ist dann sehr unpraktisch, wenn man z.B. eine Textdatei (wie CSV)
+Zeile für Zeile einlesen möchte. Dies macht die Funktion
+<code>.readlines()</code>. Sie liest jede Zeile einzeln ein, und man bekommt
+eine Liste zurück, die alle Zeilen als Strings enthält.
+</p>
+
+<p>
+Wollen wir z.B. folgende Datei <code>items.csv</code> einlesen und Zeile für
+Zeile in eine neue Datenstruktur überführen, dann sähe der Code
+dazu wie folgt aus:
+</p>
+
+<pre class="example" id="org976346d">
+;user 1;user 2;user 3;user 4;user 5;user 6;user 7;user 8
+item 1;3;4;5;1;2;4;4;3
+item 2;3;2;3;2;3;3;4;2
+item 3;2;5;5;5;2;5;3;3
+item 4;3;3;5;3;3;4;1;4
+item 5;1;4;4;3;2;3;4;3
+</pre>
+
+<div class="org-src-container">
+<pre class="src src-python"><span style="color: #b6a0ff;">with</span> <span style="color: #f78fe7;">open</span>(<span style="color: #79a8ff;">"items.csv"</span>, <span style="color: #79a8ff;">"r"</span>, encoding=<span style="color: #79a8ff;">"UTF-8"</span>) <span style="color: #b6a0ff;">as</span> csv:
+    data = csv.readlines()
+
+<span style="color: #b6a0ff;">for</span> line <span style="color: #b6a0ff;">in</span> data:
+    <span style="color: #f78fe7;">print</span>([i.strip() <span style="color: #b6a0ff;">for</span> i <span style="color: #b6a0ff;">in</span> line.split(<span style="color: #79a8ff;">";"</span>)])
+</pre>
 </div>
-<div id="outline-container-org5022842" class="outline-4">
-<h4 id="org5022842"><span class="section-number-4">11.3.1.</span> Teilnehmer Anonymisierung</h4>
-<div class="outline-text-4" id="text-11-3-1">
+
+<p>
+In der <code>print</code> Anweisung brauchen wir die String-Methode <code>.strip</code>,
+sonst würden wir die Steuerzeichen und etwaigen Whitespace um die
+Elemente herum auch in die Liste mit übernehmen.
+</p>
+</div>
+</div>
+
+
+<div id="outline-container-orgc114291" class="outline-3">
+<h3 id="orgc114291"><span class="section-number-3">11.4.</span> Funktionen für CSV und JSON</h3>
+<div class="outline-text-3" id="text-11-4">
+<p>
+Für die Datenformate CSV (mit Komma oder Strichpunkt separierte
+Felder) und JSON gibt es besondere Funktionen, die einen leichteren
+Umgang mit diesen Formaten ermöglichen.
+</p>
+</div>
+
+<div id="outline-container-orgc03dbc2" class="outline-4">
+<h4 id="orgc03dbc2"><span class="section-number-4">11.4.1.</span> Modul csv</h4>
+<div class="outline-text-4" id="text-11-4-1">
+<p>
+Folgender Beispielcode mit obiger CSV Datei soll die Handhabung
+dieses Moduls erklären:
+</p>
+
+<div class="org-src-container">
+<pre class="src src-python"><span style="color: #b6a0ff;">import</span> csv 
+
+<span style="color: #b6a0ff;">with</span> <span style="color: #f78fe7;">open</span>(<span style="color: #79a8ff;">"items.csv"</span>, <span style="color: #79a8ff;">"r"</span>, encoding=<span style="color: #79a8ff;">"UTF-8"</span>) <span style="color: #b6a0ff;">as</span> csvfile:
+    csvreader = csv.reader(csvfile, dialect=<span style="color: #79a8ff;">"excel"</span>)
+
+    <span style="color: #b6a0ff;">for</span> line <span style="color: #b6a0ff;">in</span> csvreader:
+        <span style="color: #f78fe7;">print</span>(line)
+
+<span style="color: #b6a0ff;">with</span> <span style="color: #f78fe7;">open</span>(<span style="color: #79a8ff;">"new.csv"</span>, <span style="color: #79a8ff;">"w"</span>, newline=<span style="color: #79a8ff;">""</span>) <span style="color: #b6a0ff;">as</span> csvfile:
+    csvwriter = csv.writer(csvfile, dialect=<span style="color: #79a8ff;">"excel"</span>)
+    csvwriter.writerow([<span style="color: #79a8ff;">'Apfel'</span>] * 3 + [<span style="color: #79a8ff;">'Bananen'</span>])
+    csvwriter.writerow([<span style="color: #79a8ff;">"Ich"</span>, <span style="color: #79a8ff;">"esse"</span>, <span style="color: #79a8ff;">"einen"</span>, <span style="color: #79a8ff;">"Apfel"</span>, <span style="color: #79a8ff;">"!"</span>])
+</pre>
+</div>
+
+<pre class="example" id="org1eb5faf">
+['\ufeff;user 1;user 2;user 3;user 4;user 5;user 6;user 7;user 8']
+['item 1;3;4;5;1;2;4;4;3']
+['item 2;3;2;3;2;3;3;4;2']
+['item 3;2;5;5;5;2;5;3;3']
+['item 4;3;3;5;3;3;4;1;4']
+['item 5;1;4;4;3;2;3;4;3']
+</pre>
+</div>
+</div>
+
+<div id="outline-container-org988ef34" class="outline-4">
+<h4 id="org988ef34"><span class="section-number-4">11.4.2.</span> Modul json</h4>
+<div class="outline-text-4" id="text-11-4-2">
+<p>
+Das JavaScriptObjectNotation Format (json) ist den oben
+eingeführten Dictionaries sehr ähnlich, weshalb ein dictionarie
+sehr leicht im json Format speichern und umgekehrt aus dem json
+Format sehr gut ein dictionarie generieren kann.
+</p>
+
+<div class="org-src-container">
+<pre class="src src-python"><span style="color: #b6a0ff;">import</span> json
+
+<span style="color: #a8a8a8;"># </span><span style="color: #a8a8a8;">das dictionary pottermore wie weiter oben</span>
+<span style="color: #00d3d0;">pottermore</span> = {...}
+
+<span style="color: #a8a8a8;"># </span><span style="color: #a8a8a8;">wir schreiben das dictionarie mit json.dumps() in die Datei</span>
+<span style="color: #b6a0ff;">with</span> <span style="color: #f78fe7;">open</span>(<span style="color: #79a8ff;">"test.json"</span>, <span style="color: #79a8ff;">"w"</span>, encoding=<span style="color: #79a8ff;">"UTF-8"</span>) <span style="color: #b6a0ff;">as</span> jsonfile:
+    jsonfile.write(json.dumps(pottermore))
+
+<span style="color: #a8a8a8;"># </span><span style="color: #a8a8a8;">wir laden mit json.load() in ein dictionarie</span>
+<span style="color: #b6a0ff;">with</span> <span style="color: #f78fe7;">open</span>(<span style="color: #79a8ff;">"test.json"</span>, <span style="color: #79a8ff;">"r"</span>, encoding=<span style="color: #79a8ff;">"UTF-8"</span>) <span style="color: #b6a0ff;">as</span> jsonfile:
+    data = json.load(jsonfile)
+
+    <span style="color: #b6a0ff;">for</span> key, value <span style="color: #b6a0ff;">in</span> data.items():
+        <span style="color: #f78fe7;">print</span>(key, value)
+</pre>
+</div>
+</div>
+</div>
+</div>
+
+
+<div id="outline-container-org584a615" class="outline-3">
+<h3 id="org584a615"><span class="section-number-3">11.5.</span> Aufgaben</h3>
+<div class="outline-text-3" id="text-11-5">
+</div>
+
+<div id="outline-container-orgdfcd967" class="outline-4">
+<h4 id="orgdfcd967"><span class="section-number-4">11.5.1.</span> Teilnehmer Anonymisierung</h4>
+<div class="outline-text-4" id="text-11-5-1">
 <p>
 An einer medizinischen Studie sollen 200 Teilnehmer*innen
 teilnehmen. 100 davon bekommen ein neues Medikament verabreicht,
@@ -8814,22 +9177,27 @@ Die Liste sollte dann in etwas so aussehen:
 </tr>
 </tbody>
 </table>
+
+<p>
+Die erstellte Liste nehmen Sie anschlieẞend und lesen sie zur
+weiteren Verarbeitung als Liste wieder in Ihre Programm ein.
+</p>
 </div>
 </div>
 </div>
 </div>
 
 
-<div id="outline-container-orga78e591" class="outline-2">
-<h2 id="orga78e591"><span class="section-number-2">12.</span> Lösungen zu den Aufgaben </h2>
+<div id="outline-container-org586aaa8" class="outline-2">
+<h2 id="org586aaa8"><span class="section-number-2">12.</span> Lösungen zu den Aufgaben </h2>
 <div class="outline-text-2" id="text-12">
 </div>
-<div id="outline-container-orgc45beb3" class="outline-3">
-<h3 id="orgc45beb3"><span class="section-number-3">12.1.</span> Kapitel: Skripte erstellen und Ausführen </h3>
+<div id="outline-container-org6d3d8a8" class="outline-3">
+<h3 id="org6d3d8a8"><span class="section-number-3">12.1.</span> Kapitel: Skripte erstellen und Ausführen </h3>
 <div class="outline-text-3" id="text-12-1">
 </div>
-<div id="outline-container-org4d9743b" class="outline-4">
-<h4 id="org4d9743b"><span class="section-number-4">12.1.1.</span> Wann ist Ostern?</h4>
+<div id="outline-container-org206d7dd" class="outline-4">
+<h4 id="org206d7dd"><span class="section-number-4">12.1.1.</span> Wann ist Ostern?</h4>
 <div class="outline-text-4" id="text-12-1-1">
 <div class="org-src-container">
 <pre class="src src-python"><span class="linenr"> 1: </span><span style="color: #f78fe7;">print</span>(<span style="color: #79a8ff;">"Berechnung von Ostern."</span>)
@@ -8859,8 +9227,8 @@ Die Liste sollte dann in etwas so aussehen:
 </div>
 
 
-<div id="outline-container-org4aa6575" class="outline-4">
-<h4 id="org4aa6575"><span class="section-number-4">12.1.2.</span> Wie hoch die Blutalkoholkonzentration?</h4>
+<div id="outline-container-orgd644cab" class="outline-4">
+<h4 id="orgd644cab"><span class="section-number-4">12.1.2.</span> Wie hoch die Blutalkoholkonzentration?</h4>
 <div class="outline-text-4" id="text-12-1-2">
 <div class="org-src-container">
 <pre class="src src-python"><span class="linenr"> 1: </span><span style="color: #00d3d0;">r</span> = <span style="color: #f78fe7;">float</span>(<span style="color: #f78fe7;">input</span>(<span style="color: #79a8ff;">"Verteilungsfaktor Alkohol im K&#246;rper (0,6-0,8): "</span>).replace(<span style="color: #79a8ff;">","</span>, <span style="color: #79a8ff;">"."</span>))
@@ -8885,21 +9253,21 @@ Die Liste sollte dann in etwas so aussehen:
 </div>
 
 
-<div id="outline-container-org4dca00f" class="outline-3">
-<h3 id="org4dca00f"><span class="section-number-3">12.2.</span> Kapitel: Kontrollstrukturen </h3>
+<div id="outline-container-orgf4a30e1" class="outline-3">
+<h3 id="orgf4a30e1"><span class="section-number-3">12.2.</span> Kapitel: Kontrollstrukturen </h3>
 <div class="outline-text-3" id="text-12-2">
 </div>
-<div id="outline-container-orge4a2c7a" class="outline-4">
-<h4 id="orge4a2c7a"><span class="section-number-4">12.2.1.</span> Konsonant oder Vokal?</h4>
+<div id="outline-container-org2ae93fb" class="outline-4">
+<h4 id="org2ae93fb"><span class="section-number-4">12.2.1.</span> Konsonant oder Vokal?</h4>
 <div class="outline-text-4" id="text-12-2-1">
 <div class="org-src-container">
-<pre class="src src-python"><span style="color: #f78fe7;">str</span> = <span style="color: #f78fe7;">input</span>(<span style="color: #79a8ff;">"Geben Sie einen Buchstaben ein: "</span>)
+<pre class="src src-python"><span style="color: #00d3d0;">strg</span> = <span style="color: #f78fe7;">input</span>(<span style="color: #79a8ff;">"Geben Sie einen Buchstaben ein: "</span>)
 
-<span style="color: #b6a0ff;">if</span> <span style="color: #f78fe7;">str</span>.lower() <span style="color: #b6a0ff;">in</span> <span style="color: #79a8ff;">"aeiou"</span>:
+<span style="color: #b6a0ff;">if</span> strg.lower() <span style="color: #b6a0ff;">in</span> <span style="color: #79a8ff;">"aeiou"</span>:
     <span style="color: #f78fe7;">print</span>(<span style="color: #79a8ff;">"Vokal!"</span>)
 
-<span style="color: #b6a0ff;">elif</span> <span style="color: #f78fe7;">str</span>.lower() == <span style="color: #79a8ff;">"y"</span>:
-    <span style="color: #f78fe7;">print</span>(<span style="color: #79a8ff;">"Offiziell ein Konstonant, halte ich es f&#252;r einen Vokal."</span>)
+<span style="color: #b6a0ff;">elif</span> strg.lower() == <span style="color: #79a8ff;">"y"</span>:
+    <span style="color: #f78fe7;">print</span>(<span style="color: #79a8ff;">"Offiziell ein Konsonant, halte ich es f&#252;r einen Vokal."</span>)
 
 <span style="color: #b6a0ff;">else</span>:
     <span style="color: #f78fe7;">print</span>(<span style="color: #79a8ff;">"Konsonant!"</span>)
@@ -8909,8 +9277,8 @@ Die Liste sollte dann in etwas so aussehen:
 </div>
 
 
-<div id="outline-container-org7baef9e" class="outline-4">
-<h4 id="org7baef9e"><span class="section-number-4">12.2.2.</span> Verschachtelte Schleifen</h4>
+<div id="outline-container-org7eb34ae" class="outline-4">
+<h4 id="org7eb34ae"><span class="section-number-4">12.2.2.</span> Verschachtelte Schleifen</h4>
 <div class="outline-text-4" id="text-12-2-2">
 <p>
 Einmal mit 4 (!) for-Schleifen:
@@ -8939,8 +9307,8 @@ Einmal mit der Hilfe der Format Optionen von f-Strings:
 </div>
 
 
-<div id="outline-container-org3ac8ced" class="outline-4">
-<h4 id="org3ac8ced"><span class="section-number-4">12.2.3.</span> Absteigende Dominosteine</h4>
+<div id="outline-container-orgfa04ea7" class="outline-4">
+<h4 id="orgfa04ea7"><span class="section-number-4">12.2.3.</span> Absteigende Dominosteine</h4>
 <div class="outline-text-4" id="text-12-2-3">
 <div class="org-src-container">
 <pre class="src src-python"><span class="linenr">1: </span><span style="color: #b6a0ff;">for</span> i <span style="color: #b6a0ff;">in</span> <span style="color: #f78fe7;">range</span>(0, 7):
@@ -8956,8 +9324,8 @@ Einmal mit der Hilfe der Format Optionen von f-Strings:
 </div>
 
 
-<div id="outline-container-org8010f1f" class="outline-4">
-<h4 id="org8010f1f"><span class="section-number-4">12.2.4.</span> Quersumme berechnen</h4>
+<div id="outline-container-org74f2e1c" class="outline-4">
+<h4 id="org74f2e1c"><span class="section-number-4">12.2.4.</span> Quersumme berechnen</h4>
 <div class="outline-text-4" id="text-12-2-4">
 <div class="org-src-container">
 <pre class="src src-python"><span class="linenr"> 1: </span><span style="color: #b6a0ff;">def</span> <span style="color: #feacd0;">quersumme</span>(<span style="color: #00d3d0;">zahl</span>: <span style="color: #f78fe7;">str</span>):
@@ -8986,8 +9354,8 @@ die Funktion und geben eine Fehlermeldung aus.
 
 
 
-<div id="outline-container-org14ff57f" class="outline-4">
-<h4 id="org14ff57f"><span class="section-number-4">12.2.5.</span> Bip!, Blop!, Beeebop!</h4>
+<div id="outline-container-orgc833231" class="outline-4">
+<h4 id="orgc833231"><span class="section-number-4">12.2.5.</span> Bip!, Blop!, Beeebop!</h4>
 <div class="outline-text-4" id="text-12-2-5">
 <div class="org-src-container">
 <pre class="src src-python"><span class="linenr"> 1: </span><span style="color: #b6a0ff;">try</span>:
@@ -9011,8 +9379,8 @@ die Funktion und geben eine Fehlermeldung aus.
 
 
 
-<div id="outline-container-orgb1ccc53" class="outline-4">
-<h4 id="orgb1ccc53"><span class="section-number-4">12.2.6.</span> Hundejahre</h4>
+<div id="outline-container-orgf58c047" class="outline-4">
+<h4 id="orgf58c047"><span class="section-number-4">12.2.6.</span> Hundejahre</h4>
 <div class="outline-text-4" id="text-12-2-6">
 <div class="org-src-container">
 <pre class="src src-python"><span class="linenr">1: </span><span style="color: #b6a0ff;">def</span> <span style="color: #feacd0;">calc_dog_years</span>(years: <span style="color: #f78fe7;">int</span>) -&gt; <span style="color: #f78fe7;">float</span>:
@@ -9028,8 +9396,8 @@ die Funktion und geben eine Fehlermeldung aus.
 </div>
 
 
-<div id="outline-container-org4ebf63c" class="outline-4">
-<h4 id="org4ebf63c"><span class="section-number-4">12.2.7.</span> Summe zwischen zwei beliebigen Ganzzahlen</h4>
+<div id="outline-container-org6f96eaa" class="outline-4">
+<h4 id="org6f96eaa"><span class="section-number-4">12.2.7.</span> Summe zwischen zwei beliebigen Ganzzahlen</h4>
 <div class="outline-text-4" id="text-12-2-7">
 <p>
 Natürlich könnten Sie die Aufgabe lösen, indem Sie eine Funktion
@@ -9087,8 +9455,8 @@ Viel eleganter, meinen Sie nicht?
 
 
 
-<div id="outline-container-org9c055d5" class="outline-4">
-<h4 id="org9c055d5"><span class="section-number-4">12.2.8.</span> BMI Klassifikation</h4>
+<div id="outline-container-org909742a" class="outline-4">
+<h4 id="org909742a"><span class="section-number-4">12.2.8.</span> BMI Klassifikation</h4>
 <div class="outline-text-4" id="text-12-2-8">
 <div class="org-src-container">
 <pre class="src src-python"><span class="linenr"> 1: </span> <span style="color: #a8a8a8;"># </span><span style="color: #a8a8a8;">In einer Schleife, die nur terminiert, wenn der Nutzer eine</span>
@@ -9144,8 +9512,8 @@ Viel eleganter, meinen Sie nicht?
 
 
 
-<div id="outline-container-orgc067419" class="outline-4">
-<h4 id="orgc067419"><span class="section-number-4">12.2.9.</span> Rate es!</h4>
+<div id="outline-container-org8c1f1c7" class="outline-4">
+<h4 id="org8c1f1c7"><span class="section-number-4">12.2.9.</span> Rate es!</h4>
 <div class="outline-text-4" id="text-12-2-9">
 <div class="org-src-container">
 <pre class="src src-python"><span class="linenr"> 1: </span><span style="color: #b6a0ff;">import</span> random
@@ -9208,8 +9576,8 @@ Viel eleganter, meinen Sie nicht?
 </div>
 
 
-<div id="outline-container-org8dc9a9c" class="outline-4">
-<h4 id="org8dc9a9c"><span class="section-number-4">12.2.10.</span> Stein, Schere, Papier (Echse, Spock)</h4>
+<div id="outline-container-org0238659" class="outline-4">
+<h4 id="org0238659"><span class="section-number-4">12.2.10.</span> Stein, Schere, Papier (Echse, Spock)</h4>
 <div class="outline-text-4" id="text-12-2-10">
 <div class="org-src-container">
 <pre class="src src-python"><span class="linenr"> 1: </span><span style="color: #b6a0ff;">import</span> random
@@ -9245,12 +9613,12 @@ Viel eleganter, meinen Sie nicht?
 </div>
 
 
-<div id="outline-container-orga45e5f7" class="outline-3">
-<h3 id="orga45e5f7"><span class="section-number-3">12.3.</span> Kapitel: Datenstrukturen </h3>
+<div id="outline-container-org777f7de" class="outline-3">
+<h3 id="org777f7de"><span class="section-number-3">12.3.</span> Kapitel: Datenstrukturen </h3>
 <div class="outline-text-3" id="text-12-3">
 </div>
-<div id="outline-container-org5ea28c3" class="outline-4">
-<h4 id="org5ea28c3"><span class="section-number-4">12.3.1.</span> Schreiben Sie eine replace_all() Funktion</h4>
+<div id="outline-container-org4613c52" class="outline-4">
+<h4 id="org4613c52"><span class="section-number-4">12.3.1.</span> Schreiben Sie eine replace_all() Funktion</h4>
 <div class="outline-text-4" id="text-12-3-1">
 <div class="org-src-container">
 <pre class="src src-python"><span class="linenr"> 1: </span><span style="color: #00d3d0;">dic</span> = {
@@ -9271,8 +9639,8 @@ Viel eleganter, meinen Sie nicht?
 </div>
 
 
-<div id="outline-container-org639aa4c" class="outline-4">
-<h4 id="org639aa4c"><span class="section-number-4">12.3.2.</span> Ausschuss zählen</h4>
+<div id="outline-container-org7bd05b4" class="outline-4">
+<h4 id="org7bd05b4"><span class="section-number-4">12.3.2.</span> Ausschuss zählen</h4>
 <div class="outline-text-4" id="text-12-3-2">
 <p>
 Lassen Sie sich bitte nicht dazu verleiten, per <code>for</code> oder <code>while</code> Schleife über die einzelnen Elemente der Liste zu iterieren und eine Variable  hochzuzählen, wenn ein Listenelement gleich <code>True</code> ist. Dafür hat Python die eigene Listenmethode <code>.count()</code>, die auch auf Geschwindigkeit optimiert ist. Also:
@@ -9286,8 +9654,8 @@ Lassen Sie sich bitte nicht dazu verleiten, per <code>for</code> oder <code>whil
 </div>
 
 
-<div id="outline-container-org92a94c2" class="outline-4">
-<h4 id="org92a94c2"><span class="section-number-4">12.3.3.</span> Listen Differenzen</h4>
+<div id="outline-container-org6cfb153" class="outline-4">
+<h4 id="org6cfb153"><span class="section-number-4">12.3.3.</span> Listen Differenzen</h4>
 <div class="outline-text-4" id="text-12-3-3">
 <p>
 Am besten lässt sich die Aufgabe durch eine einfache List
@@ -9312,8 +9680,8 @@ Comprehension und den <code>in</code> Operator.
 </div>
 
 
-<div id="outline-container-org78bc1b2" class="outline-4">
-<h4 id="org78bc1b2"><span class="section-number-4">12.3.4.</span> Pangramme</h4>
+<div id="outline-container-org999ea63" class="outline-4">
+<h4 id="org999ea63"><span class="section-number-4">12.3.4.</span> Pangramme</h4>
 <div class="outline-text-4" id="text-12-3-4">
 <div class="org-src-container">
 <pre class="src src-python"><span class="linenr"> 1: </span><span style="color: #b6a0ff;">import</span> string
@@ -9414,8 +9782,8 @@ False
 
 
 
-<div id="outline-container-orgaac4487" class="outline-4">
-<h4 id="orgaac4487"><span class="section-number-4">12.3.5.</span> Matrizen generieren</h4>
+<div id="outline-container-org440456d" class="outline-4">
+<h4 id="org440456d"><span class="section-number-4">12.3.5.</span> Matrizen generieren</h4>
 <div class="outline-text-4" id="text-12-3-5">
 <div class="org-src-container">
 <pre class="src src-python"><span class="linenr">1: </span><span style="color: #b6a0ff;">def</span> <span style="color: #feacd0;">create_matrix</span>(x: <span style="color: #f78fe7;">int</span>, y: <span style="color: #f78fe7;">int</span>) -&gt; <span style="color: #f78fe7;">list</span>:
@@ -9430,8 +9798,8 @@ False
 </div>
 
 
-<div id="outline-container-org6083325" class="outline-4">
-<h4 id="org6083325"><span class="section-number-4">12.3.6.</span> Liste in gleiche Summen aufteilen</h4>
+<div id="outline-container-org55da203" class="outline-4">
+<h4 id="org55da203"><span class="section-number-4">12.3.6.</span> Liste in gleiche Summen aufteilen</h4>
 <div class="outline-text-4" id="text-12-3-6">
 <p>
 Bevor Sie sich ein Konstrukt mit Variablen für <i>linke Seite</i> und
@@ -9459,12 +9827,12 @@ Möglichkeite des <i>Slicings</i> von Python.
 </div>
 
 
-<div id="outline-container-org1df95e3" class="outline-3">
-<h3 id="org1df95e3"><span class="section-number-3">12.4.</span> Kapitel: Mit Dateien arbeiten </h3>
+<div id="outline-container-org24928a0" class="outline-3">
+<h3 id="org24928a0"><span class="section-number-3">12.4.</span> Kapitel: Mit Dateien arbeiten </h3>
 <div class="outline-text-3" id="text-12-4">
 </div>
-<div id="outline-container-org04f6db6" class="outline-4">
-<h4 id="org04f6db6"><span class="section-number-4">12.4.1.</span> Teilnehmer Anonymisierung</h4>
+<div id="outline-container-org3c0f0e5" class="outline-4">
+<h4 id="org3c0f0e5"><span class="section-number-4">12.4.1.</span> Teilnehmer Anonymisierung</h4>
 <div class="outline-text-4" id="text-12-4-1">
 <div class="org-src-container">
 <pre class="src src-python"><span class="linenr"> 1: </span><span style="color: #b6a0ff;">from</span> random <span style="color: #b6a0ff;">import</span> randint
@@ -9530,32 +9898,33 @@ Möglichkeite des <i>Slicings</i> von Python.
 </div>
 
 
-<div id="outline-container-org377eb39" class="outline-2">
-<h2 id="org377eb39"><span class="section-number-2">13.</span> Weiterführende Literatur</h2>
+<div id="outline-container-org742a0ed" class="outline-2">
+<h2 id="org742a0ed"><span class="section-number-2">13.</span> Weiterführende Literatur</h2>
 <div class="outline-text-2" id="text-13">
 </div>
-<div id="outline-container-org7e409ca" class="outline-3">
-<h3 id="org7e409ca"><span class="section-number-3">13.1.</span> Einführende Literatur</h3>
+<div id="outline-container-orge2816d4" class="outline-3">
+<h3 id="orge2816d4"><span class="section-number-3">13.1.</span> Einführende Literatur</h3>
 </div>
 
 
-<div id="outline-container-org3877a29" class="outline-3">
-<h3 id="org3877a29"><span class="section-number-3">13.2.</span> Für Fortgeschrittene</h3>
+<div id="outline-container-org97e8e0b" class="outline-3">
+<h3 id="org97e8e0b"><span class="section-number-3">13.2.</span> Für Fortgeschrittene</h3>
 </div>
 
 
-<div id="outline-container-orgdd6ecaa" class="outline-3">
-<h3 id="orgdd6ecaa"><span class="section-number-3">13.3.</span> Data Science</h3>
+<div id="outline-container-orgc2feede" class="outline-3">
+<h3 id="orgc2feede"><span class="section-number-3">13.3.</span> Data Science</h3>
 </div>
 
 
-<div id="outline-container-orgeebb2e9" class="outline-3">
-<h3 id="orgeebb2e9"><span class="section-number-3">13.4.</span> Webseiten</h3>
+<div id="outline-container-orge79b3ee" class="outline-3">
+<h3 id="orge79b3ee"><span class="section-number-3">13.4.</span> Webseiten</h3>
 </div>
 </div>
 
-<div id="outline-container-org8273d1c" class="outline-2">
-<h2 id="org8273d1c"><span class="section-number-2">14.</span> Rechtliches und Impressum</h2>
+
+<div id="outline-container-orgc3f2108" class="outline-2">
+<h2 id="orgc3f2108"><span class="section-number-2">14.</span> Rechtliches und Impressum</h2>
 <div class="outline-text-2" id="text-14">
 <p>
 <b>Impressum</b>
@@ -9589,7 +9958,7 @@ vom Autor erstellte Grafiken unterstehen der Creativ Commons Lizenz
 </p>
 
 
-<div id="org05a2049" class="figure">
+<div id="org40f28f2" class="figure">
 <p><img src="figs/ccc_lizenz.png" alt="ccc_lizenz.png" />
 </p>
 </div>
@@ -9602,7 +9971,7 @@ vom Autor erstellte Grafiken unterstehen der Creativ Commons Lizenz
 <div class="footdef"><sup><a id="fn.1" class="footnum" href="#fnr.1" role="doc-backlink">1</a></sup> <div class="footpara" role="doc-footnote"><p class="footpara">Wenn Sie
 möchten, können Sie sich auch einmal die erweiterte REPL mit dem Namen
 iPython ansehen (<a href="https://ipython.org">https://ipython.org</a>). Wie Sie diese mit PIP
-installieren, erfahren Sie im entsprechenden <a href="#orge6d52cf">Kapitel</a>.</p></div></div>
+installieren, erfahren Sie im entsprechenden <a href="#org34b9e1d">Kapitel</a>.</p></div></div>
 
 <div class="footdef"><sup><a id="fn.2" class="footnum" href="#fnr.2" role="doc-backlink">2</a></sup> <div class="footpara" role="doc-footnote"><p class="footpara">Es ist
 zwar heutzutage nicht essentiell zum reinen Programmieren für die
@@ -9649,7 +10018,7 @@ einer Datenbank liegen.</p></div></div>
 </div></div>
 <div id="postamble" class="status">
 <p class="author">Autor: Stefan Böhringer</p>
-<p class="date">Created: 2022-02-13 So 19:51</p>
+<p class="date">Created: 2022-02-17 Do 17:32</p>
 <p class="creator"><a href="https://www.gnu.org/software/emacs/">Emacs</a> 28.0.90 (<a href="https://orgmode.org">Org</a> mode 9.5.1)</p>
 <p class="validation"><a href="https://validator.w3.org/check?uri=referer">Validate</a></p>
 </div>
