@@ -1,0 +1,92 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes"?>
+<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
+  <channel>
+    <title>wissenschaft on Datenschauer</title>
+    <link>https://datenschauer.de/tags/wissenschaft/</link>
+    <description>Recent content in wissenschaft on Datenschauer</description>
+    <generator>Hugo -- gohugo.io</generator>
+    <language>de-DE</language>
+    <lastBuildDate>Tue, 12 Jul 2022 00:00:00 +0200</lastBuildDate><atom:link href="https://datenschauer.de/tags/wissenschaft/index.xml" rel="self" type="application/rss+xml" />
+    <item>
+      <title>Schnelle Python WebApps bauen mit Anvil</title>
+      <link>https://datenschauer.de/posts/schnelle-python-webapps-bauen-mit-anvil/</link>
+      <pubDate>Tue, 12 Jul 2022 00:00:00 +0200</pubDate>
+      
+      <guid>https://datenschauer.de/posts/schnelle-python-webapps-bauen-mit-anvil/</guid>
+      <description>In unserem wissenschaftlichen Alltag - und sehr wahrscheinlich nicht nur da - ist es wichtig, manche Ideen schnell umzusetzen und auszutesten.
+die Herausforderung: ein anonymes Anmeldeverfahren Im Projekt FALKO-PV stehen wir vor der Herausforderung, ein gut funktionierendes, aber möglichst anonymes Anmeldeverfahren für eine Web-App zu entwickeln, mit der Schüler:innen ihren Unterricht bewerten können. Diese Unterrichtsbewertung durch Schüler:innen ist ein wichtiger Bestandteil in unserem Studiendesign, von der viel abhängt. Wir bilden einen umfangreichen psychometrischen Fragebogen als App ab, die sowohl von Lehrer:innen- als auch Schüler:innen-Seite völlig anonym genutzt werden kann.</description>
+      <content>&lt;p&gt;In unserem wissenschaftlichen Alltag - und sehr wahrscheinlich nicht nur da - ist es wichtig, manche Ideen schnell umzusetzen und auszutesten.&lt;/p&gt;
+&lt;h2 id=&#34;die-herausforderung-ein-anonymes-anmeldeverfahren&#34;&gt;die Herausforderung: ein anonymes Anmeldeverfahren&lt;/h2&gt;
+&lt;p&gt;Im Projekt &lt;a href=&#34;https://falko-pv.de&#34;&gt;FALKO-PV&lt;/a&gt; stehen wir vor der Herausforderung, ein gut funktionierendes, aber möglichst &lt;em&gt;anonymes&lt;/em&gt; Anmeldeverfahren für eine Web-App zu entwickeln, mit der Schüler:innen ihren Unterricht bewerten können. Diese Unterrichtsbewertung durch Schüler:innen ist ein wichtiger Bestandteil in unserem Studiendesign, von der viel abhängt. Wir bilden einen umfangreichen psychometrischen Fragebogen als App ab, die sowohl von Lehrer:innen- als auch Schüler:innen-Seite völlig anonym genutzt werden kann. Dabei starten Lehrkräfte eine Umfrage, an der dann durch Weitergabe eines QR-Codes an die Schüler:Innen diese daran teilnehmen können. Die Antworten auf einer einfachen fünf-stufigen Likertskala werden dann herangezogen, um die Qualität des Unterrichts auf einer Skala von - bis jetzt - neun Dimensionen und mehreren Subdimensionen zu bewerten. Natürlich könnten die Schüler:Innen die Antworten geben, ohne sich vorher anzumelden. Da die Erhebung der Unterrichtsqualität aber zu mehreren Erhebungszeitpunkten im Schuljahr erfolgt, könnten wir so Veränderungen der Qualität immer nur auf Klassenebene beobachten. Dabei würden wir aber wichtige Informationen auf Individualebene verlieren. Um dies zu verhindern, müssen die gegebenen Anworten der einzelnen Schüler:innen getracked werden. Sie müssen sich also anmelden. Allerdings sollte nach der Anmeldung kein Rückschluss möglich sein auf die tatsächlichen Kinder und Jugendlichen einer Klasse.&lt;/p&gt;
+&lt;h3 id=&#34;bisherige-praxis-schüler-innen-vergeben-einen-eigenen-code&#34;&gt;bisherige Praxis: Schüler:Innen vergeben einen eigenen Code&lt;/h3&gt;
+&lt;p&gt;Um die Anonymität von Teilnehmer:innen bei solchen Befragungen zu bewahren, war es Usus, den Befragten die Erstellung eines eigenen Codes zu überlassen; meistens in der Form: &amp;ldquo;Nimm die zwei Anfangsbuchstaben des Namens deiner Mutter; addiere zur Zahl deiner Hausnummer die Zahl des Monats, in dem du geboren wurdest, usw.&amp;rdquo;. Das Problem an diesen Zeichenketten ist jedoch, dass sie schnell vergessen werden und - man sieht es an den Anweisungen, wie bei der Frage nach dem Geburtsmonat - oft nicht so ganz anonym sind.&lt;/p&gt;
+&lt;p&gt;Auch die Vergabe von Codes durch die Lehrkraft ist auf Grund der Tatsache, dass die Codes keine Rückschlüsse auf die eigentlichen Individuen geben sollen, ausgeschlossen. Was also tun?&lt;/p&gt;
+&lt;h3 id=&#34;idee-anmelden-über-ein-individuelles-bildermuster-und-anwendung-einer-mnemo-technik&#34;&gt;Idee: Anmelden über ein individuelles Bildermuster und Anwendung einer Mnemo-Technik&lt;/h3&gt;
+&lt;p&gt;Bei nächtlichen Überlegungen zu dieser Problematik viel mir eine Mnemotechnik ein, die ich selbst oft verwende: durch das Erzählen kleiner &amp;ldquo;verrückter&amp;rdquo; Geschichten lassen sich Fakten und Zusammenhänge viel besser merken. Kombiniert man dies dann noch mit einprägsamen Bildern, ist die Vergessenskurve nicht ganz so extrem. So war die Idee für ein stabiles aber anonymes Anmeldeverfahren für die Individuen einer Klasse geboren.&lt;/p&gt;
+&lt;p&gt;Die Schüler:innen sollten vier Mal mit sechs Bildern konfrontiert werden, aus denen sie sich jeweils eines aussuchen. Hinter jedem Bild steckt eine Zahl von 1 bis 6. Haben sie sich also für vier Bilder entschieden so haben sie im Hintergrund einen vierstelligen Pin-Code auf der Basis der Zahlen 1 bis 6 generiert. Mit diesem Pin-Code können sie sich dann immer wieder anmelden. Der Clou ist aber nun, dass sie diesen Pin-Code gar nicht kennen und sich auch nicht merken müssen. Alles was sie behalten müssen, sind die Bilder, die sie ausgewählt haben. Das bedeutet: bei jedem Anmeldeverfahren müssen sie einfach wieder die selben Bilder auswählen, wie beim ersten Mal. Um diese gleichbleibende Auswahl zu unterstützen kommt die erwähnte Mnemotechnik ins Spiel: die Bilder werden aus vier Themenbereichen gewählt, die möglichst stabile persönliche aber nicht direkt zuordbare Merkmale der Schüler:innen abbilden, wie &amp;ldquo;Welches Fabelwesen beschreibt dich im Kindergartenalter am besten?&amp;rdquo;, &amp;ldquo;Wo hast du bis jetzt am häufigsten Urlaub gemacht?&amp;rdquo; oder &amp;ldquo;Wie legst du die größte Strecke deines Schulwegs zurück?&amp;rdquo;. Dabei sollten die zur Auswahl stehenden Bilder eine möglichst hohe Varianz erzeugen, also beim &amp;ldquo;Fabelwesen&amp;rdquo; einfach mal das Einhorn weglassen, damit nicht alle jüngeren Mädchen auf Grund kultureller Erzeihugen dieses eine Tier nehmen. Die vier Themen wurden dann weiter so ausgewählt, dass sie in ihrer Reihenfolge einen leicht zu merkenden Satz ergeben. Das erste Thema ist also z.B. ein Wesen oder Tier, das zweite Thema eine Farbe, das dritte Thema ein Ort und das vierte Thema eine Tätigkeit. So lässt sich nach der Auswahl der Bilder ein Satz in der Form: &amp;ldquo;Ein so und so &amp;lt;farbiges&amp;gt; &amp;lt;Wesen&amp;gt; &amp;lt;tut etwas&amp;gt; in/am &amp;lt;Ort&amp;gt;.&amp;rdquo; Es kommen somit Sätze zustande wie: &amp;ldquo;Eine blaue Fee fährt auf dem Campingplatz Ski&amp;rdquo;, oder &amp;ldquo;Ein rotes Meerschweinchen fährt im alten Ägypten mit dem Bus.&amp;rdquo;. Sowohl die visuelle Anordnung der Bilder, als auch die leicht verrückten und daher eingängigen Sätze sollen beim &lt;em&gt;Memorieren&lt;/em&gt; der Anmeldung helfen.&lt;/p&gt;
+&lt;h2 id=&#34;nächste-herausforderung-das-testen&#34;&gt;nächste Herausforderung: das Testen&lt;/h2&gt;
+&lt;p&gt;Nun kann man sich natürlich die schönsten Verfahren ausdenken, und sich ob seiner Kreativität freuen, aber, gerade als empirisch Forschender fragt man sich sofort: hält dies auch der Realität stand oder zerschellt mein Konzept am tatsächlichen &amp;ldquo;Doing&amp;rdquo; der Kinder und Jugendlichen dort draussen? Einwände kamen auch von befreundeten Pädagog:innen und Psycholog:innen. Man musste das Verfahren also an realen Personen testen. Aber wie? Man müsste ja solch ein Anmeldeverfahren erst einmal programmieren, und das möglichst schnell und dann auch noch am besten kostenlos, denn in Drittmittel geförderten Projekten drängt oft die Zeit und Gelder, die vorher nicht genau spezifiziert wurden, können nicht ausgegeben werden.&lt;/p&gt;
+&lt;p&gt;Darüber hinaus war mir klar, dass ich am schnellsten zu einem Ergebnis komme, wenn ich mich nicht erst in ein bestimmtes Framework oder neue Programmiersprache einarbeiten muss. Und da ich in den letzten Jahren eigentlich fast ausschliesslich mit Python und R gearbeitet habe (meine PHP und JavaScript Kenntnisse würde ich als eher &amp;ldquo;eingerostet&amp;rdquo; nennen), war klar, dass ich auf der Suche nach einem Tool war, mit folgenden Anforderungen:&lt;/p&gt;
+&lt;ul&gt;
+&lt;li&gt;schnelle Umsetzung einer Web-App ohne groß JS, HTML und CSS zu schreiben&lt;/li&gt;
+&lt;li&gt;Umsetzung möglichst mit Python als Code-Basis&lt;/li&gt;
+&lt;li&gt;kostenlos&lt;/li&gt;
+&lt;/ul&gt;
+&lt;p&gt;Diese Anforderungen sah ich in &lt;a href=&#34;https://anvil.works&#34;&gt;Anvil&lt;/a&gt; realisiert, über das ich im &lt;a href=&#34;https://realpython.com/podcasts/rpp/63/&#34;&gt;RealPython Podcast&lt;/a&gt; erfahren habe, und testete es aus. So viel kann ich gleich vorweg sagen: ich wurde nicht enttäuscht. Im Gegenteil: alle meine Erwartungen wurden eigentlich übertroffen.&lt;/p&gt;
+&lt;h2 id=&#34;anvil-ein-kleines-online-python-framework-für-rapides-web-app-development&#34;&gt;Anvil: ein kleines Online-Python-Framework für rapides Web-App Development&lt;/h2&gt;
+&lt;p&gt;Anvil ist ein kleines Framework, mit dem man vollständig in einem Editor im Browser Web-Apps erstellen kann. Alle Web-Apps, die man damit erstellt, können über die Anvil Plattform kostenlos gehostet werden. Ein Bezahlplan (ab ca. 14,- Euro / Monat) bietet mehr Annehmlichkeiten, wie die Verwendung einer eigenen Domain, der Installation weiterer Python Module, die Verwendung verschiedener Datenbanken und mehr. Eine Übersicht über die unterschiedlichen Stufen gibt es &lt;a href=&#34;https://anvil.works/pricing&#34;&gt;hier&lt;/a&gt;.&lt;/p&gt;
+&lt;p&gt;Der Webeditor bietet eine sehr intuitiven GUI, mit der man über verschieden Elemente sehr leicht eine Seite &amp;ldquo;zusammenbauen&amp;rdquo; kann.&lt;/p&gt;
+
+  &lt;figure class=&#34;left&#34; &gt;
+    &lt;img src=&#34;https://datenschauer.de/ox-hugo/anvil_form_designer.gif&#34;   /&gt;
+    
+  &lt;/figure&gt;
+
+
+&lt;p&gt;Darüber hinaus lassen sich dann die platzierten Elemente direkt im &lt;em&gt;client-side Code&lt;/em&gt; ansprechen. So lässt sich der Klick auf einen Button mit einer einfachen Funktion realisieren:&lt;/p&gt;
+&lt;div class=&#34;highlight&#34;&gt;&lt;pre tabindex=&#34;0&#34; style=&#34;color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4;&#34;&gt;&lt;code class=&#34;language-python&#34; data-lang=&#34;python&#34;&gt;&lt;span style=&#34;display:flex;&#34;&gt;&lt;span&gt;&lt;span style=&#34;color:#66d9ef&#34;&gt;def&lt;/span&gt; &lt;span style=&#34;color:#a6e22e&#34;&gt;button_click&lt;/span&gt;(self, &lt;span style=&#34;color:#f92672&#34;&gt;**&lt;/span&gt;event_args):
+&lt;/span&gt;&lt;/span&gt;&lt;span style=&#34;display:flex;&#34;&gt;&lt;span&gt;    result &lt;span style=&#34;color:#f92672&#34;&gt;=&lt;/span&gt; alert(
+&lt;/span&gt;&lt;/span&gt;&lt;span style=&#34;display:flex;&#34;&gt;&lt;span&gt;        &lt;span style=&#34;color:#e6db74&#34;&gt;&amp;#39;Button gedrückt!&amp;#39;&lt;/span&gt;,
+&lt;/span&gt;&lt;/span&gt;&lt;span style=&#34;display:flex;&#34;&gt;&lt;span&gt;        title&lt;span style=&#34;color:#f92672&#34;&gt;=&lt;/span&gt;&lt;span style=&#34;color:#e6db74&#34;&gt;&amp;#39;Drück mich!&amp;#39;&lt;/span&gt;,
+&lt;/span&gt;&lt;/span&gt;&lt;span style=&#34;display:flex;&#34;&gt;&lt;span&gt;    )
+&lt;/span&gt;&lt;/span&gt;&lt;span style=&#34;display:flex;&#34;&gt;&lt;span&gt;    &lt;span style=&#34;color:#66d9ef&#34;&gt;if&lt;/span&gt; result:
+&lt;/span&gt;&lt;/span&gt;&lt;span style=&#34;display:flex;&#34;&gt;&lt;span&gt;        open_form(&lt;span style=&#34;color:#e6db74&#34;&gt;&amp;#39;thank_you_page&amp;#39;&lt;/span&gt;)
+&lt;/span&gt;&lt;/span&gt;&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;&lt;p&gt;Natürlich gibt es auch eine visuell zu bearbeitende Datenbank, die sich sehr leicht mit dem Server-Side Code ansprechen lässt.&lt;/p&gt;
+
+  &lt;figure class=&#34;left&#34; &gt;
+    &lt;img src=&#34;https://datenschauer.de/ox-hugo/anvil_data_table.png&#34;   /&gt;
+    
+  &lt;/figure&gt;
+
+
+&lt;p&gt;Die Daten lassen sich als CSV exportieren, die wir dann wiederum mit dem Python Data Science Stack auswerten konnten.&lt;/p&gt;
+&lt;p&gt;Darüber hinaus bietet Anvil eine Unmenge an sehr guten &lt;a href=&#34;https://anvil.works/learn&#34;&gt;Tutorials&lt;/a&gt;, sowie eine eingängige &lt;a href=&#34;https://anvil.works/learn&#34;&gt;Dokumentation&lt;/a&gt;, die es einem leicht machen, das Framework schnell zu verstehen. Eine freundliche Community hilft überdies bei Problemen.&lt;/p&gt;
+&lt;p&gt;Hier noch ein paar Impressionen aus der erstellten Web-App:&lt;/p&gt;
+
+  &lt;figure class=&#34;left&#34; &gt;
+    &lt;img src=&#34;https://datenschauer.de/ox-hugo/anvil_webapp_1.png&#34;   /&gt;
+    
+  &lt;/figure&gt;
+
+
+
+  &lt;figure class=&#34;left&#34; &gt;
+    &lt;img src=&#34;https://datenschauer.de/ox-hugo/anvil_webapp_2.png&#34;   /&gt;
+    
+  &lt;/figure&gt;
+
+
+
+  &lt;figure class=&#34;left&#34; &gt;
+    &lt;img src=&#34;https://datenschauer.de/ox-hugo/anvil_webapp_3.png&#34;   /&gt;
+    
+  &lt;/figure&gt;
+
+
+&lt;h2 id=&#34;zusammenfassung&#34;&gt;Zusammenfassung&lt;/h2&gt;
+&lt;p&gt;Anvil hat es mir ermöglicht, innerhalb weniger Tage eine fehlerfreie App zu publizieren, mit der wir als Forschungsgruppe das Anmeldeverfahren an gut 150 Menschen testen konnten. Zwar läuft der Test noch, aber es zeigt sich jetzt schon, dass das Anmeldeverfahren sehr stabil läuft und im Gegensatz zu einer Kontrollgruppe, die auf herkömmliche Weise einen Code erstellen muss, keine so große Vergessenskurve aufweist.&lt;/p&gt;
+</content>
+    </item>
+    
+  </channel>
+</rss>

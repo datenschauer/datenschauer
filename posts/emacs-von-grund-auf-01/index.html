@@ -1,0 +1,205 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  
+    <title>Emacs von Grund auf - #01 :: Datenschauer</title>
+  
+  <meta http-equiv="content-type" content="text/html; charset=utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<meta name="description" content="Das ist eine erste Überschrift In Emacs &amp;ldquo;bewegt&amp;rdquo; man sich viel über Tastenkombinationen. Dafür werden vor allem die Strg-Taste und die Alt- oder Esc-Taste gedrückt. Die Strg-Taste heißt im Englischen &amp;ldquo;Control&amp;rdquo; = &amp;ldquo;Ctrl&amp;rdquo; und wird daher mit &amp;ldquo;C-&amp;rdquo; abgekürzt. Wenn man also irgendwo die Tastenkombination C-x liest so heißt das: &amp;ldquo;Drücke die Tasten &amp;lsquo;Strg&amp;rsquo; und &amp;lsquo;x&amp;rsquo; gleichzeitig.&amp;rdquo; Achtung: gibt es Kombinationen mit Großbuchstaben, so müssen drei Tasten gleichzeitig gedrückt werden. So meint C-X das gleichzeitige Drücken von &amp;ldquo;Strg&amp;rdquo;, &amp;ldquo;Shift&amp;rdquo; und &amp;ldquo;x&amp;rdquo;." />
+<meta name="keywords" content="" />
+<meta name="robots" content="noodp" />
+<link rel="canonical" href="https://datenschauer.de/posts/emacs-von-grund-auf-01/" />
+
+
+
+
+<link rel="stylesheet" href="https://datenschauer.de/assets/style.css">
+
+  <link rel="stylesheet" href="https://datenschauer.de/assets/green.css">
+
+
+
+
+
+
+<link rel="apple-touch-icon" href="https://datenschauer.de/img/apple-touch-icon-192x192.png">
+
+  <link rel="shortcut icon" href="https://datenschauer.de/img/favicon/green.png">
+
+
+
+<meta name="twitter:card" content="summary" />
+
+  
+    <meta name="twitter:site" content="https://twitter.com/Datenschauer" />
+  
+    <meta name="twitter:creator" content="[Stefan Boehringer]" />
+
+
+
+<meta property="og:locale" content="en" />
+<meta property="og:type" content="article" />
+<meta property="og:title" content="Emacs von Grund auf - #01">
+<meta property="og:description" content="Das ist eine erste Überschrift In Emacs &amp;ldquo;bewegt&amp;rdquo; man sich viel über Tastenkombinationen. Dafür werden vor allem die Strg-Taste und die Alt- oder Esc-Taste gedrückt. Die Strg-Taste heißt im Englischen &amp;ldquo;Control&amp;rdquo; = &amp;ldquo;Ctrl&amp;rdquo; und wird daher mit &amp;ldquo;C-&amp;rdquo; abgekürzt. Wenn man also irgendwo die Tastenkombination C-x liest so heißt das: &amp;ldquo;Drücke die Tasten &amp;lsquo;Strg&amp;rsquo; und &amp;lsquo;x&amp;rsquo; gleichzeitig.&amp;rdquo; Achtung: gibt es Kombinationen mit Großbuchstaben, so müssen drei Tasten gleichzeitig gedrückt werden. So meint C-X das gleichzeitige Drücken von &amp;ldquo;Strg&amp;rdquo;, &amp;ldquo;Shift&amp;rdquo; und &amp;ldquo;x&amp;rdquo;." />
+<meta property="og:url" content="https://datenschauer.de/posts/emacs-von-grund-auf-01/" />
+<meta property="og:site_name" content="Datenschauer" />
+
+  
+    <meta property="og:image" content="https://datenschauer.de/img/favicon/green.png">
+  
+
+<meta property="og:image:width" content="2048">
+<meta property="og:image:height" content="1024">
+
+  <meta property="article:section" content="emacs" />
+
+
+  <meta property="article:published_time" content="2021-10-14 00:00:00 &#43;0200 &#43;0200" />
+
+
+
+
+
+
+
+
+
+
+
+
+</head>
+<body class="green">
+
+
+<div class="container headings--one-size">
+
+  <header class="header">
+  <div class="header__inner">
+    <div class="header__logo">
+      <a href="/">
+  <div class="logo">
+    Datenschauer
+  </div>
+</a>
+
+    </div>
+    
+      <div class="menu-trigger">menu</div>
+    
+  </div>
+  
+    <nav class="menu">
+  <ul class="menu__inner menu__inner--desktop">
+    
+      
+        
+          <li><a href="/about">About</a></li>
+        
+      
+        
+          <li><a href="/categories/emacs">Emacs</a></li>
+        
+      
+      
+    
+
+    
+  </ul>
+
+  <ul class="menu__inner menu__inner--mobile">
+    
+      
+        <li><a href="/about">About</a></li>
+      
+    
+      
+        <li><a href="/categories/emacs">Emacs</a></li>
+      
+    
+    
+  </ul>
+</nav>
+
+  
+</header>
+
+
+  <div class="content">
+    
+<div class="post">
+  <h1 class="post-title">
+    <a href="https://datenschauer.de/posts/emacs-von-grund-auf-01/">Emacs von Grund auf - #01</a></h1>
+  <div class="post-meta">
+    
+      <span class="post-date">
+        2021-10-14 
+      </span>
+    
+    
+    <span class="post-author">:: [Stefan Boehringer]</span>
+    
+  </div>
+
+  
+  <span class="post-tags">
+    
+    #<a href="https://datenschauer.de/tags/tutorial/">Tutorial</a>&nbsp;
+    
+    #<a href="https://datenschauer.de/tags/anf%C3%A4nger/">Anfänger</a>&nbsp;
+    
+  </span>
+  
+
+  
+
+  
+
+  <div class="post-content"><div>
+        <h2 id="das-ist-eine-erste-überschrift">Das ist eine erste Überschrift<a href="#das-ist-eine-erste-überschrift" class="hanchor" ariaLabel="Anchor">&#8983;</a> </h2>
+<p>In Emacs &ldquo;bewegt&rdquo; man sich viel über Tastenkombinationen. Dafür werden vor allem die Strg-Taste und die Alt- oder Esc-Taste gedrückt. Die Strg-Taste heißt im Englischen &ldquo;Control&rdquo; = &ldquo;Ctrl&rdquo; und wird daher mit &ldquo;C-&rdquo; abgekürzt. Wenn man also irgendwo die Tastenkombination <code>C-x</code> liest so heißt das: &ldquo;Drücke die Tasten &lsquo;Strg&rsquo; und &lsquo;x&rsquo; gleichzeitig.&rdquo; Achtung: gibt es Kombinationen mit Großbuchstaben, so müssen drei Tasten gleichzeitig gedrückt werden. So meint <code>C-X</code> das gleichzeitige Drücken von &ldquo;Strg&rdquo;, &ldquo;Shift&rdquo; und &ldquo;x&rdquo;.</p>
+<p>Eine weitere wichtige Taste ist die &ldquo;Meta-Taste&rdquo;. Sie gibt es auf heutigen Tastaturen nicht mehr und ist ein Relikte aus den frühen achziger Jahren. Dort gab es die Taste auf Keyboards sogenannter LISP-Machines. Da die Taste auf heutigen Tastaturen fehlt muss natürlich Ersatz her. In eine Standard Emacs Installation ist die Meta Taste die Alt- oder die ESC-(Escape-)Taste. Sie wird mit &ldquo;M&rdquo; für &ldquo;Meta&rdquo; abgekürzt. Lesen Sie also irgenwo <code>M-x</code> so meint das: &ldquo;Drücken sie die Alt-Taste und die Taste &lsquo;x&rsquo; gleichzeitig.&rdquo;</p>
+<div class="highlight"><pre tabindex="0" style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4"><code class="language-python" data-lang="python"><span style="color:#66d9ef">def</span> <span style="color:#a6e22e">test</span>(x):
+    <span style="color:#66d9ef">return</span> <span style="color:#e6db74">&#34;Hallo, das ist </span><span style="color:#e6db74">{}</span><span style="color:#e6db74">.&#34;</span><span style="color:#f92672">.</span>format(x)
+
+print(test(<span style="color:#e6db74">&#34;Stefan&#34;</span>))
+</code></pre></div><div class="highlight"><pre tabindex="0" style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4"><code class="language-text" data-lang="text">Hallo, das ist Stefan.
+</code></pre></div>
+      </div></div>
+
+  
+  
+  
+
+  
+
+</div>
+
+  </div>
+
+  
+    <footer class="footer">
+  <div class="footer__inner">
+    
+      <div class="copyright">
+        <span>© 2021 Powered by <a href="http://gohugo.io">Hugo</a></span>
+    
+        <span>:: Theme made by <a href="https://twitter.com/panr">panr</a></span>
+      </div>
+  </div>
+</footer>
+
+<script src="https://datenschauer.de/assets/main.js"></script>
+<script src="https://datenschauer.de/assets/prism.js"></script>
+
+
+
+
+
+
+
+  
+</div>
+
+</body>
+</html>
