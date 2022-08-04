@@ -1,5 +1,5 @@
 - 👋 Hi, I’m Stefan
-- 👀 I’m interested in Data Science, Empirical Research in Education, Statistics, Emacs, Python, Philosophy
+- 👀 I’m interested in Full-Stack-Dev, JavaScript, Python, Empirical Research in Education, Statistics, Vim and Philosophy
 - 🌱 I’m currently learning elisp, clojure
 - 📫 How to reach me: write to stefan@datenschauer.de or find me at https://twitter.com/Datenschauer
 
