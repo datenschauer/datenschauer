@@ -1,6 +1,6 @@
 - 👋 Hi, I’m Stefan
-- 👀 I’m interested in Full-Stack-Dev, JavaScript, Python, Empirical Research in Education, Statistics, Vim and Philosophy
-- 🌱 I’m currently learning elisp, clojure
+- 👀 I’m interested in Full-Stack-Dev, JavaScript, Python, Empirical Research in Education, Statistics, Emacs and Philosophy
+- 🌱 I’m currently learning Lisp for fun!
 - 📫 How to reach me: write to stefan@datenschauer.de or find me at https://twitter.com/Datenschauer
 
 <!---
